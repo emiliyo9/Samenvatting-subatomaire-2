@@ -1,0 +1,93 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Quantum getallen}%
+\label{sec:quantum_getallen}
+
+Er zijn verschillende quantum getallen die gebruikt worden. Deze kunnen opgesplitst worden in 2 groepen:
+\begin{itemize}
+    \item Additieve quantum getallen:
+        \begin{itemize}
+            \item baryon getal
+            \item elektrische lading
+            \item kleur
+            \item lepton getal
+            \item ...
+        \end{itemize}
+        Deze komen overeen met spontane transformaties
+    \item Multiplicatieve kwantum getallen
+        \begin{itemize}
+            \item pariteit
+            \item C-pariteit
+            \item ...
+        \end{itemize}
+        Komen overeen met discrete transformaties
+\end{itemize}
+
+\subsection{Elekrische lading}%
+\label{sub:elekrische_lading}
+
+We weten dat de elektrische lading behouden is.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:cons_lading}
+        \sum_{init} Q_i \sum_{final} Q_i
+    \end{aligned}
+\end{equation}
+Dit wil zeggen dat de lichtste drager van de lading stabiel zal moeten zijn. Met een levensduur $\tau_e$ van het elektron groter dan $6.6\cdot 10^{28}$yr (90\% CL) is dit ook het geval.\\
+De antideeltjes hebben tegengestelde lading.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:anti_deeltje_lading}
+        |Q_{\epsilon^+}+Q_{\epsilon^-}|/e < 4\cdot 10^{-8}
+    \end{aligned}
+\end{equation}
+
+\subsection{Lepton getal}%
+\label{sub:lepton_getal}
+
+Het lepton getal $\mathcal{L}$ is $+1$ voor de $e^-$, $\mu^-$, $\tau^-$ en de neutrino's en $-1$ voor $e^+$, $\mu^+$, $\tau^+$ en de antineutrino's. Voor al de andere deeltjes is het lepton getal $0$. Voor zover we weten is het lepton getal voor elke generatie behouden met een uitzondering van de neutrino oscillaties die dit niet behouden.\\
+De som van de lepton getallen $\mathcal{L} = \mathcal{L}_e + \mathcal{L}_\mu + \mathcal{L}_\tau$ moet altijd behouden worden. Dit wil zeggen dat het lichtste neutrino moet stabiel zijn. Ergens weten we dat het lepton getal niet helemaal behouden kan zijn. Dit weten we zeker voor het baryon getal.
+
+\subsection{Baryon getal}%
+\label{sub:baryon_getal}
+
+Het baryon getal $\mathcal{B}$ is $+1$ voor al de baryonen, $-1$ voor al de anti-baryonen en $0$ voor de rest. In alles wat we ooit hebben gezien is het baryon getal behouden. Dit zegt ons terug dat het lichtste baryon, het proton, stabiel moet zijn. Met een levensduur  $\tau_p$ van meer dan $2.1\cdot 10^{29}$yr (90\% CL) is dat natuurlijk stabiel.\\
+In de theorieën waar $\mathcal{B}$ niet behouden wordt, wordt $\mathcal{M}$ ook niet behouden. Maar wat er wel zou behouden worden worden is $\mathcal{B-L}$. Achter het behoud van deze 2 quantum getallen zit geen ijk principe. Dit zijn puur experimentele vaststellingen.  We weten dat deze niet helemaal behouden kunnen worden als we denken aan de big bang. Hier ontstaat het universum uit pure energie. Deze splitst op in deeltje-antideeltje paren. M.a.w. moet er bij de big bang even veel materie als anti-materie gecreerd zijn. Vandaag de dag nemen we deze anti-materie niet meer waar dus moet deze toch ergens verdwenen zijn.\\
+De baryonen zijn opgesteld uit quarks en antiquarks. Dit geeft ons de nieuwe baryon getallen:
+\begin{itemize}
+    \item $\mathcal{B} = +\frac{1}{3}$ voor quarks
+    \item $\mathcal{B} = -\frac{1}{3}$ voor antiquarks
+    \item $\mathcal{B} = 0$ voor de rest
+\end{itemize}
+
+\subsection{Impuls moment}%
+\label{sub:impuls_moment}
+
+\begin{equation}
+    \begin{aligned}
+        \label{eq:impuls_moment}
+        \vec{J}=\vec{L}+\vec{S}
+    \end{aligned}
+\end{equation}
+Wat deze intrinsieke spin nu juist betekent hangt af van de omstandigheden. We weten wel dat het totaal angulair moment behouden is. De fundamentele reden hiervoor is dat alles wat we zien en alle theorieën die we uitschrijven invariant zijn voor rotatie in de ruimte. Het behoud van energie komt uit de tijd invariatie en het behoud van moment uit de de ruimtelijke invariantie.\\
+\begin{equation}
+    \begin{aligned}
+        \label{eq:samengesteld_moment}
+        \vec{L} + \vec{S} &= \vec{J}\\
+        |l-s| \leq &j \leq |l+s|\\
+        j_3=m&=l_3+m_3
+    \end{aligned}
+\end{equation}
+De angulaire moment operator is gegeven door:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ang_mom_op}
+        \hat{\vec{L}}^2&=l(l+1)\hbar^2\\
+        \hat{L}_3&=l_3\hbar
+    \end{aligned}
+\end{equation}
+Hierbij zijn de quantum getallen gegeven door $l=0,1,2...$ en $-l\leq l_3\leq l$. De angulaire momenta zullen veel samengesteld worden . Al de mogelijke combinaties van composities en decomposities worden gedaan aan de hand van de Cleksch-Gordan coëfficiënten. Die de kans tussen de verschillende quantum getallen zal weergeven. Zie hiervoor de oefeninglessen om goed mee te leren werken. 
+
+\end{document}

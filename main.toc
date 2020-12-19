@@ -1,0 +1,19 @@
+\contentsline {section}{\numberline {1}Introductie en overzicht}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}High energy physics}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Discovering the electron}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Interacties}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Deeltjes experimenten}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Mandelstam-variables}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Acceleratoren}{6}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Detectoren}{6}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}Energie verlies}{7}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}Deeltjes detectoren}{8}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}Event reconstructie}{9}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}Cross sectie}{9}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}Differentiële cross sectie}{10}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}Hoe meten we dit alles}{10}{subsection.1.13}%
+\contentsline {section}{\numberline {2}Quantum getallen}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Elekrische lading}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Lepton getal}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Baryon getal}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Impuls moment}{12}{subsection.2.4}%
