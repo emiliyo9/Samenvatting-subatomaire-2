@@ -1,0 +1,158 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Feynman diagrammen, processen en correcties}%
+\label{sec:feynman_diagrammen_processen_en_correcties}
+
+\subsection{Schrödinger en co}%
+\label{sub:schrodinger_en_co}
+
+In de klassieke mechanica hebben we:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:klas_mech}
+        \frac{\vec{p}^2}{2m} +V=E
+    \end{aligned}
+\end{equation}
+of voor een vrij deeltje:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:klas_vrij}
+        \frac{\vec{p}^2}{2m}=E
+    \end{aligned}
+\end{equation}
+Overgaan naar kwantummechanica geeft:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:kwan_vrij}
+        \vec{p}\rightarrow \frac{\vec{\nabla}}{i} \\
+        E \rightarrow i \frac{\partial}{\partial t} \\
+        - \frac{1}{2m} \vec{\nabla}^2\psi = i \frac{\partial \psi}{\partial t} 
+    \end{aligned}
+\end{equation}
+Relativiteit toevoegen geeft $E^2-\vec{p}^2=m^2$ of in invariante notatie $p^\mu p_\mu-m^2=0$. Vervangen we dit in vergelijking (\ref{eq:kwan_vrij}) krijgen we de Klein-Gordon vergelijkingen.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:klein_gordon}
+        -\partial^\mu\partial_\mu \psi - m^2\psi = 0
+    \end{aligned}
+\end{equation}
+Deze zijn door Schrödinger opgesteld voor dat hij de Schrödinger vergelijkingen heeft opgesteld. Dit omdat eerst geprobeerd is de vergelijkingen relativistisch op te lossen maar dit wou niet lukken en zijn dan eerst klassiek opgelost. Het probleem bij de Klein-Gordon vergelijkingen is dat $|\psi|^2$ geen probabiliteit meer is a.k.a deze is niet positief definiet. De reden hiervoor is de tweede afgeleide naar de tijd. Dit komt er fysisch op neer dat deeltjes kunnen gecreëerd en geannihileerd kunnen worden. Schrijven we de Klein-Gordon vergelijking eenvoudiger:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:klein_gordon_eenvoudig_1}
+        \frac{\partial^2 \psi}{\partial t^2} = \vec{\nabla}^2 \psi - m^2 \psi
+    \end{aligned}
+\end{equation}
+vermenigvuldig dit met de canonische $\psi^*$ en trek er het canonische toegevoegde van af.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:klein_gordon_eenvoudig_2}
+        \psi^*\frac{\partial^2 \psi}{\partial t^2} - \psi\frac{\partial^2 \psi^*}{\partial t^2} = \psi^*(\vec{\nabla}^2 \psi - m^2 \psi) - \psi(\vec{\nabla}^2 \psi^* - m^2 \psi^*)
+    \end{aligned}
+\end{equation}
+Dit kan herschreven worden als volgt:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:klein_gordon_eenvoudig_3}
+        \frac{\partial}{\partial t} \left(\psi^*\frac{\partial \psi}{\partial t} - \psi\frac{\partial \psi^*}{\partial t}\right) = \vec{\nabla} \cdot §(\psi^*\vec{\nabla} \psi - \psi\vec{\nabla} \psi^*)
+    \end{aligned}
+\end{equation}
+Zo krijgen we iets dat afgeleid is naar de tijd dat moet gelijk zijn aan iets afgeleid naar de ruimte. Dit kan niets anders dan een continuïteit vergelijking.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:continuiteit_vergelijking}
+        \frac{\partial \rho}{\partial t} + \vec{\nabla} \cdot \vec{J} &= 0\\
+        \rho &= i\left(\psi^*\frac{\partial \psi}{\partial t} - \psi\frac{\partial \psi^*}{\partial t}\right)
+    \end{aligned}
+\end{equation}
+Voor een vrij deeltje (plane wave) is de golffunctie:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:golffunctie_vrij}
+        \psi(\vec{x}, t) = Ne^{i(\vec{p}\cdot \vec{x}-Et)}
+    \end{aligned}
+\end{equation}
+met $N$ de normalisatieconstante. Vul dit in $\rho$ in en krijgen we:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:dens_vrij}
+        \rho &= 2|N|^2E\\
+        E&=\pm\sqrt{p^2+m^2}
+    \end{aligned}
+\end{equation}
+Belangrijk hier is dat $E$ niet constant is en dus ook de densiteit aan deeltjes is niet constant. De $E$ in de relativiteit komt van de Lorentz contractie. Naarmate de energie toeneemt zal door de normalisatie van de golfvergelijking het volume kleiner worden.
+
+\subsection{Dirac}%
+\label{sub:dirac}
+
+Dirac wil de kwantummechanica en relativiteit toch samenvoegen. Hij zoekt naar een vergelijking die eerste orde is in $t$.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:dirac_vergelijking}
+        \hat E \psi = (\vec{\alpha} \cdot \hat{p} + \beta m)\psi
+    \end{aligned}
+\end{equation}
+En hij eist dat $\psi$ voldoet aan de Klein-Gordon vergelijkingen. Zo gaan de niet te interpreteren densiteiten $\rho$ weg. De enige manier om dit op te lossen is wanneer $\vec{\alpha}$ en $\beta$ 4 $\times$ 4 matrices zijn. Dit omdat er aan anti-commutatie relaties zal moeten voldaan worden, wat niet kan met getallen. Dit geeft mee dat $\psi$ 4 componenten zal hebben, ``Dirac spinor''.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:dirac_spinor}
+        \psi(x)=
+        \begin{pmatrix}
+            \psi_1\\
+            \psi_2\\
+            \psi_3\\
+            \psi_4
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+            \phi\\
+            \chi
+        \end{pmatrix}
+    \end{aligned}
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        \label{eq:dirac_beta}
+        \beta=
+        \begin{pmatrix}
+            I & 0\\
+            0 & -I
+        \end{pmatrix}
+    \end{aligned}
+\end{equation}
+\begin{equation}
+    \begin{aligned}
+        \label{eq:dirac_alpha}
+        \alpha_i=
+        \begin{pmatrix}
+            0 & \sigma_i\\
+            \sigma_i & 0
+        \end{pmatrix}\\
+        \sigma_x=
+        \begin{pmatrix}
+            0 & 1\\
+            1 & 0
+        \end{pmatrix}\\
+        \sigma_y=
+        \begin{pmatrix}
+            0 & -i\\
+            i & 0
+        \end{pmatrix}\\
+        \sigma_z=
+        \begin{pmatrix}
+            1 & 0\\
+            0 & -1
+        \end{pmatrix}\\
+    \end{aligned}
+\end{equation}
+Nu is het mogelijk om de Dirac vergelijking (vergelijking (\ref{eq:dirac_vergelijking})) herschreven worden in zijn covariante vorm:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:dirac_covariant}
+        i\gamma^\mu\partial_\mu\psi - m\psi =0
+    \end{aligned}
+\end{equation}
+
+\end{document}
