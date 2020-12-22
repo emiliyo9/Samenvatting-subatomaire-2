@@ -1,0 +1,285 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{DIS, nucleon structuur, PDF's}%
+\label{sec:dis_nucleon_structuur_pdf_s}
+
+\subsection{Diep inelastische verstrooiing}%
+\label{sub:diep_inelastische_verstrooiing}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/diep_in_ver.png}
+    \caption{Diep inelastische verstrooiing van een proton en een lepton}%
+    \label{fig:diep_in_ver}
+\end{figure}
+
+Bij deze verstrooiing zal de kinetische energie van het lepton veel hoger zijn dan de massa van proton. Zo is het mogelijk om de inwendige structuur van het proton te gaan bekijken. De reden waarom we dit kunnen doen is omdat bij deze hoge energieën de golflengte van het foton veel kleiner zal zijn dan de grote van het proton. In dit geval werken we met een foton wat een groot voordeel is omdat we de vertices in dit diagram heel goed kunnen beschrijven en het lepton is een elementair deeltje. De enige onbekende in dit systeem is dus de inwendige structuur van het proton. De reden waarom het zo lang heeft geduurd voor we proton bundels zijn beginnen gebruiken is omdat niet alle massa in de valentie quarks van het proton zullen zitten wat het allemaal veel ingewikkelder maakt. Om met het LHC nauwkeurige metingen te kunnen uitvoeren moeten we veel meer statistiek (meer events) hebben.\\
+De kinetiek van het proces schematisch weergegeven in figuur \ref{fig:diep_in_ver} kan makkelijk neergeschreven worden. Een parton (quark) van een proton met 4moment $xp$ zal een energie $q$ absorberen van het foton en een vrij deeltje worden.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:parton_foton_abs}
+        \text{voor absorptie: }(xp+q)^2 &= m_{parton}^2 \approx 0\\
+                                        &=x^2p^2+2xpq+q^2\\
+                                        &=2xp+q^2\\
+                          \Rightarrow x &=- \frac{-q^2}{2pq} = \frac{Q^2}{2pq} 
+    \end{aligned}
+\end{equation}
+Het enige deeltje dat in staat zal zijn om een foton met energie $q$ te absorberen moet een impulsfractie $x$, zoals berekent in (\ref{eq:parton_foton_abs}), hebben van het proton. Met andere woorden hebben we een filter op welke partonen we willen waarnemen. Deze fractie is Lorentz invariant en dimensieloos. Een andere Lorentz invariante grootheid in dit proces is $y=\frac{q\cdot p}{k\cdot p}$. Deze geeft de fractie van het electron dat gedragen wordt door het foton.\\
+Verder uitgewerkt op een vast target hebben we als 4 momenta:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:4_momenta_dis}
+        k=
+        \begin{pmatrix}
+            E\\
+            0\\
+            0\\
+            E
+        \end{pmatrix},
+        p=
+        \begin{pmatrix}
+            m_p\\
+            0\\
+            0\\
+            0
+        \end{pmatrix},
+        k'=
+        \begin{pmatrix}
+            E'\\
+            0\\
+            E'\sin\theta\\
+            E'\cos\theta
+        \end{pmatrix},
+        p_h=
+        \begin{pmatrix}
+            E_h\\
+            p_{xh}\\
+            p_{yh}\\
+            p_{zh}\\
+        \end{pmatrix}
+    \end{aligned}
+\end{equation}
+De aannames dat we hier hebben gedaan zijn:
+\begin{itemize}
+    \item elektron beweegt langs de z-as
+    \item door hoge energieën zien we het elektron als massaloos: $|E_e|=|p_{ze}|$
+    \item het elektron verstrooit in het yz-vlak
+    \item De hadronische finale toestand is de som van alle uitkomende deeltjes samen
+\end{itemize}
+De invariante massa van dit systeem is $W=\sqrt{E_H^2-\vec{p}^2_h}\geq m_p$. Het is mogelijk maar zeldzaam dat de geabsorbeerde energie kan verdeelt worden onder alle andere partons om zo een proton uit te komen. Dit is een elastische verstrooiing en $W=m_p$. In alle andere gevallen breekt het parton los van de rest en hebben we een inelastische verstrooiing met $W>m_p$.\\
+Dit systeem heeft 8 vrijheidsgraden (voor zowel $k'$ als $p_h$ 1 voor de energie en 3 voor de hoeken). Eén van deze vrijheidsgraden valt weg vanwege de massa van het elektron dat verwaarloost wordt, nog 4 vallen weg door het behoud van energie en impuls en ten laatste valt er nog 1 weg door azimutale symmetrie. Zo houden we uiteindelijk nog 2 vrijheidsgraden over. De 2 makkelijkst te kiezen variabelen zijn $E'$ en $\theta$. Het probleem hierbij is dat deze niet Lorentz invariant zijn. Deze variabelen kunnen wel omgevormd worden naar $x$ en $y$ die dit wel zijn.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:etheta_naanr_xy}
+        \begin{matrix}
+            Q^2 & = & -(k-k')^2                 & \approx   & 2EE'(1-\cos\theta) \\
+            x   & = & -\frac{q^2}{2p\cdot q}    & =         & \frac{EE'(1-\cos\theta)}{(E-E')m_p} \\
+            y   & = & -\frac{q\cdot p}{k\cdot p}& =         & \frac{E-E'}{E} \\
+        \end{matrix}
+    \end{aligned}
+\end{equation}
+
+\subsection{Experimenten}%
+\label{sub:experimenten}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{DIS_nucleon_structuur_pdf/hera.png}
+    \caption{HERA experiment}%
+    \label{fig:hera}
+\end{figure}
+
+De beste vaste target machines voor precisie zijn $e^+e^-$ colliders. Op deze machines zijn ook voor het eerst de quarks gezien. In het CERN hadden ze eerst een proton collider gemaakt en dachten dat ze de boot gemist hebben. Wat ze gedaan hebben is de protonen op een target insturen en daar komen massas pionen uit. Als je deze lang genoeg meeneemt gaan die vervallen naar muonen met een levensduur van de orde $10^{-8}$s en zo verkrijgen we een muon bundel. Omdat dit tertiaire deeltjes zijn gaat de densiteit van de deeltjes veel lager liggen en zullen een vrij breed energiespectrum hebben. Hetzelfde kan gedaan worden voor neutrino's.\\
+Er zijn ook colliders waar 2 deeltjes bundels op elkaar worden afgestuurd. Een voorbeeld van de waargenomen deeltjes is in figuur \ref{fig:hera} gegeven van het HERA experiment. Hier is het duidelijk dat de elektronen van links zullen komen. Dit omdat de inkomende energie van het proton veel hoger is dan dat van het elektron en de uitgaande deeltjes van de collisie gaan wegens behoud van impuls via de linker kant de detector verlaten.\\
+Als je zo een extravagant experiment zoals het LHC maakt is 1 van de eerste dingen die je doet het onderzoeken van het  kinematisch bereik van dat experiment. In figuur \ref{fig:kin_bereik} wordt $Q^2$ in functie van $x$ geplot van verschillend colliders.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/kin_bereik.png}
+    \caption{Kinematisch bereik}%
+    \label{fig:kin_bereik}
+\end{figure}
+
+\subsection{Cross section}%
+\label{sub:cross_section}
+
+De werkzame doorsnede van deze DIS experimenten wordt gegeven door:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:dis_werkzame_doorsnede}
+        \frac{d^2\sigma^{e,N}}{dxdy} = \frac{4\pi\alpha^2s}{Q^4} [xy^2F_1^{eN}+(1-y)F_2^{eN}]
+    \end{aligned}
+\end{equation}
+met $F_1$ en $F_2$ de structuur functies. Het is logisch dat er in deze werkzame doorsnede een $\alpha^2$ afhankelijkheid verwerkt zit omdat deze interactie verloopt via de elektromagnetische interactie en dus 2 vertices heeft die elk een $\alpha$ toedragen. En de waarschijnlijkheid dat we de impulsfractie $x$ vinden van het parton wordt gegeven door die structuur functies $F_1$ en $F_2$. Het zijn deze dus die alle informatie bevatten. We zien dat de structuur functies afhangen van zowel $x$ als $Q^2$, $F_i(x, Q^2)$. Zo weten we direct dat dit geen puntdeeltjes kunnen zijn omdat we anders geen afhankelijkheid zouden hebben van $Q^2$.\\
+{\color{blue}Intermezzo: waar komt de massa van het proton nu vandaan? De structuur van protonen bestaat uit quarks en gluonen. In het echt is dit nog veel complexer dan zomaar die 3 quarks. De uiteindelijke reden daarvoor is dat het proton zeer klein is omdat de interactie tussen quarks zeer sterk is. De quarks worden op ongeveer 1fm van elkaar af. Het heisenberg principe zegt dat als we iets opsluiten in een ruimte van 1fm dat het een nulpuntsenergie van 197MeV zal hebben. De bewegingsenergie/bindingsenergie van de 3 quarks samen is 600MeV. Het grootste gedeelte van de massa van het proton zal dus afhangen van de bewegings-/bindingsenergie van de quarks en niet van de quarks zelf. Deze bindingsenergie komt van de interactie tussen de quarks zelf aan de hand van uitwisseling van gluonen. Door het continu uitgewisselde gluonen splitsen continu in quark-antiquark paren. Dit is het equivalent van de lamb shift in elektronenwolken.}\\
+Het is nog nooit gelukt om de structuur functies wiskundig uit te rekenen, QCD is hier niet toe in staat. De enige manier om deze te bepalen is aan de hand van experimenten. In het quark parton model kunnen we $F_2$ uitschrijven
+\begin{equation}
+    \begin{aligned}
+        \label{eq:tweede_structuur_functie}
+        F_2^{eN}(x)=\sum_q xQ_q^2|q^N(x)+\overline q^N (x)]
+    \end{aligned}
+\end{equation}
+Hier sommeren we over alle quarks. $q^N(x)$ en $\overline q^N(x)$ zijn respectievelijk de waarschijnlijk om een quark of antiquark in het proton te vinden. Al dat we hier alle mogelijke quarks bekijken is het zo goed als onmogelijk een top quark met een massa van $\pm100$GeV tegen te komen in een proton van 1GeV. Er is een relatie tussen $F_1$ en $F_2$
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_rel}
+        \frac{2xF_1}{F_2} =
+        \begin{matrix}
+            1 & & \text{spin } \frac{1}{2} \\
+            0 & & \text{spin } 0
+        \end{matrix}
+    \end{aligned}
+\end{equation}
+Deze relatie is makkelijk aangetoond.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:bewijs_struct_func_rel_1}
+        \left(\frac{d\sigma}{d\Omega}\right)_{puntdeeltje,1/2)} = {\color{red} \left(\frac{d\sigma}{d\Omega}\right)_{Rutherford}\cos^2  \frac{\theta}{2}} {\color{green} \left[1+ \frac{2Q^2}{4m^2c^2} \tan^2 \frac{\theta}{2} \right]}
+    \end{aligned}
+\end{equation}
+n het rood vinden we de Mott cross sectie $\left(\frac{d\sigma}{d\Omega}\right)_{M}$, de cross sectie voor het verstrooien van een spin $1/2$ deeltje aan een spin $0$ deeltje. Uit de Rutherford cross sectie komt uiteindelijk $\alpha^2/Q^4$. De $\cos^2$ in de Mott cross sectie komt uit het behoud van heliciteit en angulair moment. Als je een elekton hebt met spin 1/2 dan is zijn heliciteit de projectie van zijn spin op de bewegingsrichting. In het geval dat we een positieve heliciteit hebben liggen de bewegingsrichting en heliciteit in dezelfde richting. Onder een verstrooiing van $180^\circ$ zal de spin van het deeltje niet verandert zijn maar het momentum wel. Dit zorgt ervoor dat de heliciteit en momentum antiparallel zijn wat wegens behoud van heliciteit niet kan. Dit wordt weergegeven in deze cos-term.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/mot_cross_section.jpg}
+    \caption{Visualisatie van spin $1/2$ deeltje dat verstrooit onder een hoek van $180^\circ$}%
+    \label{fig:mot_cross_section}
+\end{figure}
+
+Het toevoegen van het groen gedeelte aan de Mott cross sectie is nodig als we verstrooien van een spin $1/2$ deeltje aan een spin $1/2$ deeltje. De eerste term in het groene gedeelte is afkomstig van de elektrische interactie en de tweede term van de magnetische interactie m.a.w. van de spin. Door deze term is het terug mogelijk om te verstrooien onder $180^\circ$. Voor het verstrooien van een elektron aan een quark moet aan vergelijking (\ref{eq:bewijs_struct_func_rel_1}) nog de lading van het quark $Q_a^2$ vermenigvuldigd worden. De laatste stap is nu de cross sectie op te stellen van een spin $1/2$ deeltje dat zich verstrooit van een proton.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:bewijs_struct_func_rel_2}
+        \left(\frac{d\sigma}{d\Omega dE'}\right) = {\color{green} \left(\frac{d\sigma}{d\Omega}\right)_{M} \sum_q Q_q^2 [1+ \frac{Q^2}{4m^2c^2} \tan^2 \frac{\theta}{2}]} {\color{red}q(x)} \frac{{\color{red}dx}}{dE'} 
+    \end{aligned}
+\end{equation}
+Dit komt neer op de waarschijnlijkheid om te verstrooien naar een quark in het groen en de waarschijnlijkheid om een quark te vinden in het rood. Nu kunnen we ad-hoc een aantal dingen uitwerken:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:bewijs_struct_func_rel_3}
+        \begin{matrix}
+            x = \frac{Q^2}{2M\nu}; & \nu = E-E' & \Rightarrow & \frac{dx}{dE'} = \frac{x}{\nu} 
+        \end{matrix}
+    \end{aligned}
+\end{equation}
+en de massa van het de quark is gegeven door $m_q = xM_p$. Vullen we deze in vergelijking (\ref{eq:bewijs_struct_func_rel_2}) in.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:bewijs_struct_func_rel_4}
+        \left(\frac{d\sigma}{d\Omega dE'}\right) &= \left(\frac{d\sigma}{d\Omega}\right)_{M} \sum_q Q_q^2 [1+ \frac{Q^2}{4x^2M_p^2c^2} \tan^2 \frac{\theta}{2}]q(x) \frac{x}{\nu}\\
+                                                 &\Downarrow\\
+        \left(\frac{d\sigma}{d\Omega dE'}\right) &= \left(\frac{d\sigma}{d\Omega}\right)_{M} \left[ \frac{1}{\nu} F_2 + \frac{2}{M^2c^2} \tan^2 \frac{\theta}{2} \right]
+    \end{aligned}
+\end{equation}
+Zo komen op de afgeleides na vergelijking (\ref{eq:dis_werkzame_doorsnede}) en vergelijking (\ref{eq:bewijs_struct_func_rel_4}) overeen. Als $\theta=0^\circ$ dan hebben we enkel $F_2$ en als $\theta=180^\circ$ dan hebben we enkel $F_1$. Specifiek voor $1/2$ partons kunnen we vergelijking (\ref{eq:dis_werkzame_doorsnede}) herschrijven als volgt:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_parton}
+        \frac{d^2\sigma^{e,N}}{dxdy} &= \frac{4\pi\alpha^2s}{Q^4} \left[y^2 \frac{F_2^{e,N}}{2} + (1-y)F_2^{e,N}\right]\\
+                                     &= \frac{4\pi\alpha^2s}{Q^4} \left[\frac{1+(1-y)^2}{2}\right]F_2^{e,N}\\
+    \end{aligned}
+\end{equation}
+
+\subsection{Structuur functies}%
+\label{sub:structuur_functies}
+
+Vervolgens kunnen we kijken hoe de structuur functie er uit ziet van het proton.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_proton}
+        F_2^{e,p} = x\left(Q_u^2(u+\overline u) + Q_d^2(d+\overline d + s + \overline s)\right)
+    \end{aligned}
+\end{equation}
+Hier worden enkel de waarschijnlijkheden van de up, down en strange (anti)quarks in acht genomen omdat de overige zo goed als niet mogelijk zijn. Het proton en neutron zijn voor de sterke wisselwerking hetzelfde alleen dat een up quark verandert in een downquark. Dit geeft de isospin invarianties
+\begin{equation}
+    \begin{aligned}
+        \label{eq:isospin_invariantie}
+        \begin{matrix}
+            u(x) \equiv u^p(x) = d^n(x) &   & \overline u(x) \equiv \overline u^p(x) = \overline d^n(x) \\
+            d(x) \equiv d^p(x) = u^n(x) &   & \overline d(x) \equiv \overline d^p(x) = \overline u^n(x) \\
+            s(x) \equiv s^p(x) = s^n(x) & = & \overline s^p(x) = \overline s^n(x)                       \\
+        \end{matrix}
+    \end{aligned}
+\end{equation}
+Gebruiken we deze invariantie dan vinden we direct de structuur functie voor het neutron.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_neutron}
+        F_2^{e,n} = x\left(Q_d^2(u+\overline u + s + \overline s) + Q_u^2(d+\overline d)\right)
+    \end{aligned}
+\end{equation}
+Om de structuur functie van een nucleon te bepalen middelen we uit over de 2 structuurfuncties.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_nucleon}
+        F_2^{e,N} &\equiv \frac{F_2^{e,p}+F_2^{e,n}}{2}\\
+                  &= \frac{x}{2} \left((Q_u^2+Q_d^2)(u+\overline u + d + \overline d) + 2Q_d^2(s+\overline s)\right)\\
+                  &\approx \frac{x}{2} \left( \frac{5}{9} (u+\overline u + d + \overline d)\right)
+    \end{aligned}
+\end{equation}
+
+\subsection{(Anti)neutrino verstrooiing}%
+\label{sub:_anti_neutrino_verstrooiing}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/neutrino_scat.png}
+    \caption{Feynman diagram van de neutrino verstrooiing}%
+    \label{fig:neutrino_scat}
+\end{figure}
+
+In principe is het mogelijk voor zowel charged ($W^\pm$) of neutral ($Z^0$) current verstrooiing doen. Hierbij wordt een neutrino afgeschoten op een proton waar na interactie van de neutrino en het quark aan de hand van een W boson het geladen equivalent van de neutrino de verstrooiing verlaten. De neutrino of antineutrino zal door het uitwisselen van respectievelijk ofwel het $W^+$ of $W^-$ boson enkel met een aantal quarks kunnen interageren in het proton:
+\begin{itemize}
+    \item $\nu$-scattering: $d,\overline u,s$
+    \item $\overline \nu$-scattering: $u,\overline d,\overline s$
+\end{itemize}
+In een experiment kunnen de verschillende (anti)neutrino verstrooiingen uit elkaar gehouden worden omdat $\nu \rightarrow e^-$ en $\overline \nu \rightarrow e^+$. Naast de $F_2^{\nu,N}\propto x(q+\overline q)$ krijgen we nu nog een extra structuur functie $xF_3^{\nu,N}\propto x(q-\overline q)$.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_nucleon_zwak}
+        \frac{d^2 \sigma^\nu}{dxdy} = \frac{G_F^2 s}{2\pi} \left[ \frac{F_2^\nu+xF_3^\nu}{2} + \frac{F_2^\nu-xF_3^\nu}{2}(1-y^2) \right]
+    \end{aligned}
+\end{equation}
+De eerste term tussen de haakjes zijn enkel de quarks en is onafhankelijk van de hoek waaronder wordt verstrooit en is isotroop. De tweede term zijn de antiquarks is de waarschijnlijkheid om er te hebben afhankelijk van de hoek waaronder verstrooit wordt. Waarom dit zo is wordt snel duidelijk als we de verstrooiing bij $180^\circ$ graden bekijken. Hier hebben we gebruik gemaakt van het feit dat de zwakke wisselwerking enkel bind aan linkshandige deeltjes.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/neutr_scat_f_3.jpg}
+    \caption{Neurtrino verstrooiing bij $180^\circ$}%
+    \label{fig:neutr_scat_f_3}
+\end{figure}
+
+Dezelfde redenering kan gedaan worden voor de antineutrinos en dan krijgen we:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_nucleon_zwak_anti}
+        \frac{d^2 \sigma^{\overline \nu}}{dxdy} = \frac{G_F^2 s}{2\pi} \left[ \frac{F_2^\nu-xF_3^\nu}{2} + \frac{F_2^\nu+xF_3^\nu}{2}(1-y^2) \right]
+    \end{aligned}
+\end{equation}
+Gebruiken we dit nu om de structuurfuncties van het proton en neutron op te stellen.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:struct_func_neutrino_proton_neutron}
+        F_2^{\nu, p} &= 2x[d(x)+\overline u(x)]\\
+        xF_3^{\nu, p} &= 2x[d(x)-\overline u(x)]\\
+        F_2^{\nu, n} &= 2x[u(x)+\overline d(x)]\\
+        xF_3^{\nu, n} &= 2x[u(x)-\overline d(x)]\\
+                      &\Downarrow\\
+        F_2^{\nu, N} &= F_2^{\overline \nu, N}\\
+        xF_3^{\nu, N} &= xF_3^{\overline \nu, N}\\
+        F_2^{\nu, N} &= x(u+\overline u+d+\overline d)\\
+        xF_3^{\nu, N} &= x(u-\overline u+d-\overline d)\\
+    \end{aligned}
+\end{equation}
+Het interessante is dat $xF_3^{\nu, N}$ ons het aantal quarks - het aantal antiquarks geeft m.a.w. de valentie quarks. Experimentezl hebben we kunnen zien dat $F_2$ zowel voor de elektromagnetische als de zwakke wisselwerking hetzelfde is. Dit is het beste bewijs dat we hebben voor de lading van een quark.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{DIS_nucleon_structuur_pdf/neutr_scat_exp.png}
+    \caption{Vergelijking zwakke en EM structuurfunctie in experimenten}%
+    \label{fig:neutr_scat_exp}
+\end{figure}
+
+\end{document}
