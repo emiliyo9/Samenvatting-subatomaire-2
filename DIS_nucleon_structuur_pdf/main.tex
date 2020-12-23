@@ -282,13 +282,154 @@ Het interessante is dat $xF_3^{\nu, N}$ ons het aantal quarks - het aantal antiq
     \label{fig:neutr_scat_exp}
 \end{figure}
 
-We zien dat $xF_3$ piekt bij een x waarde van $0.2$. Omdat we 3 valentiequarks hebben in een proton of neutron zouden we eerder deze piek bij $0.3$ verwachten. Dit komt door de verschillende gluons die worden uitgedeeld tussen de quarks. Je kan dit schematisch zien in figuur
-
+We zien dat $xF_3$ piekt bij een x waarde van $0.2$. Omdat we 3 valentiequarks hebben in een proton of neutron zouden we eerder deze piek bij $0.3$ verwachten. Dit komt door de verschillende gluons die worden uitgedeeld tussen de quarks. Je kan dit schematisch zien in figuur \ref{fig:valance_quark_dist}.
+ 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/valance_quark_dist.jpg}
     \caption{Schematische voorstelling van de quark verdeling}%
     \label{fig:valance_quark_dist}
+\end{figure}
+
+Toen voor het eerst de structuur functies werden onderzocht werd de scaling violation waargenomen. Of je nu naar puntdeeltjes kijkt met een hoge resolutie of lage resolutie zou je geen verschil mogen zien maar we zien dat dit niet zo is. Door de kortere waarneming hebben de zee quarks de tijd niet gehad om uit te middelen. De kans om een valentiequark te vinden is steeds moeilijker met hogere energieën.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{DIS_nucleon_structuur_pdf/scale_viol.png}
+    \caption{Scaling violations}%
+    \label{fig:scale_viol}
+\end{figure}
+
+Het mooie is dat we met QCD e $Q^2$ afhankelijkheid kan beschrijven. Jammergenoeg kan dit niet gezegd worden over de $x$ afhankelijkheid. De scaling violation kan ook waargenomen worden. Uit  de structuur functies kunnen de parton distributie functies afgeleid worden. Hier zien we dat de zee quarks zullen domineren bij lagere $x$ waarden.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{DIS_nucleon_structuur_pdf/part_dist_func.png}
+    \caption{parton distributie functies}%
+    \label{fig:part_dist_func}
+\end{figure}
+
+We zien dat er voor hoge $x$ in het proton er meer $\overline d$ aanwezig is de $\overline u$. Dit is te verklaren door de pion wolk die rond het proton zal leven. Deze pionen kunnen alleen neutraal of positief geladen zijn wat zorgt voor die hogere densiteit aan $\overline d$. {\color{red} Dit durft hij graag vragen op het examen les 5 10u00}.
+
+\subsection{Gepolariseerde DIS}%
+\label{sub:gepolariseerde_dis}
+
+Vanaf de jaren 80 zijn er ook longitudinaal gepolariseerde lepton en nucleon bundels gebruikt. Met deze experimenten kijken we naar de spin structuur van de nucleonen. We zien uit deze experimenten dat de spin van het proton niet zal opgemaakt zijn uit de valentie quarks. Dit leide tot de zo genoemde ``spin crisis''.
+
+\subsection{Spin physics}%
+\label{sub:spin_physics}
+
+Als we kijken naar eender welk rond draaiend systeem zoals bijvoorbeeld het zonnestelsel, kunnen we zien dat het grootste deel van het angulaire momentum van deze systemen niet zal afhangen van de lichamen met de grootste massa.
+
+\subsection{Nucleon spin fysica}%
+\label{sub:nucleon_spin_fysica}
+
+Uit de gepolariseerde experimenten verwachten we te zien dat $\frac{1}{2} = \frac{1}{2} (\Delta u + \Delta d)$ is. In het echt zien we dat de $\Delta u + \Delta d \approx 0$ wat natuurlijk totaal onverwacht was.\\
+In de werkelijkheid is het veel veel complexer.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:spin_werkelijk}
+        S_z &= \frac{1}{2} = \frac{1}{2} \Delta \Sigma + \Delta G + L_q + L_g\\
+        \Delta \Sigma &= (\Delta u_v + \Delta d_v) + (\Delta u_s + \Delta d_s + \Delta \overline u+ \Delta \overline d+ \Delta \overline s)\\
+        \Delta \Sigma &= \text{Quark spin contributie}\\
+        \Delta G &= \text{Gluon spin contributie}\\
+        L_q &= \text{Orbitaal angulair moment van quarks}\\
+        L_g &= \text{Orbitaal angulair moment van gluons}\\
+    \end{aligned}
+\end{equation}
+We verwachten wegens sferisch symmetrisch te zijn van de quarks dat al de bijdrages behalve $\Delta \Sigma$ 0 zouden zijn.\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/foton_abs_hel.png}
+    \caption{Foton absorptie bij gepolariseerde DIS}%
+    \label{fig:foton_abs_hel}
+\end{figure}
+
+Hoe meten we nu de spin distributie in quarks? We polariseren het proton parallel of anti parallel aan de richting van het foton en dan kijken we welke quarks het foton zullen absorberen. De reden waarom we het proton polariseren en niet de bundel is omdat het polariseren en vooral het flippen van de bundel die moeilijk is. Nu vragen we ons af het foton zal hitten. We kunnen ons de conservatie van heliciteit voorstellen bij absorptie. We zien in figuur \ref{fig:foton_abs_hel} dat de fotonen enkel geabsorbeerd worden door quarks met tegengestelde spin.\\
+Steken we deze quarks nu in een nucleon en we nemen aan dat enkel de quarks contributies leveren aan de spin kunnen we door het verranderen van de polarisatie van het proton, kiezen we of we de quarks bekijken die ofwel positief of negatief bijdragen aan de spin van het proton. Door de onderste spin min de bovenste spin te doen in figuur \ref{fig:foton_abs_pol} dan krijgen we de netto bijdrage van de quarks aan de spin.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{DIS_nucleon_structuur_pdf/foton_abs_pol.png}
+    \caption{Absorptie van foton door quarks in nucleon}%
+    \label{fig:foton_abs_pol}
+\end{figure}
+
+Zo krijgen we uiteindelijk een tensor uit deze experimenten
+\begin{equation}
+    \begin{aligned}
+        \label{eq:pol_tensor}
+        W^{\mu\nu} = -g^{\mu\nu}&F_1(x,Q^2) + \frac{p^\mu p^\nu}{\nu} F_2(x,Q^2)\\
+        &+ i\epsilon^{\mu\nu\delta\sigma} \frac{q_\delta}{\nu} (S_\sigma g_1(x,Q^2) + \frac{1}{\nu} (p\cdot qS_\sigma - S\cdot qp_\sigma)g_2(x,Q^2))
+    \end{aligned}
+\end{equation}
+Hierbij kennen we de ongepolariseerde structuur functies $F_1$ en $F_2$ al. Dit komt neer op de impuls densiteit van de quarks:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:f_1_pol}
+        F_1(x)=\frac{1}{2} \sum_q e_q^2[q^+(x)+q^-(x)] = \frac{1}{2} \sum_q e_q^2 q(x)
+    \end{aligned}
+\end{equation}
+De nieuwigheid hier is zijn de gepolariseerde structuur functies $g_1$ en $g_2$. Deze beschrijven de spin structuur van de spin van de quarks.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:g_1_pol}
+        g_1(x)=\frac{1}{2} \sum_q e_q^2[q^+(x)-q^-(x)] = \frac{1}{2} \sum_q e_q^2 \Delta q(x)
+    \end{aligned}
+\end{equation}
+$g_2$ zal niet besproken worden in deze cursus. Deze is te ingewikkeld. Hoe meten we $g_1$ nu. Het is natuurlijk niet mogelijk om het virtueel foton te polariseren. Wat wel mogelijk is, is het polariseren van de elektronbundel. Als de verstrooiing onder een grote hoek gebeurd nemen zal er een groot deel van de spin van het elektron overgebracht zijn naar het proton en als het onder een kleine hoek verstrooit wordt bijna geen spin overgebracht. Dit kan weergegeven worden in een polarisatie factor
+\begin{equation}
+    \begin{aligned}
+        \label{eq:pol_factor}
+        D= \frac{y(2-y)}{y^2 + 2(1-y)(1+R)}\\
+        R= \frac{\sigma_L}{\sigma_T} 
+    \end{aligned}
+\end{equation}
+Wat in deze experimenten zal gemeten worden is
+\begin{equation}
+    \begin{aligned}
+        \label{eq:a_parallel}
+        A_{||} &= \frac{\sigma^{\uparrow\downarrow} - \sigma^{\uparrow\uparrow}}{\sigma^{\uparrow\downarrow} + \sigma^{\uparrow\uparrow}}\\
+               &= D.(A_1+\eta A_2)
+    \end{aligned}
+\end{equation}
+Eigenlijk willen willen weten wat $A_1$ is
+\begin{equation}
+    \begin{aligned}
+        \label{eq:a_parallel}
+        A_{1} &= \frac{\sigma_{1/2} - \sigma_{3/2}}{\sigma^{1/2} + \sigma^{3/2}}\\
+    \end{aligned}
+\end{equation}
+Zo bekomen we uiteindelijk een ratio
+\begin{equation}
+    \begin{aligned}
+        \label{eq:pol_ratio_struct_func}
+        \frac{g_1}{F_1} = \frac{1}{1+\gamma^2} \left( \frac{A_{||}}{D} - (\eta - \gamma)A_2\right)
+    \end{aligned}
+\end{equation}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{DIS_nucleon_structuur_pdf/foton_abs.png}
+    \caption{Onderzoek naar pin structuur}%
+    \label{fig:foton_abs}
+\end{figure}
+
+De uiteindelijke structuur functies die we komen kan je vinden in figuur \ref{fig:pol_exp_res_1}. Voor het polariseren van het neutron maken we gebruik van $^3He$ als equivalent. We zien bij kleine $x$ niets wat wil zeggen dat de zee quarks niet toedragen tot de spin. Alle polarisatie is te vinden bij de hogere $x$ en zien we dat onze valentie quarks toch gepolariseerd zullen zijn. Bij het proton hebben we een positieve bijdrage en bij het neutron een negatieve bijdrage. Dit komt omdat de up quark positief zal bijdragen aan de spin en het down quark negatief. Het is momenteel nog niet gelukt om dit te bewijzen met QCD. In figuur \ref{fig:pol_exp_res_2} hebben we dit omgezet naar de bijdrages van de quarks zelf. Hieruit zien we dat de zee quarks niet gepolariseerd zijn. We krijgen uiteindelijk te zien dat $\Delta\Sigma \approx 0.30$ is, of anders gezegd dragen de spin van de quarks maar 1/3 mee aan de totale spin van het nucleon. Waar de rest vandaan komt is op dit moment nog niet duidelijk.
+
+\begin{figure}[ht]
+    \centering
+    \subfloat[]{
+        \includegraphics[width=0.5\textwidth]{DIS_nucleon_structuur_pdf/pol_exp_res_1.png}
+        \label{fig:pol_exp_res_1}
+    }
+    \hfill
+    \subfloat[]{
+        \includegraphics[width=0.4\textwidth]{DIS_nucleon_structuur_pdf/pol_exp_res_2.png}
+        \label{fig:pol_exp_res_2}
+    }
+    \caption{Resultaten uit polarisatie experimenten}
 \end{figure}
 
 \end{document}
