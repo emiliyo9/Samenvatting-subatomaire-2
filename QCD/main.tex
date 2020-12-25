@@ -181,4 +181,270 @@ $n$-jets rates:
     \item 4 jets: $\propto \alpha_s^2$
     \item ...
 \end{itemize}
+
+Indien je een $e^+e^-$ experiment uitvoert bij exact de massa van het $Z$ boson. Hierdoor krijgen we een immense werkzame doorsnede aan deze deeltjes. Hier kunnen we dan weer de ratio tussen de hadron en muon verval kanalen bepalen.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:hadr_z_boson}
+        R_Z = \frac{\Gamma(Z\rightarrow \text{hadrons})}{\Gamma(Z\rightarrow \mu^+\mu^-)} = R_Z^0(1+ \frac{\alpha_s}{\pi} + ...)
+    \end{aligned}
+\end{equation}
+Op deze ratios zullen straling correcties die we niet kunnen berekenen. $R_Z^0$ kan in de elektro zwakke theorie uit gerekend worden. Zo is het weer mogelijk om bij het bepalen van de $R_Z$ in experimenten zo de sterke wisselwerking constante te bepalen.\\
+Hetzelfde als bij het $Z$ boson kan nu ook gedaan worden bij de $\tau$ vervallen.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:hadr_tau}
+        R_\tau = \frac{\Gamma(\tau\rightarrow \text{hadrons}+\nu_\tau)}{\Gamma(\tau\rightarrow e\nu_e\nu_\tau)} = R_\tau^0(1+ \frac{\alpha_s}{\pi} + ...)
+    \end{aligned}
+\end{equation}
+Nog een andere manier om $\alpha_s$ te berekenen is DIS scaling violations. Door deze waarde via verschillende manieren en processen te kunnen meten, kunnen we uiteindelijk inzien dat we dicht bij de werkelijke waarde zullen komen.
+
+\subsection{Testen van QCD}%
+\label{sub:testen_van_qcd}
+
+We hebben nu in experimenten gevonden dat we 3 kleuren hebben of hoe hard verschillende quarks aan elkaar binden. Nu is het mogelijk om hier nog veel dieper op in te gaan. We kunnen bijvoorbeeld kijken naar de 4-jet evenementen en wat er nu allemaal kan gebeuren om deze 4 jets te maken. Dit komt neer op 4 verschillende diagrammen gegeven in figuur \ref{fig:4jets}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{QCD/4jets.png}
+    \caption{Mogelijke diagrammen om 4 jets te maken}%
+    \label{fig:4jets}
+\end{figure}
+
+Hiervan is de eerste jet heel makkelijk te onderscheiden van de andere 3 vanwege zijn topologie. De eerste heeft 2 jets die in de ene richting zullen gaan en 2 jets in de andere richting. De andere 3 configuraties hebben 1 jet die met ongeveer de helft van de impuls in de ene richting zal gaan en de overige 3 jets in de andere richting gaan. Wat er gebeurt in deze diagrammen kunnen gereduceerd worden tot 3 verschillende processen.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{QCD/reduced_events.png}
+    \caption{Gereduceerde diagram elementen}%
+    \label{fig:reduced_events}
+\end{figure}
+
+Deze zijn evenredig met de sterke koppelingsconstante en de kleurfactoren $C_F$, $C_A$ en $T_F$. Deze kleurfactoren zijn niets anders dan het aantal kleurcombinaties dat er mogelijk zijn. Het is makkelijk in te zien dat die factoren zich ook zullen tonen in de verschillende mogelijkheden om 4 jets te creëren. Dit kunnen we gebruiken om de symmetrieën tussen de kleuren onderzoeken. De kinematica van deze experimenten hangen dus af van de diagrammen. Als we hier nu $C_A/C_F$ en $T_F/C_F$ bepalen vinden we de groepen van de kleuren bepalen.
+
+\begin{table}[h]
+    \centering
+    \caption{Symmetrie van de kleurconstantes}
+    \label{tab:sym_kleurfact}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Groep   & $C_A$ & $C_F$         & $T_F$ \\
+        \hline
+        $SU(3)$ & 3     & 4/3           & 1/2   \\
+        $U(1)_3$& 0     & 1             & 3     \\
+        $S0(3)$ & 3     & 3             & 3     \\
+        $SU(N)$ & $N$   & $(N^2-1)/2N$  & 1/2   \\
+        \hline
+    \end{tabular}
+\end{table}
+
+In tabel \ref{tab:sym_kleurfact} kan je de waarden terug vinden voor de kleurfactoren indien QCD een bepaalde groep zou hebben. Uit dit experiment, zoals bij het LEP (figuur \ref{fig:4jets_results}) zien we dat het een goede aanname was dat we hiervoor $SU(3)$ gebruiken.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{QCD/4jets_results.png}
+    \caption{Lep resultaten voor 4 jet experimenten}%
+    \label{fig:4jets_results}
+\end{figure}
+
+{\color{red} Wat Ruckbosch vooral interessant vindt hier is dat je weet waarom $C_A$ bij $U(1)_3$ 0 is. Dit komt omdat $U(1)$ een abelse groep is en zelf interactie niet mogelijk is.}
+
+\subsection{Spin van het gluon}%
+\label{sub:spin_van_het_gluon}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{QCD/3jets.png}
+    \caption{3 jet evenementen}%
+    \label{fig:3jets}
+\end{figure}
+
+Hier drijven we de experimenten nog een beetje verder en kijken we naar 3-jet evenementen. In deze experimenten maken we weer een quark-antiquark paar aan waar er 1 van een gluon zal afstraalt. Hier zal een spin $1/2$ deeltje een vector boson met spin $1$ aanmaken. Het behoud van angulair moment zorgt ervoor dat de hoekdistributie afhangt van het feit of het gluon nu een spin 0 of spin 1 deeltje is.
+Bij deze experimenten zoek je de jet met de hoogste energie die waarschijnlijk degene is die niets heeft afgestraald. Dan kan je kijken naar de hoekdistributie tussen de andere 2 en kan je een idee krijgen over de spin van het gluon. In de resultaten van deze experimenten (figuur \ref{fig:3jets_results}) zien we dat deze de curve zal beschrijven voor een spin 1 deeltje en is het gluon dus een vector gluon.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{QCD/3jets_results.png}
+    \caption{Onderzoek naar de spin van het gluon}%
+    \label{fig:3jets_results}
+\end{figure}
+
+\subsection{$\alpha_s$}%
+\label{sub:_alpha_s_}
+
+Wat we al hebben gezien is de sterke koppelingsconstante bij de massa van het $Z$ boson (figuur \ref{fig:str_kop_z}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{QCD/str_kop_z.png}
+    \caption{De sterke koppelingsconstante bij de massa van het $Z$ boson}%
+    \label{fig:str_kop_z}
+\end{figure}
+
+Indien we dit voor meerdere massa's en verschillende energieën uitvoeren krijgen we uiteindelijk te zien dat de sterke koppelingsconstante zal weglopen (figuur \ref{fig:running_str_kop}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{QCD/running_str_kop.png}
+    \caption{Lopende koppelingsconstante}%
+    \label{fig:running_str_kop}
+\end{figure}
+
+Het interessante bij deze grafiek is dat de meest accurate metingen voor QCD komen uit het onderzoek van een zwakke interactie. Hierbij is de vorm van de curve bepaalt door QCD en gefit aan de waarde van het $Z$ boson.
+
+\subsection{Lopende koppelingsconstante}%
+\label{sub:lopende_koppelingsconstante}
+
+\subsubsection{QED}%
+\label{ssub:qed}
+
+Bij QED wordt de effectieve lading van het elektron bepaalt door het proces:\\
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \feynmandiagram[inline=(a), horizontal=b to c]{
+            a -- [photon, edge label=\(\gamma\)] b,
+            i1 -- [fermion] a,
+            a -- [fermion] i2,
+            f1 -- [fermion] b,
+            b -- [fermion] f2,
+        };
+    \end{center}
+    \begin{equation}
+        \begin{aligned}
+            \label{eq:QED_eerste_orde}
+            P_0 = \frac{e_0^2}{q^2}
+        \end{aligned}
+    \end{equation}
+\end{minipage}\noindent
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \feynmandiagram[inline=(a), horizontal=a to b]{
+            a -- [photon, edge label=\(\gamma\)] b
+            -- [fermion, half left, looseness=1.5] c
+            -- [fermion, half left, looseness=1.5] b,
+            c -- [photon, edge label=\(\gamma\)] d,
+            i1 -- [fermion] a,
+            a -- [fermion] i2,
+            f1 -- [fermion] d,
+            d -- [fermion] f2,
+        };
+    \end{center}
+    \begin{equation}
+        \begin{aligned}
+            \label{eq:QED_tweede_orde}
+            P = P_0\pi(q^2)P_0
+        \end{aligned}
+    \end{equation}
+\end{minipage}
+Uiteindelijk krijgen voor alle ordes samen dat:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:QED_all}
+        p&=P_0\pi(q^2)P_0+P_0\pi(q^2)\pi(q^2)P_0+...\\
+         &=P_0 \frac{1}{1-\pi(q^2)P_0} \\
+         &=P_0 \frac{1}{1-e_0^2\prod(q^2)} 
+    \end{aligned}
+\end{equation}
+Hierbij hebben we gebruik gemaakt van Taylor ontwikkelingen waarbij x natuurlijk kleiner moet zijn dan 1. Bij de laatste gelijkheid hebben we een zelf energie correctie geïsoleerd waar de lading is uit gehaald. We zien dus dat een foton omgeven zal zijn door een wolk van deeltje-antideeltje paren die hij zal aanmaken en opslorpen. Om de lading van het elektron nu te schrijven als de lading bij het eerste diagram vermenigvuldigd met de uitkomst uit vergelijking (\ref{eq:QED_all}).
+\begin{equation}
+    \begin{aligned}
+        \label{eq:running_lading}
+        e^2(q^2) = \frac{e_0^2}{1-e_0^2\prod(q^2)} 
+    \end{aligned}
+\end{equation}
+De effectieve lading hangt dus af van op welke afstand we er gaan naar kijken. Schalen we dit nu naar $\nu$, een basisschaal, dan krijgen we
+\begin{equation}
+    \begin{aligned}
+        \label{eq:running_lading_1}
+        e^2(\mu^2) = \frac{e_0^2}{1-e_0^2\prod(\mu^2)} 
+    \end{aligned}
+\end{equation}
+Zo bekomen we dat de elementaire lading gegeven kan worden door
+\begin{equation}
+    \begin{aligned}
+        \label{eq:running_lading_2}
+        e_0^2 &= \frac{e^2(\mu^2)}{1-e^2(\mu^2)\prod(\mu^2)} 
+        e^2(q^2) &= \frac{e^2(\mu^2)}{1-e^2(\mu^2)\cdot [\prod(q^2)-\prod(\mu^2)]}
+    \end{aligned}
+\end{equation}
+Het enige dat loopt in deze vergelijking is de $\prod{q^2}$ term. Het is mogelijk om in QCD $\prod(q^2)-\prod(\mu^2)$ uit te rekenen. Hiervoor wordt er verwezen naar het vak kwantumveldentheorie. Hetgeen we hier hebben is eigenlijk niets anders dan de EM koppelingsconstante
+\begin{equation}
+    \begin{aligned}
+        \label{eq:em_koppelingsconstante}
+        \alpha(q^2) &= \frac{\alpha(\mu^2)}{1-\alpha(\mu^2) \frac{1}{3\pi} ln\left( \frac{q^2}{\mu^2} \right)}
+    \end{aligned}
+\end{equation}
+Wat we ook zullen waarnemen bij hoge energieën maar niet wat we gebruiken in het dagelijkse leven. Daar is $\alpha = \frac{1}{137}$. We zien dat bij hogere energieën de elektrische lading sterker zal worden. Dit omdat als we naar zo kleine afstanden van enkele fm beginnen te kijken, begint een nieuw fenomeen af te spelen. Een lading zal voortdurend fotonen afstralen en in lading-antilading paren omgaan. Het positieve gedeelte van het paar wordt gericht naar de negatieve lading. Met andere woorden wordt het vacuum rond de lading gepolariseerd. Het moment dat we binnen dat gepolariseerde gebied beginnen te kijken zien we die shields van de gepolariseerde lading niet meer en zullen we de echte lading van het deeltje beginnen zien.
+
+\subsubsection{QCD}%
+\label{ssub:qcd}
+
+Deze zelfde denkwijze kunnen we nu toepassen op QCD. We krijgen naast de equivalente diagrammen in QED ook nog andere mogelijkheden. In eerste orde hebben we nu:\\
+\begin{minipage}[c]{0.3\textwidth}
+    \begin{center}
+        \feynmandiagram[inline=(a), horizontal=a to b]{
+            a -- [gluon] b
+            -- [fermion, half left, looseness=1.5] c
+            -- [fermion, half left, looseness=1.5] b,
+            c -- [gluon] d,
+            i1 -- [fermion] a,
+            a -- [fermion] i2,
+            f1 -- [fermion] d,
+            d -- [fermion] f2,
+        };
+    \end{center}
+\end{minipage}\noindent
+\begin{minipage}[c]{0.3\textwidth}
+    \begin{center}
+        \feynmandiagram[inline=(a), horizontal=a to b]{
+            a -- [gluon] b
+            -- [gluon, half left, looseness=1.5] c
+            -- [gluon, half left, looseness=1.5] b,
+            c -- [gluon] d,
+            i1 -- [fermion] a,
+            a -- [fermion] i2,
+            f1 -- [fermion] d,
+            d -- [fermion] f2,
+        };
+    \end{center}
+\end{minipage}\noindent
+\begin{minipage}[c]{0.3\textwidth}
+    \begin{center}
+        \feynmandiagram[inline=(a), horizontal=a to d]{
+            a -- [gluon] b,
+            b -- [gluon, half left] c;
+            c -- [gluon, half left] b,
+            b -- [gluon] d,
+            i1 -- [fermion] a,
+            a -- [fermion] i2,
+            f1 -- [fermion] d,
+            d -- [fermion] f2,
+        };
+    \end{center}
+\end{minipage}\\
+Nog een andere mogelijkheid is
+\begin{center}
+    \feynmandiagram [small, horizontal=a to t1] {
+        i1 -- a -- i2,
+        a -- [gluon] t1 -- [gluon] t2 -- t3 -- [gluon] t1,
+        t2 -- p1,
+        t3 -- p2,
+    };
+\end{center}
+Het resultaat voor de lopende sterke koppelingsconstante zal  naast deze extra diagrammen ook nog afhangen van het aantal flavours $N_f$ en het aantal kleuren $n_c$. Zo krijgen we
+\begin{equation}
+    \begin{aligned}
+        \label{eq:running_strong}
+        \alpha_s(q^2) = \frac{\alpha_s(\mu^2)}{1+\alpha_s(\mu^2) \frac{11n_c-2n_f}{12\pi} \ln\left(\frac{q^2}{\mu^2}\right)} 
+    \end{aligned}
+\end{equation}
+ Hier is een belangrijke eigenschap dat boven zal komen. Het moment dat $11n_c>2n_f$ dan zal de noemer altijd maar groter worden met grotere q waarden en wordt de sterke koppelingsconstante steeds kleiner als we op kleinere afstanden kijken. De reden voor deze verzwakking is juist hetzelfde als voor bij het elektron. Het quark straalt terug gluonen uit die quark-antiquark paren zal maken. Zo hebben we rond het quark een wolk van quark-antiquark paren die het vacuum rond het quark polariseren. Het verschil hier is dat gluonen zelf kluer hebben en kleur zullen wegnemen van het quark. Hoe dichter je dus bij het quark komt hoe meer kleur is weg gestraald en hoe minder kleur je zal waarnemen en hoe kleiner de koppeling zal worden. De factor waarmee kleur zal weggenomen worden door QCD is:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:kleur_qcd}
+        \lambda_{QCD} \equiv \mu \exp(-12\pi/(33-2n_f)\alpha_s(\mu^2))
+    \end{aligned}
+\end{equation}
+Dit alles noemen we de asymptotische vrijheid. Eens de quarks zo dicht bij elkaar zijn zullen ze elkaar niet meer voelen.
+
 \end{document}
