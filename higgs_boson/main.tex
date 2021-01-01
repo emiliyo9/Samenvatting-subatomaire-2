@@ -268,8 +268,107 @@ Uit al deze termen kunnen we een aantal elementen waarnemen. Er is een scalair v
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\linewidth]{higgs_boson/complex_scalair_veld_int.png}
-    \caption{}%
-    \label{fig:higgs_boson/hoed_pot_comp}
+    \caption{Zelf interactie diagrammen van complex scalair veld}%
+    \label{fig:higgs_boson/complex_scalair_veld_int}
 \end{figure}
+
+Het massaloze deeltje komt overeen met de perturbatie van het deeltje langs de cirkel van minima. Om zich hierlangs te verplaatsen is er geen extra energie nodig en wil dit dus zeggen dat het massaloos is.
+
+\subsubsection{Lokale ijk symmetrie}%
+\label{ssub:lokale_ijk_symmetrie}
+
+Gaan we nu over van de globale symmetrie naar de lokale $U(1)$ symmetrie moeten we de covariante afgeleide terug invoeren.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:complex_scalair_veld_lokaal}
+        \phi(x) &\rightarrow \phi'(x) = e^{ig\chi(x)}\phi(x)\\
+        \partial_\mu &\rightarrow D_\mu = \partial_\mu + igB_\mu\\
+        B_\mu &\rightarrow B'_\mu = B_\mu - \partial_\mu \chi(x)
+    \end{aligned}
+\end{equation}
+We voeren hier in essentie hetzelfde uit als sectie \ref{sub:lakale_u_1_gauge_invariantie} maar dan voor deeltjes met een andere potentiaal. Hierbij hebben we bij het vervangen van de afgeleide door een de covariante afgeleide terug een extra vector veld $B_\mu$ toegevoegd die de informatie zal dragen van de lokale fases. De Lagrangiaan wordt nu
+\begin{equation}
+    \begin{aligned}
+        \label{eq:comp_scal_veld_lagr_lok_symm}
+        \mathcal{L} = - \frac{1}{4} F^{\mu\nu}F^{\mu\nu} + (\partial_\mu \phi)^*(\partial^\mu \phi)-\mu^2\phi^2-\lambda\phi^4\\
+        - igB\mu \phi^* (\partial^\mu \phi) + ig (\partial_\mu \phi)^* B^\mu \phi + g^2 B_\mu B^\mu \phi^* \phi
+    \end{aligned}
+\end{equation}
+Hier krijgen we terug een aantal extra termen in de Lagrangiaan. We zien dat een massaloos ijkveld $F^{\mu\nu} = \partial^\mu B^\nu - \partial^\nu B^\mu$ is toegevoegd. De derde laatste toont ook dat dit massaloos ijkveld zal interageren met $\phi$. Werken we de symmetrie breking bij $\mu^2<0$ uit met $\phi(x)= \frac{1}{\sqrt{2}} (v + \eta(x) + i\xi(x))$ vinden we een nieuwe Lagrangiaan
+\begin{equation}
+    \begin{aligned}
+        \label{eq:comp_scal_veld_lagr_lok_symm_breking}
+        \mathcal{L} = {\color{red}\frac{1}{2} (\partial_\nu\eta)(\partial^\nu\eta) + \lambda v^2\eta^2} + {\color{blue}\frac{1}{2} (\partial_\nu\xi)(\partial^\nu\xi)} - {\color{green}V_{int}(\eta,\xi,B)}\\
+        - {\color{orange}\frac{1}{4} F^{\mu\nu}F_{\mu\nu} + \frac{1}{2} g^2v^2B_\mu B^\mu} + {\color{purple}gvB_\mu(\partial^\mu \xi)}
+    \end{aligned}
+\end{equation}
+In het rood vinden we de beschrijving van het scalair veld $\eta$ dat massief is geworden, in het blauw een massaloos scalaire veld $\xi$, in het groen de interacties tussen $\eta$, $\xi$ en $B$, in oranje het massieve B veld en ten laatste in het paars een directe koppeling van het $B$ veld met het $\xi$ veld. Maar wat is de laatste term nu? Deze klopt niet echt. Het is mogelijk om van deze term af te geraken door een specifieke ijk te kiezen en van daar alles te interpreteren. De ijk die we hier opleggen noemen we de unitaire ijk, $\chi(x) = -\xi(x)/gv$. De complexe term van de golffunctie wordt door deze ijk opgenomen door $v$ en geeft $\phi(x) = \frac{1}{\sqrt{2}} (v+\eta(x)) \equiv \frac{1}{\sqrt{2}} (v+h(x))$. Hierdoor komt $\xi(x)$ niet meer expliciet voor in de Lagrangiaan maar deze zal wel voorkomen in de transformaties $B_\mu (x) \rightarrow B'_\mu(x) - B_\mu(x) + \frac{1}{gv} \partial_\mu \xi(x)$.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:comp_scal_veld_lagr_unitaire_ijk}
+        \mathcal{L} = \frac{1}{2} (\partial_\nu h)(\partial^\nu h) + \lambda v^2 h^2 + \frac{1}{2} (\partial_\nu\xi)(\partial^\nu\xi) - \frac{1}{4} F^{\mu\nu}F_{\mu\nu} + \frac{1}{2} g^2v^2B_\mu B^\mu\\
+        + gvB_\mu(\partial^\mu h) + \frac{1}{2} g^2 B_\mu B^\mu h^2 - \lambda vh^3 - \frac{1}{4} \lambda h^4
+    \end{aligned}
+\end{equation}
+Hierbij zijn de $\eta$ termen vervangen door Higgs termen. We hebben nog steeds het $B$ veld en de directe koppeling van $B$ en $\xi$ is verdwenen. De $\xi$ termen zijn als het ware opgeslokt door het $B$ veld. Zo bekomen we een Lagrangiaan die 2 massieve velden beschrijft met hun inderlinge interacties daarbij. De massa van deze velden zijn $m_B = gv$ en $m_h = \sqrt{2\lambda}v$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{higgs_boson/complex_scal_int_unitaire_ijk.png}
+    \caption{Interactie diagrammen van de velden bij de unitaire ijk}%
+    \label{fig:higgs_boson/complex_scal_int_unitaire_ijk}
+\end{figure}
+
+\subsection{Het standaard model scalair}%
+\label{sub:het_standaard_model_scalair}
+
+In het standaard model hebben we natuurlijk niet alleen lokale $U(1)$ ijk symmetrie maar hebben we eerder een lokale $SU(2)_L\times U(1)_Y$ ijk symmetrie. Deze zullen opbreken in 3 massieve velden $W^+$, $W^-$ en $Z$. Om dit te doen hebben we een scalair veld nodig met 4 vrijheidsgraden.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:sm_scalair_veld}
+        \phi = 
+        \begin{pmatrix}
+            \phi^+\\
+            \phi^-
+        \end{pmatrix}
+        = \frac{1}{\sqrt{2}} 
+        \begin{pmatrix}
+            \phi_1 + i\phi_2\\
+            \phi_3 + i\phi_4
+        \end{pmatrix}
+    \end{aligned}
+\end{equation}
+Indien je dit helemaal zou uitwerken (zie Thomson) kan je de verschillende massa's voor de deeltjes: $m_W = \frac{1}{2} gv$, $m_A = 0$, $m_Z = \frac{1}{2} v\sqrt{g^2+g'^2}$ en $m_h = \sqrt{2\lambda}v$. Uit experimenten is het mogelijk om de massa's van deze deeltjes te bepalen en is het mogelijk om andere parameters te berekenen. Zo komt uit $m_W$ en $g$ dat het vacuum $v=246$GeV is. De reden hiervoor weten we niet. Uit $m_W$ en $m_Z$ kunnen we zoals we eerder al gezien hebben de Weinberg hoek $\theta_W$ bepalen. Het was uit de theorie nog niet mogelijk om de massa van het Higgs boson te bepalen omdat er nog een onbekende $\lambda$ was.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/koppeling_higgs_wz_boson.png}
+    \caption{Koppeling van $W$ en $Z$ aan het Higgs veld}%
+    \label{fig:higgs_boson/koppeling_higgs_wz_boson}
+\end{figure}
+
+Voor de koppelingsconstante van deze deeltjes hebben we $g_W=g$, $g_Z= \frac{g}{\cos\theta_W}$ en zien we dat de koppeling van het $W$ en $Z$ boson aan het Higgs veld zullen afhangen van hun massa.\\
+{\color{red} Het is hier niet de bedoeling om de Lagrangianen volledig te kunnen afleiden op het examen zoals hier is gedaan, het is veel belangrijker om de Lagrangianen te kunnen interpreteren en er de fysische betekenissen van kunnen geven.}
+
+\subsection{Fermion massa's}%
+\label{sub:fermion_massa_s}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/koppeling_higgs_e.png}
+    \caption{Koppeling van fermionen aan het Higgs veld}%
+    \label{fig:higgs_boson/koppeling_higgs_e}
+\end{figure}
+
+Zoals de $W$ en $Z$ bosonen krijgen de fermionen ook massa door te koppelen aan het Higgs boson. De koppelingsconstante tussen deze 2 is gegeven door $g_f = \sqrt{2} \frac{m_f}{v} = \frac{m_f}{\sqrt{2}m_W} g$. Deze koppelingen zitten echter niet verwerkt in het Standaard Model. Deze moeten gemeten worden:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:kc_h_fermionen}
+        g_t &= 0.997 \pm 0.006\\
+        g_e &\approx 3\cdot 10^{-6}\\
+        g_\nu &\leq 10^{-12}
+    \end{aligned}
+\end{equation}
+Vroeger was de vraag waarom de top quark zo zwaar was. Dit is eigenlijk de normaal en moeten we ons af vragen waarom de andere fermionen zo licht koppelen aan het Higgs veld.
 
 \end{document}
