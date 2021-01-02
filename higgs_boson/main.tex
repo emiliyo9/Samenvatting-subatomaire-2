@@ -369,6 +369,245 @@ Zoals de $W$ en $Z$ bosonen krijgen de fermionen ook massa door te koppelen aan 
         g_\nu &\leq 10^{-12}
     \end{aligned}
 \end{equation}
+Je kan ook inzien dat bij het interageren van fermionen met het Higgs veld (eerste diagram in figuur \ref{fig:higgs_boson/koppeling_higgs_e}) gaat via links en rechts chirale deeltjes wat de koppeling tussen neutrinos en het Higgs veld onmogelijk zal maken.\\
 Vroeger was de vraag waarom de top quark zo zwaar was. Dit is eigenlijk de normaal en moeten we ons af vragen waarom de andere fermionen zo licht koppelen aan het Higgs veld.
+
+\subsection{Higgs verval}%
+\label{sub:higgs_verval}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/verval_breedte_higgs.png}
+    \caption{Verval breedte van het Higgs boson in functie van zijn massa}%
+    \label{fig:higgs_boson/verval_breedte_higgs}
+\end{figure}
+
+Nu we een model hebben voor het Higgs boson is het natuurlijk ook belangrijk om na te gaan of deze ook echt klopt. Het nagaan van de theorie doen we natuurlijk aan de hand van experimenten waar we dat Higgs boson moeten kunnen waarnemen. Het Higgs boson heeft meerdere verval kanalen met elk hun typische karakteristieken.
+\begin{itemize}
+    \item $H\rightarrow f\overline f$: De vervalbreedte van deze fermion vervalkanalen hangen door de massa afhankelijkheid van de koppelingsconstante ook af van de massa's van de interagerende deeltjes, $\Gamma(H\rightarrow f\overline f) \propto m_f^2m_H$. Behalve als $m_H > 2m_t$ (wat heel onwaarschijnlijk is vanwege de grote massa van het top quark) is zal het sterkste fermionisch verval kanaal gegeven worden door $b\overline b$.
+    \item $H\rightarrow WW$: Het Higgs boson koppelt ook sterk aan de $W$ bosonen met $\Gamma(H\rightarrow WW)\propto m_H^3$ als $m_H \gg 2m_W$. Daarentegen als $m_H < 2m_W$ moet minstens 1 $W$ off-shell zijn wat onderdrukt zal worden.
+    \item $H\rightarrow ZZ$: Als hier terug $m_H \gg 2m_Z$ krijgen we $\Gamma(H\rightarrow ZZ)\propto \Gamma(H\rightarrow WW)/2$.
+    \item $H\rightarrow \gamma\gamma$ en $H\overline gg$: Niet op boom level wat we later bekijken.
+\end{itemize}
+De totale verval breedte van het Higgs boson wordt gegeven door $\Gamma_{tot} = \sum_X \Gamma(H\rightarrow XX)$ en kan geplot worden in functie van de massa van het Higgs boson. Onder de $150$GeV is $\Gamma_H$ klein omdat er niet veel mogelijke verval kanalen zijn. Vanaf je aan de $180$GeV komt is het mogelijk om 2 $W$ bosonen aan te maken en vergroot $\Gamma_H$  significant. Als je kijkt bij $m_H=1000$GeV is zijn breedte even groot en zou het experimenteel onmogelijk zijn om deze waar te nemen. In figuur \ref{fig:higgs_boson/verval_higgs} worden de waarschijnlijkheden gegeven om het Higgs te laten vervallen naar een specifiek kanaal. Hier wordt bevestigd dat bij lage energie $b\overline b$ overheerst en vanaf $\pm 150$GeV zal $WW$ verval overnemen. Een interessante opmerking is dat de waarschijnlijkheid van het $Z$ boson een dip zal ondervinden bij de $W$ resonantie.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/verval_higgs.png}
+    \caption{Waarschijnlijkheid van de verschillende Higgs verval kanalen}%
+    \label{fig:higgs_boson/verval_higgs}
+\end{figure}
+
+We zien ook nog dat $gg$ en $\gamma\gamma$ een bijdrage zal geven tot de vervalbreedte wat niet zou mogen omdat deze niet binden aan het Higgs boson. In het LEP was het maar mogelijk om metingen te doen tot $130$GeV. In tabel \ref{tab:h_verval_125_gev} kan je de waarschijnlijkheden vinden waarin het Higgs zou vervallen als $m_H=125$GeV is.
+
+\begin{table}[h]
+    \centering
+    \caption{Verval waarschijnlijkheid van Higgs bij $m_h=125$GeV}
+    \label{tab:h_verval_125_gev}
+    \begin{tabular}{cc}
+        Verval modes & vertakking \\
+        $H\rightarrow b\overline b$ & $57.8\%$ \\
+        $H\rightarrow WW^*$ & $21.6\%$ \\
+        $H\rightarrow \tau^+\tau^-$ & $6.4\%$ \\
+        $H\rightarrow gg$ & $8.6\%$ \\
+        $H\rightarrow c\overline c$ & $2.9\%$ \\
+        $H\rightarrow zz^*$ & $2.7\%$ \\
+        $H\rightarrow \gamma\gamma$ & $0.2\%$ \\
+    \end{tabular}
+\end{table}
+
+\subsubsection{Higgs verval naar $\gamma\gamma$ en $gg$}%
+\label{ssub:higgs_verval_naar_gammagamma_en_gg_}
+
+Kijken we nu hoe het Higgs boson toch kan vervallen naar de massaloze bosonen die niet koppelen met het Higgs boson. De feynman diagrammen voor deze vervallen worden gegeven in figuur \ref{fig:higgs_boson/h_naar_foton_gluon}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{higgs_boson/h_naar_foton_gluon.png}
+    \caption{Diagrammen van het Higgs verval naar massaloze bosonen}%
+    \label{fig:higgs_boson/h_naar_foton_gluon}
+\end{figure}
+
+Alle informatie van alle deeltjes zal beschreven worden in de lussen. Indien er nog een zwaarder quark zou bestaan dan de top quark zou deze ook een bijdrage leveren. Deze diagrammen zullen nog steeds maar een kleine bijdrage aan de totale vervalbreedte. Dit wil zeggen dat er maar een kleine hoeveelheid fotonen worden aangemaakt. De reden waarom we hier zo geïnteresseerd in zijn is omdat fotonen zo makkelijk te detecteren zijn in tegenstelling tot de bottom quarks die zo overvloedig aanwezig zijn. Over het waarnemen van de Higgs bosonen zullen we later verder op in gaan.
+
+\subsection{Higgs productie}%
+\label{sub:higgs_productie}
+
+Het produceren van Higgs bosonen is een hele taak op zichzelf. In de $e^+e^-$ colliders is het in essentie mogelijk dat het elektron en positron annihileren in elkaar ($e^+e^-\rightarrow H$) maar dit is zo goed als onmogelijk vanwege de massa van het elektron. Wat wel een mogelijkheid zal zijn om Higgs bosonen aan te maken noemen we ``Higgs-strahlung''.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/Higgs_strahlung.png}
+    \caption{Diagrammen van Higgs-strahlung}%
+    \label{fig:higgs_boson/Higgs_strahlung}
+\end{figure}
+
+Deze Higgs-strahlung kan ook gedaan worden met quarks en kan naast het gebruiken van een $Z$ boson ook een $W$ boson gebruikt worden. Dit wordt ook wel geassocieerde productie van het Higgs bij een vector boson genoemd. Een andere mogelijkheid om Higgs bosonen te maken is de vector-boson fusie. Dit zal vooral voorkomen bij quarks maar is technisch gezien ook mogelijk bij het botsen van elektronen.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/vec_bos_fusie.png}
+    \caption{Feynman diagram voor vector-boson fusie}%
+    \label{fig:higgs_boson/vec_bos_fusie}
+\end{figure}
+
+Hier stralen 2 verschillende quarks een $W$ of $Z$ uit om te combineren tot een Higgs boson. Nog een andere mogelijkheid die enkel mogelijk is bij hadron colliders is de $t\overline t$ fusie. Hier vervallen 2 gluonen tot $t\overline t$ paren waar de centrale $t\overline t$ zullen annihileren tot een Higgs boson.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/tt_fusie.png}
+    \caption{Feynman diagram voor $t\overline t$ fusie}%
+    \label{fig:higgs_boson/tt_fusie}
+\end{figure}
+
+Dit is een heel handige vorm van Higgs productie omdat de top quarks en Higgs boson makkelijk te onderscheiden zijn. Ten laatste hebben we nog een productie die enkel mogelijk is in hadron colliders. De gluon-gluon fusie waar enkel een Higgs boson zal aangemaakt worden.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/gluon_gluon_fusie.png}
+    \caption{Feynman diagram voor gluon gluon fusie}%
+    \label{fig:higgs_boson/gluon_gluon_fusie}
+\end{figure}
+
+Kijken we nu eens naar de werkzame doorsnedes van al deze processen in een hadron collider indien we de massa van het Higgs boson nog niet weten. In figuur \ref{fig:higgs_boson/h_prod_lhc} worden de werkzame doorsnedes van alle producties uitgezet in functie van de massa van het Higgs boson.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/h_prod_lhc.png}
+    \caption{Werkzame doorsnedes van Higgs productie in functie van zijn massa}%
+    \label{fig:higgs_boson/h_prod_lhc}
+\end{figure}
+
+Belangrijk om op te merken hier is dat de werkzame doorsnedes hier de eenheid femtobarn gebruiken wat heel klein is. Het is duidelijk dat de gluon gluon fusie het belangrijkste kanaal zal zijn. Op de 2de plaats vinden we de vector-boson fusie.
+
+\subsection{De zoek voor het Higgs boson}%
+\label{sub:de_zoek_voor_het_higgs_boson}
+
+De initiële zoektocht naar het Higgs boson is begonnen in het LEP. Dit is dus de geassocieerde productie $e^{+} e^{-} \rightarrow Z+H$. Eens het Higgs aangemaakt is zal het voornamelijk vervallen naar $b$ quarks ($H \rightarrow b \bar{b}$) en het $Z$ boson zal vervallen in 3 mogelijke combinaties $Z \rightarrow l^{+} l^{-}, \nu \bar{\nu}, q \bar{q}$. Het probleem bij deze opstelling is dat er een sterke achtergrond zal zijn voor $e^{+} e^{-} \rightarrow Z+Z^{*}$ waar bij het virtueel boson vervalt naar $Z^{*} \rightarrow b \bar{b}$. De maximale hoeveelheid energie dat aangemaakt kan worden in het LEP is $\sqrt{s} = 209$GeV. Nemen we hiervan dan nog eens de massa van het $Z$ boson af kunnen we maar zoeken naar een Higgs boson met een massa kleiner dan $m_{H}<\sqrt{s}-m_{Z}=118$GeV. In de prkatijk valt nog een kleine hoeveelheid weg door waarnemings thresholds en zou de massa van het Higgs kleiner moeten zijn dan $114$GeV.\\
+Schakelen we over naar het Tevatron en LHC waar we veel hogere energieën kunnen berijken. Kijken we eerst naar het Tevatron waar $p\bar{p}$ of in essentie een quark en antiquark zullenn botsen met elkaar. Het grote nadeel voor de hadron colliders is natuurlijk dat deze een grote hoeveelheid achtergrond creëren. Om deze achtergrond een beetje te proberen omzeilen kijken we het liefst naar de geassocieerde productie van Higgs bosonen. Dit omdat we hier een $t\bar{t}$ of een $W$ of een $Z$ wordt aangemaakt die we dan kunnen gebruiken als tags. De verschillende vervalmodes zijn:
+\begin{itemize}
+    \item $b\bar{b}$: deze is geprefereerd maar is moeilijk om waar te nemen in hadron colliders omdat er duizenden mogelijkheden zijn om deze aan te maken.
+    \item $\tau^{+} \tau^{-}$: iets minder moeilijk maar nog steeds moeilijk omdat je het $\tau$ zelf niet ziet vanwege zijn korte levensduur.
+    \item $W^+W^-$: dit is een heel mooie vervalmode met $l_{1} \nu l_{2} \nu$ en krijg je een elektron positron paar met tegengestelde impulsen. Jammer genoeg is dit moeilijk te reconstrueren vanwege de 2 onbekende impulsen van deneutrinos.
+    \item $Z Z^{*} \rightarrow l_{1}^{+} l_{2}^{-} l_{3}^{+} l_{4}^{-}$: Dit is het gouden kanaal omdat deze heel makkelijk te reconstrueren zijn tot het reële en virtuele $Z$ boson.
+    \item $\gamma\gamma$: ondanks heel onwaarschijnlijk te zijn is dit toch interessant vanwege de makkelijke detectie.
+\end{itemize}
+Om dit alles goed uit te voeren is het nodig een een zoek criterium in te voeren. Voor een gegeven $m_H$ moeten de volgende stappen ondernomen worden:
+\begin{enumerate}
+    \item Criterium selecteren: Kijk ik naar 2$\gamma$'s of naar 4 leptonen uit $ZZ^*$?
+    \item Tel alle mogelijke kandidaten voor dit criterium bij bepaalde $m_H$.
+    \item Vergelijk deze tot de verwachte Standaard Model achtergrond. Dit zijn dus alle mogelijke processen om bijvoorbeeld $\gamma$'s te creëren.
+    \item Gebruik de statistieken om te probabiliteit te berekenen dat dit een Higgs deeltje is.
+    \item Zo hebben we het aantal Higgs deeltjes waar we $95\%$ zeker van zijn dat ze een Higgs deeltje zijn: $N_{95}$.
+    \item Bereken de cross sectie hiervan: $\sigma_{95}=N_{95} /(\epsilon \cdot \mathcal{L})$.
+    \item Vergelijk dit met de theorie: $R_{95}=\frac{\sigma_{95}}{\sigma_{S M}}$. Hierbij is $\sigma_{S M}$ de werkzame doorsnede die we verwachten uit de theorie.
+\end{enumerate}
+Als $R<1$ dan zijn we met $95\%$ kans zeker dat de gemeten werkzame doorsnede kleiner is dan de theorie en hebben we $95\%$ kans dat er geen Higgs zal zijn bij deze massa.\\
+
+Heel belangrijk bij deze experimenten is om een grote hoeveelheid evenementen te bekijken zodat de werkzame doorsnede van de $95\%$ kan uitmiddelen tegenover de achtergrond. Indien dit niet gedaan wordt is de waarde van $R$ zo groot dat deze irrelevant zijn.\\
+Bekijken we eerst de resultaten die gevonden zijn in het Tevatron. Indien de massa van het Higgs boson tussen $100-120$GeV uit $H \rightarrow b \bar{b}$ en tussen $139-184$GeV uit $H \rightarrow W W$ zou liggen zou deze met het Tevatron zeker waargenomen worden. In figuur \ref{fig:higgs_boson/zoektoacht_h_tevatron} zou die curve $R$ onder 1 moeten komen liggen als deze er niet zou liggen. Indien deze daar wel zou liggen zou in de experimenten $R$ boven 1 moeten blijven liggen en ontstaat er een exces tussen de vooraf verwachte (berekende) stippellijn en de experimentele waardes. In de werkelijkheid heeft het Tevatron het Higgs boson enkel kunnen uitsluiten voor massa's tussen $100-103$GeV en $147-180$GeV die weergegeven worden met de groene zones. De reden waarom het niet kon uitgesloten worden voor de energieën daartussen is door de overgang van het dominerende verval kanaal van het Higgs en de achtergrond proportioneel veel groter zal zijn in deze zones (zie figuur \ref{fig:higgs_boson/verval_higgs}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/zoektoacht_h_tevatron.png}
+    \caption{$R$ in functie van de Higgs massa in het Tevatron experiment}%
+    \label{fig:higgs_boson/zoektoacht_h_tevatron}
+\end{figure}
+
+Op de verwachte waarde (stippellijn) hebben we natuurlijk een bepaalde zekerheid dat ze correct zijn. De groene en gele zones rond de verwachte lijnen geven de $1\sigma$ en $2\sigma$ waarschijnlijkheid weer. Indien er weldegelijk een Higgs boson aanwezig zou zijn moet er een exces zijn tussen de experimentele waardes en de voorspelde waarden. Dit omdat de voorspelde waarden voor $R$ bij het meten van meer experimenten enkel kan dalen maar de experimentele $R$ naar 1 zal moeten gaan omdat de experimentele werkzame doorsnede naar de werkzame doorsnede van het Standaard Model zal convergeren. Het Tevatron zegt dus dat er iets zal zitten rond die $124$GeV waar we het Higgs nu juist verwachten. Dit exces van $\pm 2.5\sigma$ is deze niet groot genoeg om het Higgs boson als ontdekt te beschouwen. Eén van de grote redenen hiervoor is de breedte van het exces. Dit is zuiver uit experimentele limitaties. We hebben dus detectoren nodig die een betere resolutie hebben en maar data kunnen generen.\\
+Hier komt het LHC dan in het beeld met een hogere $\sqrt{s}$ waardoor het makkelijker is om Higgs bosonen aan te maken en een hogere $\mathcal{L}$ waardoor zo goed als even veel evenementen kunnen uitgevord worden in 1 dag als er evenementen in een jaar kunnen aangemaakt worden in het Tevatron. Na een jaar experimentele data te verzamelen in het LHC krijgen we de resultaten weergegeven in figuur \ref{fig:higgs_boson/zoektocht_naar_h}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/zoektocht_naar_h.png}
+    \caption{$R$ in functie van de Higgs massa}%
+    \label{fig:higgs_boson/zoektocht_naar_h}
+\end{figure}
+
+Zoals we hebben gezien in het Tevatron is er in het gebied rond $125$GeV terug een exces. Alles boven de $130$Gev kan nu uitgesloten worden. Blazen we dit exces nu even op in figuur \ref{fig:higgs_boson/zoektocht_h_zoom} zien we dat het Higgs boson zou liggen bij de $124$GeV wat niet echt een verrassing was.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{higgs_boson/zoektocht_h_zoom.png}
+    \caption{Zoom van figuur \ref{fig:higgs_boson/zoektocht_naar_h} rond het exces}%
+    \label{fig:higgs_boson/zoektocht_h_zoom}
+\end{figure}
+
+Terug een jaar later wordt onderzocht hoe de werkzame doorsnede zich gedraagt in functie van de massa. Hier worden in figuur \ref{fig:higgs_boson/sigma_h_zoektocht} in de rode stippelijn de verwachte werkzame doorsnedes gegeven met hun waarschijnlijkheid en in de volle rode lijn de experimentele werkzame doorsnedes gegeven.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{higgs_boson/sigma_h_zoektocht.png}
+    \caption{Werkzame doorsnedes van de voorspellingen en het experiment in functie van $m_H$}%
+    \label{fig:higgs_boson/sigma_h_zoektocht}
+\end{figure}
+
+Omdat we weten uit het LEP en Tevatron dat het Higgs in bepaalde gebieden niet kon zitten konden we een bleit (geen idee hoe ik dit moet schrijven) analyse gedaan om er zeker van te zijn dat we geen bias hebben in de onderzoeksmethode. De gegevens werden initieel enkel geanalyseerd in de zones waar we wisten dat het Higgs niet zat om na te gaan dat alles klopt. Nu we weten dat onze analyse klopt kunnen we met dezelfde analyse kijken naar het gebied waar het Higgs wel verwachten. Uit deze analyse zien we dan uiteindelijk met een groot genoeg exces dat het Higgs bij $m_H=124$GeV ligt. {\color{blue} Intermezzo: Het verschil tussen de weighted en unweigted resultaten is de efficientie of het $\gamma\gamma$ dat gemeten is echt wel een $\gamma\gamma$ was en geen elektron of positron.}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/sigma_h_z_verval.png}
+    \caption{Ontdekking van het $H$ aan de hand van zijn $ZZ^*$ verval}%
+    \label{fig:higgs_boson/sigma_h_z_verval}
+\end{figure}
+
+Deze resultaten waren tot nu toe altijd voor het $\gamma\gamma$ verval. Dezelfde resultaten zijn gevonden voor het Higgs verval naar 2 $Z$ bosonen (figuur \ref{fig:higgs_boson/sigma_h_z_verval}).\\
+Dit kan voor alle andere verval kanalen ook gedaan worden en als we deze samen plaatsen krijgen we mooi 1 piek.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/sigma_h_alles.png}
+    \caption{Ontdekking van het $H$ voor alle verval kanalen samen}%
+    \label{fig:higgs_boson/sigma_h_alles}
+\end{figure}
+
+\subsection{Eigenschappen van het nieuwe deeltje}%
+\label{sub:eigenschappen_van_het_nieuwe_deeltje}
+
+De massa van het Higgs boson is $m_H=125.8\pm0.4\text{(stat)}\pm 0.4\text{(syst)}$GeV en de koppeling met versschillende deeltjes kan je vinden in figuur \ref{fig:higgs_boson/h_koppeling}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/h_koppeling.png}
+    \caption{Koppeling van H aanverschillende deeltjes}%
+    \label{fig:higgs_boson/h_koppeling}
+\end{figure}
+
+Zetten we deze koppeling nu uit in functie van de koppeling aan fermionen en aan vector bosonen. Het Higgs boson is gemaakt om te koppelen aan de vector bosonen maar is niet verplicht om te koppelen aan de fermionen m.a.w. een fermiofoob deeltje. Indien dit zo zou zijn was dat zalig geweest en moesten we een nieuwe vorm vinden om massa te geven aan de fermionen. Jammer genoeg is dit niet het geval en zal deze wel koppelen met fermionen en deze massa geven aan hun.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/k_koppeling_vec_ferm.png}
+    \caption{Koppeling van H aan vector bosonen en fermionen}%
+    \label{fig:higgs_boson/k_koppeling_vec_ferm}
+\end{figure}
+
+Uit de theorie hebben we gezien dat de koppelingsconstante tussen H en andere deeltjes lineair af moeten hangen van hun massa. In figuur \ref{fig:higgs_boson/h_koppeling_massa} wordt deze gemeten relatie mooi weergegeven.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{higgs_boson/h_koppeling_massa.png}
+    \caption{Relatie tussen de koppeling van H en de massa van het koppelende deeltje}%
+    \label{fig:higgs_boson/h_koppeling_massa}
+\end{figure}
+
+Het Higgs deeltje doet dus exact wat we verwachten wat leuk is maar toch spijtig omdat we geen hints krijgen voor enige verdere fysica.\\
+Uit het verval van he Higgs naar 2 fotonen weten we direct het een boson is. Om na te gaan dat het een scalair boson is met spin 0 moet er analyse gedaan worden van de hoek distributies.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/h_hoek_dist.png}
+    \caption{Hoek distributies van het Higgs boson}%
+    \label{fig:higgs_boson/h_hoek_dist}
+\end{figure}
+
+Uit verdere analyse kan ingezien worden dat dit een vector boson moet zijn ($0+$ in figuur)
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{higgs_boson/h_vec_boson.png}
+    \caption{Nagaan of $H$ een vector of pseudovector boson is}%
+    \label{fig:higgs_boson/h_vec_boson}
+\end{figure}
 
 \end{document}
