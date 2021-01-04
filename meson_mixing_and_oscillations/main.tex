@@ -339,6 +339,414 @@ $x$ vertelt ons hoeveel oscillaties we krijgen per levensduur wat in dit geval d
 \subsection{$B$-meson systeem}%
 \label{sub:_b_meson_systeem}
 
+Het kaon systeem is een beetje van een uitzondering op het vlak van het aantal verval kanalen. Deze heeft er veel minder dan de andere mesonen waardoor $y$ veel groter is dan bij de andere meson waar $y$ eerder 0 zal zijn.\\
+Kijken we naar de $B$ mesonen die zwaar zijn ($\approx 5.3$GeV). Dit wil zeggen dat er veel verval kanalen zijn en $\tau \approx 1.5$ps of $c\tau \approx 450\mu$m. Om dit probleem van de korte levensduur te ontwijken geven we ze een Lorentz boost. In dit geval kunnen ze een afstand $d=\gamma\beta c\tau$ afleggen. Het aanmaken van $B$ mesonen kan op verschillende manieren gedaan worden. In LEP werd dit gedaan aan de hand van $Z$ bosonen, $e^{+} e^{-} \rightarrow Z^{0} \rightarrow b \bar{b} \rightarrow B^{0} \bar{B}^{0}$. Met een massa van het $Z$ boson rond de $90$GeV hebben de $b$ quarks ongeveer $45$GeV aan energie hebben. Een andere manier is de asymmetrische B-factories ($e^{+} e^{-} \rightarrow \Upsilon(4 S) \rightarrow B^{0} \bar{B}^{0}$). Het verschil in energie tussen de initiële elektronen en positronen zal een boost geven aan de $B$ mesonen. De $B$ oscillaties zijn voor het eerste waargenomen in 1986 in het ARGUS experiment waar het volgende verval is waargenomen: $e^{+} e^{-} \rightarrow \Upsilon \rightarrow B^{0} \bar{B}^{0} \rightarrow B^{0} B^{0}$.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{meson_mixing_and_oscillations/argus.png}
+    \caption{ARGUS experiment}%
+    \label{fig:meson_mixing_and_oscillations/argus}
+\end{figure}
+
+In de resultaten die we hier zien in het ARGUS experiment zit heel veel informatie. We kunnen in de tracking kamer veel deeltjes waarnamen maar niet in de $B$ mesonen. Deze worden pas gedetecteerd in de calorimeter. Wat hier mooi is, is dat we geen $B^0$ en $\bar{B}^0$ waarnemen maar eerder 2 $B^0$. Dit is interessant om te bekijken. Er zijn 2 vervallen die zullen gebeuren.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:argus_vervallen}
+        B_{1}^{0} \rightarrow & D_{1}^{*-} \mu_{1}^{+} \nu_{1} \\
+                              & D_{1}^{*-} \rightarrow \pi_{1}^{-} \bar{D}^{0} \\
+                              & \bar{D}^{0} \rightarrow K_{1}^{+} \pi_{1}^{-} \\
+        B_{2}^{0} \rightarrow & D_{2}^{*-} \mu_{2}^{+} \nu_{2} \\
+                              & D_{2}^{*-} \rightarrow \pi^{0} D^{-} \\
+                              & D^{-} \rightarrow K_{2}^{+} \pi_{2}^{-} \pi_{2}^{-}
+    \end{aligned}
+\end{equation}
+Voor beide gevallen hebben we een $B^0=d\bar{b}$ waarbij de $b$ antiquark zal vervallen aan de hand van de zwakke interactie die een $W$ boson geven ($\bar{b} \rightarrow \bar{c}+W^{+}$) dat zal vervallen in een muon en een neutrino. Voor $B_1^0$ krijgen we uiteindelijk 5 uitgaande deeltjes $\mu_1^+$, $\nu_1$, $\pi_1^-$, $K_1^+$ en $\pi_1^-$ waarbij de neutrino natuurlijk niet gedetecteerd wordt. Het pion dat wordt aangemaakt bij het verval van het geëxiteerde $D^{*-}$ meson is laag energetisch omdat er bijna geen verschil is tussen de massa van het geëxiteerde $D$ meson en bij de grondtoestand ($2010\text{GeV}\rightarrow1865$GeV).
+\begin{equation}
+    \begin{aligned}
+        \label{eq:argus_verval_1}
+        B^0     &                   & 5280\text{GeV}    \\
+                & \downarrow \mu    &                   \\
+        D^{*0}  &                   & 2010\text{GeV}    \\
+                & {\color{red} \downarrow \pi_s}    &   \\
+        D^0     &                   & 1865\text{GeV}    \\
+                & \downarrow \mu    &                   \\
+        K^+     &                   & 494\text{GeV}     \\
+    \end{aligned}
+\end{equation}
+Dit kan ook gezien worden in figuur \ref{fig:meson_mixing_and_oscillations/argus} waar we 1 pion kunnen zien dat een veel meer afbuigt dan de rest. Dit is het pion met lage snelheid. Omdat we al een $B^0$ hebben zouden we verwachten dat het tweede $B$ boson $\bar{B}$ zou zijn en we dus een $\mu^-$ zouden waarnemen. Dit zien we in het experiment niet want $\mu_2$ beweegt hier nog steeds in wijzers zin en is dus ook positief geladen. In dit geval krijgen we 6 uitgaande deeltjes $\mu_2^+$, $\nu_2$, $\pi^0$, $K_2^+$ en 2 keer $\pi_2^-$. Het neutrino wordt terug niet waargenomen en het $\pi^0$ zien we als 2 fotonen. Het belangrijke is hier toch het feit dat beide $B$ mesonen aan de hand van een $W^+$ boson. Dit wilt dus zeggen dat $\bar{B}^0$ zo snel is geoscilleerd naar $B^0$ dat het zelf geen tijd heeft gehad om te vervallen.
+
+\subsection{Box diagrammen voor B mesonen}%
+\label{sub:box_diagrammen_voor_b_mesonen}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{meson_mixing_and_oscillations/box_diagr_b.png}
+    \caption{Box diagrammen van de $B$ mesonen}%
+    \label{fig:meson_mixing_and_oscillations/box_diagr_b}
+\end{figure}
+
+De reden waarom we vooral kijken naar $V_{td}$ en $V_{ts}$ is omdat de bottom quark zo goed als altijd aan de top quark zal binden. Deze box diagrammen zijn van hoog belang om te meten omdat dit de enige manier zijn om de elementen van de CKM-matrix te bepalen.
+
+\subsection{Experimentele methodes voor B mesonen}%
+\label{sub:experimentele_methodes_voor_b_mesonen}
+
+Experimenteel  gaan we op dezelfde manier te werk als bij de $K$ mesonen (sectie \ref{sub:experiment}). De vervalkanalen die we bekijken zijn $B^{0} \rightarrow l^{+} \nu X$ en $\bar{B}^{0} \rightarrow l^{-} \bar{\nu} X$ waar $X$ eender welk ander deeltje kan zijn zoals bijvoorbeeld een $D$ meson. Deze $B$ mesonen zijn zwaar en vervallen snel. Omdat het voor allebei de vervallen zo kort is kan je geen onderscheid maken tussen long of short. Het onderscheid zal hier gemaakt worden aan de hand van de massa met $H$ voor heavy en $L$ voor light. Hierbij hebben we nog steeds dat $\Delta m = m_H - m_L > 0$. We verwachten ook dat $y = \frac{\Delta \Gamma}{2 \Gamma} \ll 1$. De eerste goede metingen van de oscillatie zelf zijn gedaan in OPAL.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{meson_mixing_and_oscillations/b_osc_exp.png}
+    \caption{OPAL onderzoek naar $B$ meson oscillaties}%
+    \label{fig:meson_mixing_and_oscillations/b_osc_exp}
+\end{figure}
+
+Hier zien we de asymmetrie van deze deeltjes uitgezet in functie van de eigentijd van de $B$ mesonen. Na 1 oscillatie kunnen zien dat de foutenvlaggen heel groot worden. De mesonen zullen dus vervallen zijn.
+
+\subsection{$B$-oscillaties resultaten}%
+\label{sub:_b_oscillaties_resultaten}
+
+Voor het $B$ meson met een $d$ quark hebben we:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:b_d_resultaten}
+        \Delta m_{d} &=(3.337 \pm 0.033) \times 10^{-4} \text{eV} \\
+        \Delta m_{d} &=(0.507 \pm 0.004) \times 10^{12} \text{s}^{-1}\\
+        x_{d}&=0.770 \pm 0.008 \\
+        \chi_{d}&=0.1862 \pm 0.0023
+    \end{aligned}
+\end{equation}
+Voor $B$ mesonen met een $s$ quark is dit een stuk moeilijker en zijn deze resultaten maar in 2006 gevonden.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:b_s_resultaten}
+        \Delta m_{s}&=(116.4 \pm 0.5) \times 10^{-4} \text{eV} \\
+        \Delta m_{s}&=(17.69 \pm 0.08) \times 10^{12} \text{s}^{-1}\\
+        x_{s}&=26.49 \pm 0.29 \\
+        \chi_{s}&=0.499292 \pm 0.000016
+    \end{aligned}
+\end{equation}
+Voor $B_S^0$ hebben we experimenteel gevonden dat deze 26 keer oscilleert voor hij vervalt.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{meson_mixing_and_oscillations/b_s_osc_res.png}
+    \caption{Huidige resultaten van de experimenten van $B_S$ oscillaties}%
+    \label{fig:meson_mixing_and_oscillations/b_s_osc_res}
+\end{figure}
+
+Het belangrijkste in deze grafiek is dat er zo veel oscillaties gebeuren. Wat mixed en unmiwed betekent is niet echt belangrijk. Generatie zal niet mogelijk zijn omdat zowel $B_H$ als $B_L$ ongeveer op hetzelfde moment zullen vervallen en krijgen we dus geen zuivere bundel van één van de 2 en is het niet mogelijk om het andere te regenereren.
+
+\subsection{$D$-oscillaties}%
+\label{sub:_d_oscillaties}
+
+$D$ mesonen zijn de enige mesonen waar een up quark aanwezig zal zijn.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:d_mes_osc}
+        D^{0} &\leftrightarrow \bar{D}^{0}\\
+        c \bar{u} &\leftrightarrow \bar{c} u
+    \end{aligned}
+\end{equation}
+Dit is extreem moeilijk om waar te nemen omdat $\Delta m \ll \Gamma$ en met als gevolg dat $x\ll 1$. De reden voor het heel brede verval kanaal is omdat de $c$ quark binnen zijn doublet vervalt wat veel makkelijker is dan vervallen van de 3de naar 2de generatie voor de $K$ en $B$ mesonen. Het zal dus vervallen voor dat het zal oscilleren. Het is voor het eerst waargenomen in de 2013 waar ze keken naar
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ratio_d_osc}
+        R=\frac{\sigma\left(D^{0} \rightarrow K^{+} \pi^{-}\right)}{\sigma\left(D^{0} \rightarrow K^{-} \pi^{+}\right)}
+    \end{aligned}
+\end{equation}
+De cross sectie van de teller is deze van het geoscilleerd meson ($D^0 = \bar{c}u \rightarrow \bar{s}u+W^+ \rightarrow K^+\pi^-$). Hoe zijn we nu zo zeker dat we begonnen waren met $D^0$ en niet $\bar{D}^0$. Dit zijn we niet zeker. Het moment dat ze aangemaakt worden weten we alleen dat $R=0$ is omdat er even veel $c$ als $\bar{c}$'s worden aangemaakt. We hebben waargenomen aan LHC dat er over een bepaalde tijd meer kans is om een $\bar{c}u$ te zien vervallen dan $c\bar{u}$.
+
+\subsection{Meson oscillaties}%
+\label{sub:meson_oscillaties}
+
+De reden om deze oscillaties te onderzoeken hebben we al aangehaald on sectie \ref{sub:box_diagrammen_voor_b_mesonen}. We willen de matrix elementen van de CKM matrix bepalen. Hoeveel van alle virtuele quarks aanwezig zal zijn hangt af van de hoeveelheid faseruimte er is voor de mesonen. Om deze te kunnen onderzoeken moeten we eerst eens terug kijken naar de theorie van de CKM-matrix.
+
+\subsection{Cabibbo mixing}%
+\label{sub:cabibbo_mixing}
+
+Historisch gezien komt dit uit de jaren 60 waar in het zwakke verval kleine afwijkingen worden waargenomen. Volgens het quark model dat we toen hadden zouden $\mu^{-} \rightarrow \nu_{\mu} e^{-} \bar{\nu}_{e}$ en $d \rightarrow u e^{-} \bar{\nu}_{e}$ voor de zwakke interactie gelijk moeten zijn. Het enige verschil dat we hier mogen waarnemen zijn de verschillen in hoeveelheden faseruimte waar we makkelijk voor kunnen corrigeren. Uit deze vervallen is het mogelijk om de zwakke koppelingsconstante te bepalen die voor beide gelijk moeten zijn.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:afwijking_zwak_verval}
+        G_{F}^{(\mu)}&=(1.1663787 \pm 0.0000006) \times 10^{-5} \text{GeV}^{-2} \\
+        G_{F}^{(\beta)}&=(1.1066 \pm 0.0011) \times 10^{-5} \text{GeV}^{-2}
+    \end{aligned}
+\end{equation}
+In de werkelijkheid zien we dat deze niet binnen elkaars fout liggen en dus niet gelijk zijn. Er is dus iets meer aan de hand. Een gelijkaardige afwijking is waargenomen bij $\pi^{-} \rightarrow \mu^{-} \bar{\nu}_{\mu}$ en $K^{-} \rightarrow \mu^{-} \bar{\nu}_{\mu}$. De quark theorie zegt terug dat deze gelijk zouden moeten zijn aan elkaar en dus even snel zouden moeten vervallen op de faseruimte correcties na. Er is echter gemeten dat $K$ 20 keer minder waarschijnlijk zal zijn om te vervallen dan het pion.\\
+Cabbibo komt met de oplossing dat de sterke eigentoestanden $d$ en $s$ zullen zwak opmengen. Het zijn dus $d'$ en $s'$ die koppelen aan de zwakke interactie.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:cabb_opmenging}
+        \left(\begin{array}{c}
+                d^{\prime} \\
+                s^{\prime}
+                \end{array}\right)=\left(\begin{array}{cc}
+                \cos \theta & \sin \theta \\
+                -\sin \theta & \cos \theta
+                \end{array}\right)\left(\begin{array}{l}
+                d \\
+                s
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+De koppeling van de $W$ bosonen aan de quarks is dus niet meer een zuivere term maar wordt nu ook vermenigvuldigd met een sinus of cosinus van de Cabbibo hoek. Voeren we dit in bij de feynman diagrammen van de vervallen kunnen we inzien wat er gebeurt.
+
+\begin{figure}[h]
+    \centering
+    \subfloat[Verval van $\mu$ en $d$]{
+        \includegraphics[width=0.6\textwidth]{meson_mixing_and_oscillations/verval_mu_d.png}
+        \label{fig:meson_mixing_and_oscillations/verval_mu_d}
+    }\\
+    \subfloat[Verval van pion en kaon]{
+        \includegraphics[width=0.8\textwidth]{meson_mixing_and_oscillations/verval_pi_k.png}
+        \label{fig:meson_mixing_and_oscillations/verval_pi_k}
+    }
+    \caption{Feynman diagrammen van zwakke quark mixing}
+\end{figure}
+
+De onderdrukking van het kaon kan hieruit makkelijk getoond worden omdat met $\theta_c \approx 12^\circ$ de sinus veel kleiner zal zijn dan de cosinus.
+
+\subsection{Cabbibo theorie}%
+\label{sub:cabbibo_theorie}
+
+Deze theorie was niet zonder zijn fouten. Dit geeft aanleiding tot het zogenaamde flavour changing neutral current probleem.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{meson_mixing_and_oscillations/flav_ch_problem.png}
+    \caption{Voorbeeld van het flavour changing neutral current probleem}%
+    \label{fig:meson_mixing_and_oscillations/flav_ch_problem}
+\end{figure}
+
+Dit verval is nog nooit waargenomen. Dit verranderen van kleur met behulp van een $Z$ boson is enkel mogelijk als $s$ via $s'$ kan vervallen naar $d$.
+
+\subsection{GIM-mechanisme}%
+\label{sub:gim_mechanisme}
+
+Het is maar een paar jaar later dat de $s$ quark samen met de $c$ quark in een doublet worden samengebracht. Dit zorgt voor extra termen in de Lagrangiaan die elkaar opheffen in alle ordes.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{meson_mixing_and_oscillations/gim_opheffing.png}
+    \caption{Opheffing van de opmengende termen in de GIM theorie}%
+    \label{fig:meson_mixing_and_oscillations/gim_opheffing}
+\end{figure}
+
+We gaan hier niet verder in op de uitwerking van de Lagrangiaan. Uit dit GIM-mechanisme komt wel dat de er nu geen Flavour Changing Neutral Currents meer zijn. De prijs die we hiervoor moeten bestalen is de toevoeging van de $c$ quark die in 1974 dan ook is ontdekt ($J/\Psi$).
+
+\subsection{Meer FCNC}%
+\label{sub:meer_fcnc}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{meson_mixing_and_oscillations/fcnc.png}
+    \caption{Box diagrammen voor kaon verval naar muonen}%
+    \label{fig:meson_mixing_and_oscillations/fcnc}
+\end{figure}
+
+Indien we enkel de Cabbibo theorie zouden hebben is enkel het eerste diagram mogelijk en zouden de waarschijnlijkheden veel te groot zijnom de vervallen (branching fraction is te groot). In de GIM theorie zullen de 2 diagrammen met $u$ en $c$ elkaar uitcancelen.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:fcnc_mat_el}
+        \mathcal{M}_{u} &\propto g_{W}^{4} \cos \theta_{C} \sin \theta_{C}\\
+        \mathcal{M}_{c} &\propto-g_{W}^{4} \cos \theta_{C} \sin \theta_{C}\\
+        |\mathcal{M}|^{2}&=\left|\mathcal{M}_{u}+\mathcal{M}_{c}\right|^{2} \approx 0
+    \end{aligned}
+\end{equation}
+Het totaal matrix element zal niet volledig 0 zijn omdat de massa's van $c$ en $u$ niet volledig hetzelfde zijn. De massa van $c$ is groter en dus minder waarschijnlijk. In combinatie met de experimentele resultaten van de branching fraction van deze vervallen was het mogelijk om de massa van de $c$ quark te voorspellen.
+
+\subsection{CKM matrix}%
+\label{sub:ckm_matrix}
+
+In 1979 was er dan in tegenstelling van het ontdekken van het $c$ quark een ``echte'' revolutie in de deeltjes fysica. De ontdekking van de derde generatie quarks is gebeurd.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ckm_mat}
+        \left(\begin{array}{c}
+                d^{\prime} \\
+                s^{\prime} \\
+                b^{\prime}
+                \end{array}\right)=V_{C K M}\left(\begin{array}{l}
+                d \\
+                s \\
+                b
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+Dit moet een unitaire matrix zijn omdat 1 quark in de ene toestand nog steeds 1 quark moet zijn in de andere. Dit is gegeven door het behoud van waarschijnlijkheid. Dit is in het geval dat er maar 3 quarks mixen wat we natuurlijk willen testen. Een unitaire matrix van dimensie $N$ heeft $(N-1)^2$ vrijheidsgraden. Deze zijn de 3 euler hoeken en een fase.\\
+Deze matrix kan op verschillende manieren geparametriseerd worden. Een eerste mogelijkheid is aan de hand van de CC interacties
+\begin{equation}
+    \begin{aligned}
+        \label{eq:cc_int_ckm}
+        \left(\begin{array}{ccc}
+                \bar{u} & \bar{c} & \bar{t}
+                \end{array}\right) \hat{O}_{C C}^{\mu}\left(\begin{array}{ccc}
+                V_{u d} & V_{u s} & V_{u b} \\
+                V_{c d} & V_{c s} & V_{c b} \\
+                V_{t d} & V_{t s} & V_{t b}
+                \end{array}\right)\left(\begin{array}{l}
+                d^{\prime} \\
+                s^{\prime} \\
+                b^{\prime}
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+Origineel zag die er niet zo uit.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ckm_origineel}
+        \left(\begin{array}{ccc}
+                c_{1} & -s_{1} c_{3} & -s_{1} s_{3} \\
+                s_{1} c_{2} & c_{1} c_{2} c_{3}-s_{2} s_{3} e^{i \delta} & c_{1} c_{2} s_{3}+s_{2} c_{3} e^{i \delta} \\
+                s_{1} s_{2} & c_{1} s_{2} c_{3}+c_{2} s_{3} e^{i \delta} & c_{1} s_{2} s_{3}-c_{2} c_{3} e^{i \delta}
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+Hierbij is $c_1 = \cos\theta_1$ de cos van de Cabbibo hoek en $s_1 = \sin\theta_1$ de sin van de Cabbibo hoek. De indexen refereren naar de generatie. Dit kan nog uitgebreid worden naar:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ckm_uitgebreid}
+        \left(\begin{array}{ccc}
+                c_{12} c_{13} & s_{12} c_{13} & s_{13} e^{-i \delta_{13}} \\
+                -s_{12} c_{23}-c_{12} s_{23} s_{13} e^{i \delta_{13}} & c_{12} c_{23}-s_{12} s_{23} s_{13} e^{i \delta_{13}} & s_{23} c_{13} \\
+                s_{12} s_{23}-c_{12} c_{23} s_{13} e^{i \delta_{13}} & -c_{12} s_{23}-s_{12} c_{23} s_{13} e^{i \delta_{13}} & c_{23} c_{13}
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+Ten laatste hebben we nog een alternatieve notatie met als naam Wolfenstein.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:wolfenstein_ckm}
+        \left(\begin{array}{ccc}
+                1-\lambda^{2} / 2 & \lambda & A \lambda^{3}(\rho-i \eta) \\
+                -\lambda & 1-\lambda^{2} / 2 & A \lambda^{2} \\
+                A \lambda^{3}(1-\rho-i \eta) & -A \lambda^{2} & 1
+        \end{array}\right)+O\left(\lambda^{4}\right)
+    \end{aligned}
+\end{equation}
+Focussen we eerst op de uitgebreide CKM-matrix uit vergelijking (\ref{eq:ckm_uitgebreid}). Deze kunnen we herschrijven in 3 aparte matrixen.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ckm_uitgebreid_split}
+        V_{C K M}=&\left(\begin{array}{ccc}
+                1 & 0 & 0 \\
+                0 & c_{23} & s_{23} \\
+                0 & -s_{23} & c_{23}
+            \end{array}\right) \times\left(\begin{array}{ccc}
+                c_{13} & 0 & s_{13} e^{-i \delta} \\
+                0 & 1 & 0 \\
+                -s_{13} e^{i \delta} & 0 & c_{13}
+            \end{array}\right) \\
+            & \times\left(\begin{array}{ccc}
+                c_{12} & s_{12} & 0 \\
+                -s_{12} & c_{12} & 0 \\
+                0 & 0 & 1
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+Het is zoals eerder gezegd mogelijk om deze matrix te beschijven als we de eulerhoeken $\theta_1$, $\theta_2$, $\theta_3$ en de fase $\delta$. De relatie tussen de verschillende vormen zijn makkelijk uit te rekenen.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ckm_relaties}
+        s_{12} &=\lambda=\frac{\left|V_{u s}\right|}{\sqrt{\left|V_{u s}\right|^{2}+\left|V_{u d}\right|^{2}}} \\
+        s_{23} &=A \lambda^{2}=\lambda\left|\frac{V_{c b}}{V_{u s}}\right| \\
+        s_{13} e^{i \delta} &=V_{u b}^{*}=A \lambda^{3}(\rho+i \eta)
+    \end{aligned}
+\end{equation}
+
+\subsection{CKM matrix elementen}%
+\label{sub:ckm_matrix_elementen}
+
+Hoe bepalen we deze elementen nu? Eerst moeten we met hoge precisie bepalen we de zwakke koppelingsconstante $G_F$ is. Dit kunnen we doen door het onderzoek van het zwakke verval van leptonen.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{meson_mixing_and_oscillations/zwak_lep_verval.png}
+    \caption{Feynman diagram van lepton verval}%
+    \label{fig:meson_mixing_and_oscillations/zwak_lep_verval}
+\end{figure}
+
+\begin{equation}
+    \begin{aligned}
+        \label{eq:lep_verval_zwak}
+        \Gamma\left(\mu^{-} \rightarrow \nu_{\mu} e^{-} \bar{\nu}_{e}\right) &=\frac{G_{F}^{2} m_{\mu}^{5}}{192 \pi^{3}}\left(1+\delta_{e}^{\mu}\right) \\
+        \Gamma\left(\tau^{-} \rightarrow \nu_{\tau} e^{-} \bar{\nu}_{e}\right) &=\frac{G_{F}^{2} m_{\tau}^{5}}{192 \pi^{3}}\left(1+\delta_{e}^{\tau}\right) \\
+                                                                               &=\frac{B\left(\tau^{-} \rightarrow \nu_{\tau} e^{-} \bar{\nu}_{e}\right)}{\tau_{\tau}}
+    \end{aligned}
+\end{equation}
+Wat zien in deze vergelijkingen is de waarschijnlijkheid dat het lepton vervalt in zijn neutrino, een elektron en een antineutrino. In deze waarschijnlijkheid hebben we een $G_F$ in het kwadraat omdat er 2 vertexes zijn aan het $W$ boson. Dit is zuiver leptonisch dus komen hier geen Cabbibo hoeken aan te pas. De reden voor de massa tot de 5de term is het gevolg van het vervallen van 1 deeltje in 3. Dit geeft ons 2 vrijheidsgraden dit geeft ons een $p^2p^2dp$ wat ons $E^5$ geeft. De enige energie vrijheidsgraad dat we hebben is de massa van ons initieel deeltje dus hebben we een $m^5$ term. $\delta$ is een correctie term voor al de fysica die we hier niet in acht hebben genomen zoals de massa van het elektron, de radiatieve correcties... We moeten hier natuurlijk opletten dat we niet naar de totale breedte van de leptonen kijken maar eerder naar de branching fractie $B(...)$ naar specifiek het verval aan de hand van een $W^-$ boson in verhouding tot de levensduur van het lepton. Nu we weten wat $G_F$ is kunnen we overgaan naar zwakke vervallen van de quarks in mesonen die wel een Cabbibo hoek bevatten.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{meson_mixing_and_oscillations/zwak_s_verval.png}
+    \caption{Feynman diagram van het zwak kaon verval}%
+    \label{fig:meson_mixing_and_oscillations/zwak_s_verval}
+\end{figure}
+
+\begin{equation}
+    \begin{aligned}
+        \label{eq:kaon_zwak_verval}
+        Gamma\left(K^{0} \rightarrow \pi^{-} e^{+} \nu_{e}\right) &=\frac{G_{F}^{2} m_{K}^{5}}{192 \pi^{3}}\left(1+\delta_{e}^{K}\right)\left|V_{u s}\right|^{2} \\
+                                                                  &=\frac{B\left(K^{0} \rightarrow \pi^{-} e^{+} \nu_{e}\right)}{\tau_{K}}
+    \end{aligned}
+\end{equation}
+De vertex voor het verval van $W^+$ naar het positron en de neutrino is niets anders dan $G_F$. Voor de koppeling van $W$ aan de quarks hebben we naast $G_F$ nog een extra term $|V_{us}|^2$ met het kwadraat omdat dit een waarschijnlijkheid moet zijn. $d$ is hier alleen een bijstaander en als deze iets zou bijgeven aan deze vergelijking is het verwerkt in de correctieterm $\delta$. Uit de experimenten is het dus mogelijk om $|V_{us}|$ te bepalen en niet $V_{us}$. We krijgen $\left|V_{us}\right|=0.2252(9)$.\\
+Hetzelfde kan gedaan worden voor $B$ mesonen.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{meson_mixing_and_oscillations/zwak_b_verval.png}
+    \caption{Feynman diagram van het zwak kaon verval}%
+    \label{fig:meson_mixing_and_oscillations/zwak_b_verval}
+\end{figure}
+
+\begin{equation}
+    \begin{aligned}
+        \label{eq:b_zwak_verval}
+        \Gamma\left(B^{0} \rightarrow \pi^{-} e^{+} \nu_{e}\right) &=\frac{G_{F}^{2} m_{B}^{5}}{192 \pi^{3}}\left(1+\delta_{e}^{B}\right)\left|V_{u b}\right|^{2} \\
+                                                                   &=\frac{B\left(B^{0} \rightarrow \pi^{-} e^{+} \nu_{e}\right)}{\tau_{B}}
+    \end{aligned}
+\end{equation}
+We vinden nu dat $\left|V_{u b}\right|=(4.15 \pm 0.49) \times 10^{-3}$ is.\\
+Uit het verschil tussen $\left|V_{us}\right| > \left|V_{u b}\right|$ kunne we direct inzien dat het verval via $W^+$ naar een pion veel onwaarschijnlijker is voor het $B$ meson dan voor het $K$ meson.\\
+Zo is het mogelijk om voor alle andere CKM-matrix elementen deze ook experimenteel te bepalen:
+\begin{itemize}
+    \item Superallowed nucleaire $\beta$ verval $\Rightarrow\left|V_{u d}\right|=0.97425(22)$
+    \item $D^{\pm} \rightarrow \pi^{0} l^{\pm} \nu_{l} \Rightarrow\left|V_{c d}\right|=0.230(11)$\\
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{feynman}
+                    \vertex (b1) {\(\overline c\)};
+                    \vertex[right=2cm of b1] (b2) node [above=0.1em of b2] {\(V_{cd}^*\)};
+                    \vertex[right=2cm of b2] (b3) {\(\overline d\)};
+
+                    \vertex[above=2em of b1] (a1) {\(d\)};
+                    \vertex[above=2em of b3] (a2) {\(d\)};
+
+                    \vertex[below=2em of b3] (c1) {\(e^+\)};
+                    \vertex[below=2em of c1] (c2) {\(\overline \nu_e\)};
+                    \vertex at ($(c1)!0.5!(c2) - (1cm, 0)$) (d);
+                    \diagram* {
+                        (a1) -- [fermion] (a2),
+                        (b3) -- [fermion] (b2) -- [fermion] (b1),
+                        (c2) -- [fermion, out=180, in=-45] (d),
+                        (c1) -- [fermion, out=180, in=45] (d),
+                        (b2) -- [boson, bend right, edge label=\(W^{+}\)] (d),
+                    };
+                    \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+                    node [pos=0.5, left] {\(D^{-1}\)};
+                    \draw [decoration={brace}, decorate] (a2.north east) -- (b3.south east)
+                    node [pos=0.5, right] {\(\pi^{0}\)};
+                \end{feynman}
+            \end{tikzpicture}
+        \end{center}
+    \item $D_{s}^{+} \rightarrow \mu^{+} \nu_{\mu} \Rightarrow\left|V_{c s}\right|=1.006 \pm 0.023$
+    \item $b \rightarrow l \nu c \Rightarrow\left|V_{c b}\right|=(40.9 \pm 1.1) \times 10^{-3}$
+\end{itemize}
+De laatste overgebleven matrix elementen moeten we halen uit de box diagrammen van de meson oscillaties:
+\begin{itemize}
+    \item $B^0$ oscillaties: $\left|V_{t d}\right|=(8.4 \pm 0.6) \times 10^{-3}$
+    \item $B_S^0$ oscillaties: $\left|V_{t s}\right|=(42.9 \pm 2.6) \times 10^{-3}$
+\end{itemize}
 
 \end{document}
