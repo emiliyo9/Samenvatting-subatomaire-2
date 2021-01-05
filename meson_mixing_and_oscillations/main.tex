@@ -434,7 +434,7 @@ Voor $B_S^0$ hebben we experimenteel gevonden dat deze 26 keer oscilleert voor h
     \label{fig:meson_mixing_and_oscillations/b_s_osc_res}
 \end{figure}
 
-Het belangrijkste in deze grafiek is dat er zo veel oscillaties gebeuren. Wat mixed en unmiwed betekent is niet echt belangrijk. Generatie zal niet mogelijk zijn omdat zowel $B_H$ als $B_L$ ongeveer op hetzelfde moment zullen vervallen en krijgen we dus geen zuivere bundel van één van de 2 en is het niet mogelijk om het andere te regenereren.
+Het belangrijkste in deze grafiek is dat er zo veel oscillaties gebeuren. Wat mixed en unmixed betekent is niet echt belangrijk. Regeneratie zal niet mogelijk zijn omdat zowel $B_H$ als $B_L$ ongeveer op hetzelfde moment zullen vervallen en krijgen we dus geen zuivere bundel van één van de 2 en is het niet mogelijk om het andere te regenereren.  Je zou hier denken dat deze toestanden makkelijk in elkaar kunnen oscilleren wegens de grote hoeveelheid oscillaties voor ze vervallen maar dit is niet correct. Het gemak van oscilleren wordt bepaald door de amplitude, niet de frequentie. De frequentie leidt terug naar dat massaverschil en wil dus zeggen dat we zitten te kijken naar de heel kleine overlap in de staarten van deze mesonen. Het zal dus juist heel onwaarschijnlijk zijn om deze oscillaties tegen te komen.
 
 \subsection{$D$-oscillaties}%
 \label{sub:_d_oscillaties}
@@ -707,7 +707,7 @@ Hetzelfde kan gedaan worden voor $B$ mesonen.
                                                                    &=\frac{B\left(B^{0} \rightarrow \pi^{-} e^{+} \nu_{e}\right)}{\tau_{B}}
     \end{aligned}
 \end{equation}
-We vinden nu dat $\left|V_{u b}\right|=(4.15 \pm 0.49) \times 10^{-3}$ is.\\
+We vinden nu dat $\left|V_{u b}\right|=(4.15 \pm 0.49) \times 10^{-3}$ is.\newpage
 Uit het verschil tussen $\left|V_{us}\right| > \left|V_{u b}\right|$ kunne we direct inzien dat het verval via $W^+$ naar een pion veel onwaarschijnlijker is voor het $B$ meson dan voor het $K$ meson.\\
 Zo is het mogelijk om voor alle andere CKM-matrix elementen deze ook experimenteel te bepalen:
 \begin{itemize}
@@ -734,19 +734,129 @@ Zo is het mogelijk om voor alle andere CKM-matrix elementen deze ook experimente
                         (b2) -- [boson, bend right, edge label=\(W^{+}\)] (d),
                     };
                     \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
-                    node [pos=0.5, left] {\(D^{-1}\)};
+                    node [pos=0.5, left] {\(D^{-}\)};
                     \draw [decoration={brace}, decorate] (a2.north east) -- (b3.south east)
                     node [pos=0.5, right] {\(\pi^{0}\)};
                 \end{feynman}
             \end{tikzpicture}
         \end{center}
     \item $D_{s}^{+} \rightarrow \mu^{+} \nu_{\mu} \Rightarrow\left|V_{c s}\right|=1.006 \pm 0.023$
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{feynman}
+                    \vertex (i1) {\(c\)};
+                    \vertex[below=4em of i1] (i2) {\(\overline s\)};
+                    
+                    \vertex[right=3cm of i1] (f1) {\(\mu^+\)};
+                    \vertex[below=4em of f1] (f2) {\(\nu_\mu\)};
+
+                    \vertex at ($(i1)!0.5!(i2) + (1cm, 0)$) (a) node [above=0.1em of a] {\(V_{cs}^*\)};
+                    \vertex at ($(f1)!0.5!(f2) - (1cm, 0)$) (b);
+
+                    \diagram* {
+                        (i1) -- [fermion] (a) -- [fermion] (i2),
+                        (f2) -- [fermion] (b) -- [fermion] (f1),
+                        (a) -- [boson, edge label=\(W^{+}\)] (b),
+                    };
+                    \draw [decoration={brace}, decorate] (i2.south west) -- (i1.north west)
+                    node [pos=0.5, left] {\(D^{+}_s\)};
+                \end{feynman}
+            \end{tikzpicture}
+        \end{center}
     \item $b \rightarrow l \nu c \Rightarrow\left|V_{c b}\right|=(40.9 \pm 1.1) \times 10^{-3}$
+        \begin{center}
+            \begin{tikzpicture}
+                \begin{feynman}
+                    \vertex (b1) {\(\overline b\)};
+                    \vertex[right=2cm of b1] (b2) node [above=0.1em of b2] {\(V_{cb}^*\)};
+                    \vertex[right=2cm of b2] (b3) {\(\overline c\)};
+
+                    \vertex[above=2em of b1] (a1) {\(u\)};
+                    \vertex[above=2em of b3] (a2) {\(u\)};
+
+                    \vertex[below=2em of b3] (c1) {\(e^+\)};
+                    \vertex[below=2em of c1] (c2) {\(\overline \nu_e\)};
+                    \vertex at ($(c1)!0.5!(c2) - (1cm, 0)$) (d);
+                    \diagram* {
+                        (a1) -- [fermion] (a2),
+                        (b3) -- [fermion] (b2) -- [fermion] (b1),
+                        (c2) -- [fermion, out=180, in=-45] (d),
+                        (c1) -- [fermion, out=180, in=45] (d),
+                        (b2) -- [boson, bend right, edge label=\(W^{+}\)] (d),
+                    };
+                    \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+                    node [pos=0.5, left] {\(B^{+}\)};
+                    \draw [decoration={brace}, decorate] (a2.north east) -- (b3.south east)
+                    node [pos=0.5, right] {\(D^{0}\)};
+                \end{feynman}
+            \end{tikzpicture}
+        \end{center}
 \end{itemize}
+Het is uiteindelijk mogelijk om op verschillende manieren deze koppelingen te bepalen en zien dat deze altijd binnen elkaars fout vallen.\\
 De laatste overgebleven matrix elementen moeten we halen uit de box diagrammen van de meson oscillaties:
 \begin{itemize}
     \item $B^0$ oscillaties: $\left|V_{t d}\right|=(8.4 \pm 0.6) \times 10^{-3}$
     \item $B_S^0$ oscillaties: $\left|V_{t s}\right|=(42.9 \pm 2.6) \times 10^{-3}$
 \end{itemize}
+{\color{blue} Intermezzo: Wat zijn de quark combinaties van de mesonen?\\
+    $K$ mesonen bestaan uit een $s$ quark met een andere quark:
+    \begin{equation}
+        \begin{aligned}
+            \label{eq:k_meson_samenstelling}
+            K^+ &= \left| u\bar{s}\right>\\
+            K^- &= \left| \bar{u}s\right>\\
+            K^0 &= \left| d\bar{s}\right>\\
+            \bar{K}^0 &= \left| \bar{d}s\right>\\
+        \end{aligned}
+    \end{equation}
+    $D$ mesonen bestaan uit een $c$ quark met een andere quark:
+    \begin{equation}
+        \begin{aligned}
+            \label{eq:d_meson_samenstelling}
+            D^+ &= \left| c\bar{d}\right>\\
+            D^- &= \left| \bar{c}d\right>\\
+            D^0 &= \left| c\bar{u}\right>\\
+            \bar{D}^0 &= \left| \bar{c}u\right>\\
+        \end{aligned}
+    \end{equation}
+    $B$ mesonen bestaan uit een $b$ quark met een andere quark:
+    \begin{equation}
+        \begin{aligned}
+            \label{eq:d_meson_samenstelling}
+            B^+ &= \left| u\bar{b}\right>\\
+            B^- &= \left| \bar{b}b\right>\\
+            B^0 &= \left| d\bar{b}\right>\\
+            B_S &= \left| s\bar{b}\right>\\
+        \end{aligned}
+    \end{equation}
+    Er wordt op het examen echt wel verwacht dat je dit kan.
+}
+
+\subsection{Unitariteit van de CKM-matrix}%
+\label{sub:unitariteit_van_de_ckm_matrix}
+
+Vanwege het behoud van waarschijnlijkheid moet de matrix unitair zijn. De sommaties van de kwadraten van de elementen in een rij of kolem moeten dus gelijk zijn aan 1. Dit nemen we ook waar:
+\begin{itemize}
+    \item 1ste rij: $\left|V_{u d}\right|^{2}+\left|V_{u s}\right|^{2}+\left|V_{u b}\right|^{2}=0.9999(6)$
+    \item 2de rij: $\left|V_{c d}\right|^{2}+\left|V_{c s}\right|^{2}+\left|V_{c b}\right|^{2}=1.067(47)$
+    \item 1ste kolom: $\left|V_{u d}\right|^{2}+\left|V_{c d}\right|^{2}+\left|V_{t d}\right|^{2}=1.002(5)$
+    \item 2de kolom: $\left|V_{u s}\right|^{2}+\left|V_{c s}\right|^{2}+\left|V_{t s}\right|^{2}=1.065(46)$
+\end{itemize}
+Tot op eerste orde kunnen we dus zien dat de unitariteit is behouden. Indien er dus nog een 4de generatie aan quarks zou bestaan mag deze niet koppelen met de eerste 3 generaties. fitten we de matrix elementen nu aan deze uitkomsten en doordat deze unitair moet zijn krijgen we een CKM-matrix die er als volgt uit ziet:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:ckm_huidig}
+        \left(\begin{array}{ccc}
+                \left|V_{u d}\right| & \left|V_{u s}\right| & \left|V_{u b}\right| \\
+                \left|V_{c d}\right| & \left|V_{c s}\right| & \left|V_{c b}\right| \\
+                \left|V_{t d}\right| & \left|V_{t s}\right| & \left|V_{t b}\right|
+                \end{array}\right) \approx\left(\begin{array}{ccc}
+                0.974 & 0.225 & 0.004 \\
+                0.225 & 0.973 & 0.041 \\
+                0.009 & 0.040 & 0.999
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+Het is duidelijk te zien met de diagonaal elementen die zo goed als 1 zijn dat we vooral binnen de generatie zelf blijven. De koppeling tussen de eerste en 2de generatie is vrij groot, dit is de Cabbibo hoek $\theta_{12} = 12.9^\circ$. De koppeling tussen de 2de en 3de generatie is een stuk kleiner met een koppelingshoek $\theta_{23} = 2.4^\circ$. En ten laatste koppelt de eerste en 3de generatie zo goed als niet ($\theta_{13} = 0.2^\circ$).
 
 \end{document}
