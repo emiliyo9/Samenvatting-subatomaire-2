@@ -123,6 +123,324 @@ Zo was het uiteindelijk mogelijk om deze ratio heel exact te gaan meten.
         |\epsilon| &=(2.228 \pm 0.011) \times 10^{-3}
     \end{aligned}
 \end{equation}
-Het is vandaag de dag dus duidelijk dat er zowel direct als indirecte $CP$ schending zal plaats vinden.
+Het is vandaag de dag dus duidelijk dat er zowel direct als indirecte $CP$ schending zal plaats vinden. M.a.w. is de tijds omkering niet exact. Het vervallen van $K^0$ of het vormen van $K^0$ zal dus niet met exact dezelfde waarschijnlijkheid doorgaan.
+
+\subsection{Materie vs antimaterie}%
+\label{sub:materie_vs_antimaterie}
+
+Wat heeft dit nu te maken met materie en antimaterie? Gaan we terug naar de kaon oscilaties. Daar hebben we dat $K^{0} \rightarrow \pi^{-} l^{+} \nu_{l}$ en $\bar{K}^{0} \rightarrow \pi^{+} l^{-} \bar{\nu}_{l}$ wat zuivere leptonische zwakke vervallen zijn. Zoals we gezien hebben in sectie \ref{sub:experiment} is het mogelijk aan de hand van de lading van het lepton om te zien of een $K^0$ of $\bar{K}^0$ is vervallen. Vertrekken we met een zuivere $K^0$ bundel dan zien we enkel positief geladen leptonen en zal $A$ veel groter dan 0 zijn. Na enkele picoseconden zal deze oscilleren in $\bar{K}^0$ en zien we een dal in $A$. Uiteindelijk gaan deze toestanden over naar de $K_L^0$ toestand (alle $K_S^0$ zijn vervallen) die uit even veel $K^0$ als $\bar{K}^0$ bestaat. Voor $t$ groot genoeg moet $A$ dus naar 0 gaan. In de werkelijkheid zien we dat deze niet helemaal naar 0 gaan, er is een kleine asymmetrie. $A$ is iets groter dan 0 wat wil zeggen dat we iets meer positieve leptonen hebben en dus iets meer $K^0$ over hebben. De grafiek dat dit visualiseert is gegeven in figuur \ref{fig:meson_mixing_and_oscillations/kaon_osc_verval}. Het is nu mogelijk om deze asymmetrie uit te schrijven voor de $K_L^0$'s door gebruik te maken van vergelijkingen (\ref{eq:kaon_indirecte_cp_violation_1}).
+\begin{equation}
+    \begin{aligned}
+        \label{eq:asymmetrie_a_l}
+        A_{L}=\delta_{L} &=\frac{\Gamma\left(K_{L} \rightarrow \pi^{-} l^{+} \nu\right)-\Gamma\left(K_{L} \rightarrow \pi^{+} l^{-} \bar{\nu}\right)}{\Gamma\left(K_{L} \rightarrow \pi^{-} l^{+} \nu\right)+\Gamma\left(K_{L} \rightarrow \pi^{+} l^{-} \bar{\nu}\right)} \\
+                         &=\frac{\left|p_{K}\right|^{2}-\left|q_{K}\right|^{2}}{\left|p_{K}\right|^{2}+\left|q_{K}\right|^{2}} \\
+                         &=\frac{|1+\epsilon|^{2}-|1-\epsilon|^{2}}{|1+\epsilon|^{2}+|1-\epsilon|^{2}}=\frac{2 \Re(\epsilon)}{1+|\epsilon|^{2}}
+    \end{aligned}
+\end{equation}
+In deze uitwerking verwaarlozen we de directe $CP$ schending (deze is ook niet waargenomen hier). We zien dus dat dit een effect is van niet meer dan een aantal promille. Het mooie is dat de $\epsilon$ die we hier meten overeen komt bij het onderzoek van het pionisch verval.\\
+De experimentele waardes voor de asymmetrie zijn gegeven door $A_{L}=(3.32 \pm 0.06) \times 10^{-3}$. Nu is het mogelijk om een definitie te geven aan materie en antimaterie. Materie wordt gedefinieerd als: Wanneer de lading van de kern gelijk is aan de lading van het meest waarschijnlijke lepton in het $K_L$ verval (positief) is wat wij materie noemen. Dit is contra intuïtief omdat we meer elektronen tegenkomen dan positronen. Bij het ontstaan van het universum zijn de elektronen en positronen hoofdzakelijk niet gemaakt via dit kanaal maar eerder via de neutrinos. Dit zal duidelijker worden in het volgende hoofdstuk.
+
+\subsection{Matrix element van Kaon oscillaties}%
+\label{sub:matrix_element}
+
+De vraag is nu of dit consistent is met wat we al hadden. Kijken we hiervoor terug naar de box diagrammen van deze oscillaties en hun matrix elementen.
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex (a1) {\(\overline s\)};
+                \vertex[right=1cm of a1] (a2);
+                \vertex[right=1cm of a2] (a3);
+                \vertex[right=1cm of a3] (a4) {\(\overline d\)};
+
+                \vertex[below=1cm of a1] (b1) {\(d\)};
+                \vertex[right=1cm of b1] (b2);
+                \vertex[right=1cm of b2] (b3);
+                \vertex[right=1cm of b3] (b4) {\(s\)};
+
+                \diagram* {
+                    (b1) -- [fermion] (b2) -- [fermion, edge label={\(u,c,t\)}] (a2) -- [fermion] (a1),
+                    (a4) -- [fermion] (a3) -- [fermion, edge label={\(u,c,t\)}] (b3) -- [fermion] (b4),
+                    (a2) -- [boson, edge label=\(W\)] (a3),
+                    (b2) -- [boson, edge label=\(W\)] (b3),
+                };
+                \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+                node [pos=0.5, left] {\(K^{0}\)};
+                \draw [decoration={brace}, decorate] (a4.north east) -- (b4.south east)
+                node [pos=0.5, right] {\(\bar{K}^{0}\)};
+            \end{feynman}
+        \end{tikzpicture}
+    \end{center}
+\end{minipage}\noindent
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex (a1) {\(\overline s\)};
+                \vertex[right=1cm of a1] (a2);
+                \vertex[right=1cm of a2] (a3);
+                \vertex[right=1cm of a3] (a4) {\(\overline d\)};
+
+                \vertex[below=1cm of a1] (b1) {\(d\)};
+                \vertex[right=1cm of b1] (b2);
+                \vertex[right=1cm of b2] (b3);
+                \vertex[right=1cm of b3] (b4) {\(s\)};
+
+                \diagram* {
+                    (b1) -- [fermion] (b2) -- [fermion, edge label={\(u,c,t\)}] (b3) -- [fermion] (b4),
+                    (a1) -- [anti fermion] (a2) -- [anti fermion, edge label={\(\bar{u},\bar{c},\bar{t}\)}] (a3) -- [anti fermion] (a4),
+                    (b2) -- [boson, edge label=\(W\)] (a2),
+                    (a3) -- [boson, edge label=\(W\)] (b3),
+                };
+                \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+                node [pos=0.5, left] {\(K^{0}\)};
+                \draw [decoration={brace}, decorate] (a4.north east) -- (b4.south east)
+                node [pos=0.5, right] {\(\bar{K}^{0}\)};
+            \end{feynman}
+        \end{tikzpicture}
+    \end{center}
+\end{minipage}
+Bij elke vertex in deze diagrammen zien we dat de CKM-matrix elementen tevoorschijn zullen komen. Zo krijgen we uiteindelijk voor elke mogelijk intermediaire quark een matrix element $\mathcal{M}_{q q^{\prime}} \propto V_{q d} V_{q s}^{*} V_{q^{\prime} s}^{*} V_{q^{\prime} d}$. Het totale matrix element zal dan ongeveer overeen komen met $\mathcal{M} \approx \mathcal{M}_{u u}+\mathcal{M}_{u c}+\mathcal{M}_{c u}+\mathcal{M}_{c c}$. De matrixelementen waar een top quark voorkomt zullen verwaarloosbaar klein zijn vanwege zijn grote massa. We hebben enkel opmenging van de eerste en 2de generatie hier wat wil zeggen dat we kunnen gebruik maken van de Cabbibo hoeken:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:cab_hoeken}
+        V_{u d} &\approx V_{c s} \approx \cos \theta_{C} \\
+        V_{u s} &\approx-V_{c d} \approx \sin \theta_{C}
+    \end{aligned}
+\end{equation}
+Dit kan dan uitgewerkt worden (zie hiervoor Thompson, dit is niet echt verwacht vanbuiten te kunnen in deze cursus) en krijgen we een massaverschil dat er als volgt uitziet:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:kaon_osc_massaverschil}
+        \Delta m \approx \frac{G_{F}^{2}}{3 \pi^{2}} \sin ^{2} \theta_{C} \cos ^{2} \theta_{C} f_{K}^{2} m_{K} \frac{\left(m_{c}^{2}-m_{u}^{2}\right)^{2}}{m_{c}^{2}}
+    \end{aligned}
+\end{equation}
+De $G_F^2$ komt van de koppelingen aan de 2 $W$ bosonen wat een 2de orde zwakke wisselwerking is. De sinus en cosinus termen komen van de CKM-matrix elementen en de massatermen komen van het uitwerken van de matrixelementen. Wat belangrijk is om te in te zien aan deze massatermen, is dat als $m_c$ gelijk zou zijn aan $m_u$ dat er geen massaverschil zou zijn tussen $K^0$ en $\bar{K}^0$. De kaonen zouden nog steeds opmengen met elkaar maar de oscillaties zouden volledig gedempt zijn. Ten laatste hebben we ook nog een $f_K^2$ vorm factor term over om de hadronische kaonen te beschrijven. Dit is niet mogelijk om te doen aan de hand van first principles.\\
+Theoretisch uitgerekend komen we uit dat het massaverschil $\Delta m \approx 5 \times 10^{-12}$MeV moet zijn en experimenteel vinden we $3.5 \times 10^{-12}$MeV wat vrij goed overeen komt.\\
+{\color{red} Waar is Ryckbosch vooral in geïnteresseerd? Het kunnen uitleggen waarom $G_F^2$, de sinussen en cosinussen... aanwezig zijn. Niet echt in de wiskunde hoe de matrix elementen worden uitgewerkt. Daar is geen tijd voor in een semestervak.}\\
+
+\subsection{$CP$ schending}%
+\label{sub:_cp_schending}
+
+Deze uitrekeningen zeggen misschien iets over de oscillaties maar niets over de $CP$ schending. Om dit theoretisch te kunnen bekijken moeten we er de 3de generatie matrix elementen aan toevoegen $\mathcal{M}_{12} \propto V_{q d} V_{q s}^{*} V_{t d} V_{t s}^{*}$. De reden hiervoor is dat het fase element werkt tussen de eerste en 3de fase. Deze faseterm zal dus alleen maar voorkomen in $\mathcal{M}$ als $V_{td}$ daarin zal voorkomen. Bekijken we nu deze matrix elementen als we aan tijd inversie doen.\\
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex (a1) {\(\overline s\)};
+                \vertex[right=1cm of a1] (a2);
+                \vertex[right=1cm of a2] (a3);
+                \vertex[right=1cm of a3] (a4) {\(\overline d\)};
+
+                \vertex[below=1cm of a1] (b1) {\(d\)};
+                \vertex[right=1cm of b1] (b2);
+                \vertex[right=1cm of b2] (b3);
+                \vertex[right=1cm of b3] (b4) {\(s\)};
+
+                \diagram* {
+                    (b1) -- [fermion] (b2) -- [fermion, edge label={\(u,c,t\)}] (a2) -- [fermion] (a1),
+                    (a4) -- [fermion] (a3) -- [fermion, edge label={\(u,c,t\)}] (b3) -- [fermion] (b4),
+                    (a2) -- [boson, edge label=\(W\)] (a3),
+                    (b2) -- [boson, edge label=\(W\)] (b3),
+                };
+                \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+                node [pos=0.5, left] {\(K^{0}\)};
+                \draw [decoration={brace}, decorate] (a4.north east) -- (b4.south east)
+                node [pos=0.5, right] {\(\bar{K}^{0}\)};
+            \end{feynman}
+        \end{tikzpicture}
+    \end{center}
+\end{minipage}\noindent
+\begin{minipage}[c]{0.5\textwidth}
+    \begin{center}
+        \begin{tikzpicture}
+            \begin{feynman}
+                \vertex (a1) {\(\overline d\)};
+                \vertex[right=1cm of a1] (a2);
+                \vertex[right=1cm of a2] (a3);
+                \vertex[right=1cm of a3] (a4) {\(\overline s\)};
+
+                \vertex[below=1cm of a1] (b1) {\(s\)};
+                \vertex[right=1cm of b1] (b2);
+                \vertex[right=1cm of b2] (b3);
+                \vertex[right=1cm of b3] (b4) {\(d\)};
+
+                \diagram* {
+                    (b1) -- [anti fermion] (b2) -- [anti fermion, edge label={\(u,c,t\)}] (a2) -- [anti fermion] (a1),
+                    (a4) -- [anti fermion] (a3) -- [anti fermion, edge label={\(u,c,t\)}] (b3) -- [anti fermion] (b4),
+                    (a2) -- [boson, edge label=\(W\)] (a3),
+                    (b2) -- [boson, edge label=\(W\)] (b3),
+                };
+                \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+                node [pos=0.5, left] {\(\bar{K}^{0}\)};
+                \draw [decoration={brace}, decorate] (a4.north east) -- (b4.south east)
+                node [pos=0.5, right] {\(K^{0}\)};
+            \end{feynman}
+        \end{tikzpicture}
+    \end{center}
+\end{minipage}
+\begin{equation}
+    \begin{aligned}
+        \label{eq:kaon_osc_tijd_inv}
+        \mathcal{M}_{12} \propto V_{q d} V_{q s}^{*} V_{t d} V_{t s}^{*} \quad \mathcal{M}_{21} \propto V_{q d}^{*} V_{q s} V_{t d}^{*} V_{t s}=\mathcal{M}_{12}^{*}
+    \end{aligned}
+\end{equation}
+Er zal $CP$ schending plaatsvinden als $\mathcal{M}_{12} \neq \mathcal{M}_{12}^{*}$ is (Dit komt van $CPT$ die behouden moet worden). In de standaard parametrisatie is het alleen mogelijk dat deze afwijken door de imaginaire delen in de koppeling van de eerste met derde generatie $V_{u b}$ en $V_{t d}$.\\
+Het is mogelijk om aan te tonen (zie de Thompson) dat de indirecte $CP$ schending wordt gegeven door:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:direct_cp_viol_kaon}
+        |\epsilon| \approx \frac{\Im\left(\mathcal{M}_{12}\right)}{\sqrt{2} \Delta m} \quad|\epsilon| \propto \bar{\eta}(1-\rho+c s t .)
+    \end{aligned}
+\end{equation}
+Uit $\epsilon$ is het dus mogelijk om de faseterm in de CKM-matrix te bepalen. Het probleem hierbij is dat dit moeilijk te bepalen is met de lichte kaonen. We willen het liefst een zwaarder meson bekijken dat een $b$ quark bevat die bijna uitsluitend bindt met de $t$ quark. De perfecte kandidaat hiervoor is het $B$ meson.
+
+\subsection{$B$-systeem}%
+\label{sub:_b_systeem}
+
+\begin{center}
+    \begin{tikzpicture}
+        \begin{feynman}
+            \vertex (a1) {\(\overline b\)};
+            \vertex[right=1cm of a1] (a2);
+            \vertex[right=1cm of a2] (a3) node [above=0.1em of a3] {\(V_{td}^*\)};
+            \vertex[right=1cm of a3] (a4) {\(\overline d\)};
+
+            \vertex[below=1cm of a1] (b1) {\(d\)};
+            \vertex[right=1cm of b1] (b2) node [below=0.2em of b2] {\(V_{td}\)};
+            \vertex[right=1cm of b2] (b3);
+            \vertex[right=1cm of b3] (b4) {\(b\)};
+
+            \diagram* {
+                (b1) -- [fermion] (b2) -- [fermion, edge label={\(u,c,t\)}] (a2) -- [fermion] (a1),
+                (a4) -- [fermion] (a3) -- [fermion, edge label={\(u,c,t\)}] (b3) -- [fermion] (b4),
+                (a2) -- [boson, edge label=\(W\)] (a3),
+                (b2) -- [boson, edge label=\(W\)] (b3),
+            };
+            \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+            node [pos=0.5, left] {\(B^{0}\)};
+            \draw [decoration={brace}, decorate] (a4.north east) -- (b4.south east)
+            node [pos=0.5, right] {\(\bar{B}^{0}\)};
+        \end{feynman}
+    \end{tikzpicture}
+\end{center}
+Omdat de bottom quark zo goed als alleen zal koppelen met de top quark hebben we nog maar 1 matrix element over.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:mat_el_b_osc}
+        \mathcal{M}_{12} \propto\left(V_{t d} V_{t b}^{*}\right)^{2}
+    \end{aligned}
+\end{equation}
+Zoals voor het Kaon systeem kunnen we hier terug het massaverschil berekenen en zien dat $\Delta m_{d} \propto\left|V_{t d}^{2}\right|$. Het is nu mogelijk om die fase te bekijken $V_{t d}=\left|V_{t d}\right| e^{-i \beta}$. De reden waarom er verschillende notaties worden gebruikt voor de fase is omdat er op dit moment nog veel onderzoek naar wordt gedaan en de benaming nog niet echt vast ligt.\\
+Bekijken we nu de opmenging:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:b_opmenging}
+        \left| B_{L}\right>&=\frac{1}{\sqrt{2}}\left(\left|B^{0}\right>+e^{-i 2 \beta}\left| \bar{B}^{0}\right>\right) \\
+        \left| B_{H}\right>&=\frac{1}{\sqrt{2}}\left(\left|B^{0}\right>-e^{-i 2 \beta}\left| \bar{B}^{0}\right>\right)
+    \end{aligned}
+\end{equation}
+We hebben hier deze fase aan $B_L$ en $B_H$ toegevoegd waardoor de verdeling niet perfect 50-50 meer zal zijn. Deze zal de indirecte $CP$ schending weergeven.\\
+Dit onderzoek werd voor het eerst gedaan aan BaBar waar het verval $B^{0}\left(\bar{B}^{0}\right) \rightarrow J / \Psi K_{S}^{0}$ wordt bekeken. Hier zijn we terug geïnteresseerd in de $CP$ van de toestanden.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:cp_toestanden}
+        C P\left|J / \Psi\right>&=+\left| J / \Psi\right>\\
+        C P\left|K_{S}^{0}\right>&=+\left| K_{S}^{0}\right>\\
+        \Rightarrow C P\left(\left| J / \Psi K_{S}^{0}\right>\right)&=-1
+    \end{aligned}
+\end{equation}
+Hoe komen we nu aan de $CP$ van $J / \Psi$? De pariteit hiervan is heel makkelijk. Dit is een vector boson dus $P=-1$ en $S=1$. Voor $C$ moeten we naar de symmetrie van het deeltje kijken.
+
+\begin{table}[h]
+    \centering
+    \caption{Symmetrie van $J / \Psi$}
+    \label{tab:label}
+    \begin{tabular}{cccc}
+        $\Psi$ & $\Phi(r)$ & $t(s)$ & $\psi(c)$ \\
+        $-$    & $+$       & $+$    & $-$
+    \end{tabular}
+\end{table}
+
+Het radiaal deel is positief wegens in de grondtoestand te zitten en het spin gedeelte is positief wegens een totale spin van 1 te hebben. Omdat de totale golffunctie negatief moet zijn moet de kleurgolffunctie negatief zijn. Zo krijgen we dus voor $CP$ positief wordt. Omdat $J$ ook moet behouden zijn en de de spin van alle andere deeltjes dan $J / \Psi$ is 0 en om aan een $J$ van 0 te geraken, moet $L=1$ zijn. Zo krijgen we uiteindelijk $C P\left(\mid J / \Psi K_{S}^{0}>\right)=-1$.\\
+Het is nu mogelijk dat $B^{0} \rightarrow J / \Psi K_{S}$ en $B^{0} \rightarrow \bar{B}^{0} \rightarrow J / \Psi K_{S}$ vervallen interfereren met elkaar. Hierdoor worden we gevoelig voor de verschillen tussen $B^{0} \rightarrow \bar{B}^{0}$ en $\bar{B}^{0} \rightarrow B^{0}$.\\
+Babar is een asymmetrisch experiment waar een positron en elektron worden omgezet in $B$ mesonen.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{cp_violation/babar.png}
+    \caption{Babar experiment om $CP$ schending te bekijken}%
+    \label{fig:cp_violation/babar}
+\end{figure}
+
+De lading van de leptonen tonen zoals bij de kaon oscillaties of een $B^0$ en $\bar{B}^0$ vervallen is. Dit gebruiken we natuurlijk om de asymmetrie te onderzoeken. Wat we nu precies willen onderzoeken is het tijdverschil tussen het verval van $\bar{B}^0$ en dat van $B^0$.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:cp_asymmetrie}
+        A_{C P}=\frac{\Gamma\left(\bar{B}^{0} \rightarrow J / \Psi K_{S}^{0}\right)-\Gamma\left(B^{0} \rightarrow J / \Psi K_{S}^{0}\right)}{\Gamma\left(\bar{B}^{0} \rightarrow J / \Psi K_{S}^{0}\right)+\Gamma\left(B^{0} \rightarrow J / \Psi K_{S}^{0}\right)}=\sin \left(\Delta m_{d}\Delta \cdot t\right) \sin (2 \beta)
+    \end{aligned}
+\end{equation}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{cp_violation/babar_results.png}
+    \caption{Babar resultaten van $CP$ schending}%
+    \label{fig:cp_violation/babar_results}
+\end{figure}
+
+De reden dat voor grotere negatieve $\Delta t$ geen vervallen zijn is omdat de $B$ mesonen nog niet aangemaakt zijn. Voor be lage waarden voor positieve $\Delta t$ is dat we aan het einde van de detector zijn gekomen en niet meer kunnen meten. Het kleine verschil die je ziet in de curves zullen neerkomen op een mooie oscillatie met frequentie $\Delta m_d \cdot \Delta t$ en amplitude afhankelijk van $\beta$. We vinden uiteindelijk dat $\sin (2 \beta)=0.685 \pm 0.032$ is.
+
+\subsection{Unitaire driehoek}%
+\label{sub:unitaire_driehoek}
+
+We hebben al gekeken naar de som van de kwadraten van de rijen en kolommen van de CKM-matrix. We kunnen nu nog een stap verder gaan.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:unitaire_driehoek}
+        V^{\dagger} V=\left(\begin{array}{ccc}
+                V_{u d}^{*} & V_{c d}^{*} & V_{t d}^{*} \\
+                V_{u s}^{*} & V_{c s}^{*} & V_{t s}^{*} \\
+                V_{u b}^{*} & V_{c b}^{*} & V_{t b}^{*}
+                \end{array}\right)\left(\begin{array}{ccc}
+                V_{u d} & V_{u s} & V_{u b} \\
+                V_{c d} & V_{c s} & V_{c b} \\
+                V_{t d} & V_{t s} & V_{t b}
+                \end{array}\right)=\left(\begin{array}{ccc}
+                1 & 0 & 0 \\
+                0 & 1 & 0 \\
+                0 & 0 & 1
+        \end{array}\right)
+    \end{aligned}
+\end{equation}
+De vermenigvuldiging van een rij met de kolom moet natuurlijk ook 0 of 1 zijn als we kijken naar het matrix product.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:matrix_vermenigvuldiging}
+        V_{u b}^{*} V_{u d}+V_{c b}^{*} V_{c d}+V_{t b}^{*} V_{t d}=0
+    \end{aligned}
+\end{equation}
+Bekijken we deze vergelijking in het complex vlak dan komt dit overeen met een driehoek.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{cp_violation/complexe_driehoek.png}
+    \caption{Driehoeksvoorstelling van matrix vermenigvuldiging}%
+    \label{fig:cp_violation/complexe_driehoek}
+\end{figure}
+
+De $cd$ componenten is bij constructie reëel en de andere 2 termen hebben een imaginaire component. Het is zo mogelijk om uit te rekenen dat:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:driehoeksvoorstelling_mat_vermenigvuldiging}
+        \frac{V_{u b}^{*} V_{u d}}{V_{c b}^{*} V_{c d}} &=(\rho+i \eta)\left(\frac{\lambda^{2}}{2}-1\right) \\
+                                                        &=\bar{\rho}+i \bar{\eta}
+    \end{aligned}
+\end{equation}
+Zo bekomen we dat de coordinaten van deze driehoek gegeven worden door $C=(0,0)$, $B=(1,0)$ en $A=(\bar{\rho}, \bar{\eta})$.\\
+Dit kan nu op meerdere manieren gemeten worden:
+\begin{itemize}
+    \item $CA$ zijde: $V_{u b}^{*}=A \lambda^{3}(\rho+i \eta)$ Al deze componenten hiervan hebben we al experimenteel bepaald. $V_{ud}$ is reëel en is zeer goed gekend.
+    \item $AB$ zijde: $V_{t d}=A \lambda^{3}(1-\rho-i \eta)$ samen met $V_{t d}=\left|V_{t d}\right| e^{-i \beta}$ is het mogelijk om in te zien dat $\tan \beta=\frac{\eta}{1-\rho}$.
+\end{itemize}
 
 \end{document}
