@@ -163,7 +163,7 @@ Wat zijn al deze vrije parameters nu in dit Standaard Model.
     \end{minipage}
 \end{table}
 
-Indien er maar 1 van deze parameters er een beetje anders zou uit zien dan zou het heelal er totaal anders uit zien. De 26ste parameter, de $CP$ schending van de sterke wisselwerking is de enige die we nog niet hebben waargenomen.
+Indien er maar 1 van deze parameters er een beetje anders zou uit zien dan zou het heelal er totaal anders uit zien. De 26ste parameter, de $CP$ schending van de sterke wisselwerking is de enige die we nog niet hebben waargenomen. Indien er $CP$ schending voor de sterke wisselwerking zou zijn zouden we een dipoolmoment van het neutron waarnemen.
 
 \subsection{Behouden grootheden}%
 \label{sub:behouden_grootheden}
@@ -199,7 +199,7 @@ Verticaal in de resultaten zichbaar in figuur \ref{fig:physics_beyond_the_standa
 \subsection{Grand Unified Theories}%
 \label{sub:grand_unified_theories}
 
-Voor het uitwisselen van kleine hoeveelheden energie zien we dat de koppelingconstantes van de sterke, zwakke en elektromgnetische wisselwerking grote verschillen tonen. We hebben ook gezien dat dit lopende koppelingconstantes zijn. Voor grotere en grotere hoeveelheden aan energie lijken deze naar elkaar toe te gaan. Extrapoleren we wat we vandaag de dag weten verwachten we bij het uitwisselen van $q=M_{X} \sim 10^{15}$ de krachten even sterk zouden moeten zijn.
+Voor het uitwisselen van kleine hoeveelheden energie zien we dat de koppelingconstantes van de sterke, zwakke en elektromgnetische wisselwerking grote verschillen tonen. We hebben ook gezien dat dit lopende koppelingconstantes zijn. Voor grotere en grotere hoeveelheden aan energie lijken deze naar elkaar toe te gaan. Extrapoleren we wat we vandaag de dag kennen, dan verwachten we bij het uitwisselen van $q=M_{X} \sim 10^{15}$ de krachten even sterk zouden moeten zijn.
 
 \begin{figure}[h]
     \centering
@@ -215,7 +215,7 @@ In 1974 waren de eerste ideeën er al om deze krachten te unificeren. Hier zoude
     \item het foton
     \item 12 nieuwe ijkbosonen $Y$ en $X$ de leptoquarks
 \end{itemize}
-Zoals de elektrozwakke symmetrie die wordt gebroken door het Higgs boson zal de Grand Unified Theory symmetrie ook gebroken worden. Deze breuk zou moeten leven bij ongeveer $m_{Y} \sim m_{X} \sim 10^{15}$GeV. Naast de massa van de $Y$ en $X$ bosonen moeten er ook GUT-Higgs bosonen zijn. Uit de theorie zijn de massa van de bosonen gegeven door: $Q_{Y}=-\frac{1}{3}$ en $Q_{X}=-\frac{4}{3}$. Ze hebben naar een lading ook 3 mogelijke kleuren wat in het totaal 12 verschillende mogelijkheden moet geven. Omdat ze een massa hebben zouden deze moeten vervallen in onze deeltjes die we al kennen. Een aantal voorbeelden van zo een vervallen zijn: $X_{1} \rightarrow e^{-} d, \bar{u} \bar{u}$ en $Y_{2} \rightarrow \mu^{-} c, \bar{c} \bar{s}$. De multipletten die we bij deze theorie nu krijgen zijn vrij verschillend, we krijgen hier quintetten en decupletten.
+Zoals de elektrozwakke symmetrie die wordt gebroken door het Higgs boson zal de Grand Unified Theory symmetrie ook gebroken worden. Deze breuk zou moeten leven bij ongeveer $m_{Y} \sim m_{X} \sim 10^{15}$GeV (Zelf bij kosmische straling fysica komen we maar aan $10^{12}$GeV.). Naast de massa van de $Y$ en $X$ bosonen moeten er ook GUT-Higgs bosonen zijn. Uit de theorie zijn de massa van de bosonen gegeven door: $Q_{Y}=-\frac{1}{3}$ en $Q_{X}=-\frac{4}{3}$. Ze hebben naar een lading ook 3 mogelijke kleuren wat in het totaal 12 verschillende mogelijkheden moet geven. Omdat ze een massa hebben zouden deze moeten vervallen in onze deeltjes die we al kennen. Een aantal voorbeelden van zo een vervallen zijn: $X_{1} \rightarrow e^{-} d, \bar{u} \bar{u}$ en $Y_{2} \rightarrow \mu^{-} c, \bar{c} \bar{s}$. De multipletten die we bij deze theorie nu krijgen zijn vrij verschillend, we krijgen hier quintetten en decupletten.
 \begin{equation}
     \begin{aligned}
         \label{eq:qut_multipletten}
@@ -235,6 +235,199 @@ Zoals de elektrozwakke symmetrie die wordt gebroken door het Higgs boson zal de 
         \end{array}\right)_{L H}
     \end{aligned}
 \end{equation}
-Wat we zien gebeuren is dat de som van de ladingen in de multipletten 0 zal moeten zijn, $\sum_{i} Q_{i}=0$. Dit verklaard waarom we de $-1/3$ en $2/3$ lading hebben voor onze quarks en de gelijkheid $Q(\nu)-Q(e)=Q(u)-Q(d)$.
+Wat we zien gebeuren is dat de som van de ladingen in de multipletten 0 zal moeten zijn, $\sum_{i} Q_{i}=0$. Dit verklaard waarom we de $-1/3$ en $2/3$ lading hebben voor onze quarks en de gelijkheid $Q(\nu)-Q(e)=Q(u)-Q(d)$.\\
+\begin{center}
+    \feynmandiagram [layered layout, horizontal=b to c] {
+        a [particle=\(Z^0\)] -- [photon] b
+        -- [fermion, half left, looseness=1.5] c
+        -- [fermion, half left, looseness=1.5] b,
+        c -- [photon] d [particle=\(\gamma\)],
+    };
+\end{center}
+Technisch gezien is het feynman diagram hierboven waar te nemen. Voor het Standaard Model weten we uit de elektrozwakke theorie dat die orthogonaal moeten staan op elkaar bij constructie $\left< Z^0\mid \gamma\right> = 1$. Bij de berekening van het matrix element via de Grand Unified Theory zien we iets anders tevoorschijn komen.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|cc}
+        & $I_{3}$ & $Q$ \\
+        \hline
+        $\left(\nu_{e}\right)_{L H}$ & $+1 / 2$ & $0$ \\
+        $\left(e^{-}\right)_{L H}$ & $-1 / 2$ & $-1$ \\
+        $\left(\bar{d}_{R}\right)_{L H}$ & $0$ & $+1 / 3$ \\
+        $\left(\bar{d}_{B}\right)_{L H}$ & $0$ & $+1 / 3$ \\
+        $\left(\bar{d}_{G}\right)_{L H}$ & $0$ & $+1 / 3$
+    \end{tabular}
+\end{table}
+\begin{equation}
+    \begin{aligned}
+        \label{eq:z_to_gamma_gut}
+        \sum Q\left(I_{3}-Q \sin ^{2} \theta_{W}\right) &=0 \\
+        \Rightarrow \sin ^{2} \theta_{W}\left(M_{X}^{2}\right)=\frac{\sum Q I_{3}}{\sum Q^{2}} &=\frac{3}{8}
+    \end{aligned}
+\end{equation}
+Zo is het mogelijk om $\sin^2\theta_W$ te bepalen bij de GUT schaal. Evolueren we dit terug naar de schaal waar we de massa van het $Z$ boson kennen aan de hand van $g^{\prime} / g=\tan \theta_{W}$ en vinden we $\sin ^{2} \theta_{W}\left(M_{Z}^{2}\right) \approx 0.21$ wat dicht bij de waarde ligt die we vandaag de dag kennen van $0.23$ maar dit is nog buiten de fout. Eén groot probleem dat we nu zien is dat het proton kan vervallen $p \rightarrow e^{+} \pi^{0}$.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\linewidth]{physics_beyond_the_standard_model/proton_verval.png}
+    \caption{Feynman diagrammen van het proton verval}%
+    \label{fig:physics_beyond_the_standard_model/proton_verval}
+\end{figure}
+
+Ten eerste hebben we hier geen behoud van het baryon getal en lepton getal. We zijn dus duidelijk voorbij het Standaard Model. Deze vervallen zullen vooral gedomineerd worden door hoe waarschijnlijk het is dat een deeltje met massa $M_X$ aangemaakt wordt. Het dominante deel in de propagator is $\frac{1}{q^{2}+M_{X}^{2}}$. Wat de levenstuur betreft zal deze de inclusie van deze massa tot de 4de macht heel groot zijn $\tau \approx \frac{1}{\alpha^{2}} \frac{M_{X}^{4}}{M_{p}^{5}} \sim 10^{31} \text { yr }$. Experimenteel is dit sinds het begin van het inversum nog nooit waargenomen en hebben we $\tau\left(p \rightarrow e^{+} \pi^{0}\right) \geq 8.4 \times 10^{33} \text{yr}$. Dit onderzoek was initieel gedaan aan Kamiokande waar ze gewoon kijken naar een grote hoeveelheid water waar er mogelijks opeens een proton zou vervallen.\\
+Uit al deze problemen zijn we zeker dat de $SU(5)$ implementatie van de GUT zeker niet de oplossing zal zijn. Maar dit wil niet zeggen dat we er niet dicht bij komen. Er zijn hier al veel correcte elementen aanwezig. We gaan dus zoeken of een complexer alternatief wel het goede antwoord zou geven. Het probleem hierbij is dat deze steeds meer ijkbosonen geven die we niet hebben waargenomen. Het onderzoek naar leptoquarks wordt natuurlijk ook gedaan bij HERA ($e+q \rightarrow X / Y \rightarrow q q$) waar we nog niets hebben gevonden. Dit geeft aanleiding dat er niets zou zijn tussen $M_{EW}$ en $M_{GUT}$.
+
+\subsection{Compositen}%
+\label{sub:compositen}
+
+Een concept dat in het verleden al heel succesvol is geweest is veronderstellen dat de deeltjes die we nu kennen bestaan uit sub-deeltjes gebonden door een heel sterke interactie. Deze deeltjes noemen we preonen. Een voorbeeld van zo een theorie is de Rishon-theorie. Deze introduceert 2 nieuwe deeltjes $T$ en $V$ met als ladingen $Q_{T}=+1 / 3$ en $Q_{V}=0$. Deze kunnen we gebruiken om de gekende deeltjes te beschrijven:
+\begin{equation}
+    \begin{aligned}
+        \label{eq:rischon_samenstelling}
+        \left| e^{+}\right>&=\left| T T T\right>\\
+        \left| \nu_{e}\right>&=\left| V V V\right>\\
+        \left|u\right> &=\left|T T V\right>,\left| T V T\right>, \left| V T T\right>\text { for } 3 \text { colours } \\
+        \left| \bar{d}\right>&=\left|T V V\right>\left| V T V\right>, \left| V V T\right>\text { for } 3 \text { colours } \\
+        \left|W^{+}\right\rangle &=\left| T T T V V V\right>
+    \end{aligned}
+\end{equation}
+Er is hier 1 fundamenteel probleem. Uit de diep inelastische verstrooiing hebben we voor de afmeting voor het elektron en het quark ten hoogste $10^{-18}$m zijn. Als we die deeltjes op zo een kleine plaats willen opsluiten weten we door het heisenberg principe dat de impuls van $T$ en $V$ rond de 200GeV zal moeten zitten. Om die 600GeV aan energie te reduceren naar enkele $m_f\sim$MeV moeten we bindings energie van de orde een $O(100s)$GeV hebben. Het groot zijn en elkaar juist uit cancellen om die enkele MeV te bekomen zit niet goed. Dit is de reden waarom we denken dat we aan de effectieve bouwstenen zitten van het universum met de elementaire deeltjes.\\
+We zouden ook nog verwachten dat onze elementaire deeltjes aangeslagen toestanden hebben. Hierbij zouden de verschillende generaties overeen komen met een hyperfijn structuur. Indien dit zo is zouden we deze moeten zien vervallen $f^{*} \rightarrow f \gamma$ en $q^{*} \rightarrow q g, q \gamma$ wat we ook nog niet hebben gevonden.
+
+\subsection{Supersymmetrie}%
+\label{sub:supersymmetrie}
+
+Indien we geloven dat GUT bestaat komt er 1 groot probleem naar boven, dit noemen we het hiërarchie probleem. Bij deze schalen van $\Lambda_{G U T} \sim 10^{16}$GeV of $\Lambda_{P} \sim 10^{19}$GeV zal het Higgs boson naast de typische loop diagrammen op de eerste rij zullen de loop diagrammen ook gebeuren met het $X$ boson.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{physics_beyond_the_standard_model/loop_diagrammen_higgs.png}
+    \caption{Loop diagrammen van het Higgs bij GUT en planck schaal}%
+    \label{fig:physics_beyond_the_standard_model/loop_diagrammen_higgs}
+\end{figure}
+
+Zoals eerder in kwantumvelden is aangetoond is de massa van het Higgs boson zijn naakte massa plus al de loop diagrammen die we hier hebben.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:massa_higgs}
+        M_{H}^{2}=M_{0}^{2}+\sum_{i} c_{i} \Lambda^{2}
+    \end{aligned}
+\end{equation}
+De toevoeging van de loopdiagrammen aan $X$ zullen een gigantische hoeveelheid extra massa geven aan het Higgs boson. Als er iets is voorbij het Standaard Model, en dat moet er bijna zijn, zal bij deze schalen de zelfkoppeling van die deeltjes de massa van het Higgs boson flink opdrijven. Het probleem is dat ons Higgs deeltje licht is, om goed te zijn zou het veel zwaarder moeten zijn. De diagrammen die we nu hebben toegevoegd zouden dus moeten gecompenseerd worden met nog andere diagrammen.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{physics_beyond_the_standard_model/sussy_deeltjes.png}
+    \caption{Invoeren van equivalenten aan het $W$ boson en $t$ quark interacties}%
+    \label{fig:physics_beyond_the_standard_model/sussy_deeltjes}
+\end{figure}
+
+Hoe kunnen we die cancelaties nu implementeren? Introduceren we nieuwe deeltjes die koppelen aan het Higgs. Voor elke koppeling van het Higgs aan het $W$ deeltje krijgen we een koppeling aan het $\tilde{W}$ deeltje en hetzelfde voor de $t$ quark en alle andere koppelingen. Door de koppeling van $W$ te linken aan de koppeling van $\tilde{W}$ aan het Higgs is de cancelatie is ingebouwd in de theorie. Indien de overeenkomstige deeltjes zelf perfect hetzelfde zijn, cancelt alles elkaar uit en heeft het Higgs een massa van 0. Het invoeren van dit concept is de supersymmetrie (=SUSY). Dit zou al moeten werken voor SUSY deeltje met $M_{SUSY}<1$TeV. In het LHC hadden we verwacht dat het Higgs boson moeilijk te vinden zou geweest zijn maar dat we ook SUSY deeltjes zouden gevonden hebben.\\
+Hoe zien de SUSY deeltjes er nu uit? Om dit te bekijken vergelijken we de krachten van de van de $SU(5)$ theorie en de supersymmetrie.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\linewidth]{physics_beyond_the_standard_model/su5_vs_susy.png}
+    \caption{Vergelijking van de krachten in $SU(5)$ en SUSY}%
+    \label{fig:physics_beyond_the_standard_model/su5_vs_susy}
+\end{figure}
+
+Je ziet direct dat de krachten voor de $SU(5)$ theorie niet zullen convergeren tot 1 punt, de SUSY krachten doen dit wel bij $\sim 10^{-16}$GeV. Dit komt door de extra ingebouwde vrijheidsgraad, de massa schaal van die deeltjes. Daar kan je dus mee spelen. De voorwaarde is dat de SUSY deeltje van de orde $\Lambda \sim 1$TeV zijn. Op deze manier hebben we een symmetrie toegevoegd tussen de bosonen en fermionen. Deze symmetrie zien we op dit moment niet. Op dit moment zien we een asymmetrie tussen de fermionen die materie deeltjes zijn en bosonen wat krachtdeeltjes zijn. Het is de supersymmetrie die gebroken wordt die voor de elektrozwakke breking $\sim 100$GeV is en voor SUSY ongeveer 1TeV.\\
+SUSY is de laatste symmetrie tussen de fermionen en bosonen. Voor elk boson voegen we een fermion toe en voor elk fermion een boson. We hebben nu dus dubbel zo veel deeltjes. Nemen we als voorbeeld het spin 1/2 quark $u$.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:susy_deeltjes_1}
+        \begin{array}{llllll}
+            \text{ spin } \frac{1}{2} & u: \text{u}_{L} & u_{R} & \bar{u}_{L} & \bar{u}_{R} & (3 \text { colours }) \Rightarrow 12 \text { d.o.f. } \\
+            \text { spin } 0 & \tilde{u}: \widetilde{u_{L}} & \widetilde{u_{R}} & \widetilde{\bar{u}_{L}} & \widetilde{\bar{u}_{R}} & (3 \text { colours }) \Rightarrow 12 \text { d.o.f. }
+        \end{array}
+    \end{aligned}
+\end{equation}
+De SUSY equivalenten van de up quark noemen we up s(up)quark. Belangrijk is dat $\widetilde{u_{L}}$ geen links handig deeltje is, deze heeft geen spin en dus geen handigheid. Zo hebben we ook de sneutrinos, de gluonos (zou 3 spin vrijgheidsgraden moeten hebben maar door massaloos te zijn is er 1 weg gevallen)
+\begin{equation}
+    \begin{aligned}
+        \label{eq:susy_deeltjes_2}
+        \begin{array}{llll}
+            \text{ spin } \frac{1}{2} & \nu: \nu_{L} & \bar{\nu}_{R} & \Rightarrow 2 \text { d.o.f. } \\
+            \text{ spin } 0 & \tilde{\nu}: \widetilde{\nu_{L}} & \widetilde{\nu_{R}} & \Rightarrow 2 \text { d.o.f. }
+        \end{array}\\
+        \begin{array}{lll}
+            \text { spin } 1 & g & 2 \text{ spin } \times 8 \text { colour } \Rightarrow 16 \text { d.o.f. } \\
+            \text{ spin } \frac{1}{2} & \tilde{g} & 2 \text{ spin } \times 8 \text { colour } \Rightarrow 16 \text { d.o.f. }
+        \end{array}
+    \end{aligned}
+\end{equation}
+In het Standaard model hebben we:
+\begin{itemize}
+    \item in de elektrozwakke sector
+        \begin{equation}
+            \begin{aligned}
+                \label{eq:susy_deeltjes_3}
+                \begin{array}{lcccccc} 
+                                        & B & W^{0} & W^{1} & W^{2} & \Phi  & \\
+                    \text { d.o.f. }    & 2 & 2     & 2     & 2     & 4     & \sum=12
+                \end{array}
+            \end{aligned}
+        \end{equation}
+    \item achter de EW-symmetrie breking
+        \begin{equation}
+            \begin{aligned}
+                \label{eq:susy_deeltjes_4}
+                \begin{array}{lcccccc} 
+                                        & \gamma & Z^{0} & W^{+} & W^{-} & H  & \\
+                    \text { d.o.f. }    & 2 & 3     & 3     & 3     & 1     & \sum=12
+                \end{array}
+            \end{aligned}
+        \end{equation}
+\end{itemize}
+Schakelen we over naar SUSY dan hebben we 2 scaleire velden nodig hebben (Hebben 4 extra higgs velden nodig) krijgen we:
+\begin{itemize}
+    \item in de elektrozwakke sector in SUSY
+        \begin{equation}
+            \begin{aligned}
+                \label{eq:susy_deeltjes_5}
+                \begin{array}{llcccccc} 
+                    & B & W^{0} & W^{1} & W^{2} & \Phi_{u} & \Phi_{d} & \\
+                    \text { d.o.f. } & 2 & 2 & 2 & 2 & 4 & 4 & \sum=16
+                \end{array}
+            \end{aligned}
+        \end{equation}
+    \item achter de EW-symmetrie breking
+        \begin{equation}
+            \begin{aligned}
+                \label{eq:susy_deeltjes_6}
+                \begin{array}{lllclllllll} 
+                    & \gamma & Z^{0} & W^{+} & W^{-} & h & H & A & H^{+} & H^{-} & \\
+                    \text {d.o.f. } & 2 & 3 & 3 & 3 & 1 & 1 & 1 & 1 & 1 & \sum=16
+                \end{array}
+            \end{aligned}
+        \end{equation}
+        Al deze extra Higgs bosonen zijn nog steeds scalair maar kunnen nu ook een lading hebben.
+    \item Hun SUSY equivalenten zijn
+        \begin{equation}
+            \begin{aligned}
+                \label{eq:susy_deeltjes_7}
+                \begin{array}{lccccccccc} 
+                    & \tilde{\chi}_{1}^{0} & \tilde{\chi}_{2}^{0} & \tilde{\chi}_{3}^{0} & \tilde{\chi}_{4}^{0} & \tilde{\chi}_{1}^{+} & \tilde{\chi}_{1}^{-} & \tilde{\chi}_{2}^{+} & \tilde{\chi}_{2}^{-} & \\
+                    \text {d.o.f. } & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & \sum=16
+                \end{array}
+            \end{aligned}
+        \end{equation}
+        Dit zijn allemaal spin $1/2$ deeltjes.
+\end{itemize}
+De leuke van al deze deeltjes zijn de neutralinos $\tilde{\chi}^{0}$ en de charginos $\tilde{\chi}^{\pm}$. Naast het invoeren van de symmetrie en de deeltjes zal er ook een nieuwe pariteit tevoorschijn komen, de $R$-pariteit. Deze pariteit maakt het onderscheid tussen deeltjes en s-deeltjes.
+\begin{equation}
+    \begin{aligned}
+        \label{eq:r_pariteit}
+        R=(-1)^{2 S+3(\mathcal{B}-\mathcal{L})}
+    \end{aligned}
+\end{equation}
+Hier komen de baryon en lepton getallen in voor wat van groot belang is. Indien $R$ is behouden moet zijn volgen daar een aantal dingen uit.
+\begin{itemize}
+    \item Als je een s-deeltje maakt moet je ook zijn s-antideeltje maken, ze worden aangemaakt in paren.
+    \item De lichtste s-deeltje moet stabiel zijn (LSP). In de meeste modellen is dit het neutralino $\tilde{\chi}_{1}^{0}$. Omdat hij ongeladen is zal hij enkel interageren met de zwakke interactie. Net zoals de neutrinos ontsnappen deze gewoon uit de detector en zien we dit als $E_{\text {mis }}$ en $\vec{p}_{\text {mis }}$. Het neutralino heeft een massa van ongeveer $100$GeV en dus een perfecte kandidaat voor de donkere materie.
+    \item Het baryon en lepton getal zullen niet behouden worden maar de combinatie $\mathcal{B}-\mathcal{L}$ wel.
+\end{itemize}
+Nu kunnen we beginnen zoeken naar deze deeltjes. Indien SUSY exact zou zijn hebben we $m_{P}=m_{\tilde{P}}$. Dit is overduidelijk niet zo want een up s-quark zou dezelfde massa moeten hebben als een up quark. De SUSY moet dus gebroken worden. Dit kan mogelijks gebeuren aan de hand van spontane symmetrie breking aan de GUT-schaal of via gravitatie bemiddelde breking (wat super symmetric gravity is SUGRA). Om de massa van het Higgs boson stabiel te moeten krijgen moet de massa schaal van de orde 1TeV zijn.\\
+Er zijn veel verschillende modellen voor SUSY waarvan sommige $R$ niet behouden is maar wat ze allemaal gemeen hebben is dat er gigantisch veel nieuwe parameters worden toegevoegd. De zoektocht naar de correcte supersymmetrie theorie zal dus heel complex zijn.
 
 \end{document}
