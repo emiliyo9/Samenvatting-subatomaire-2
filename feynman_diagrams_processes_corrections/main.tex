@@ -216,7 +216,7 @@ Vullen we in vergelijking (\ref{eq:dirac_covariant}) de golffunctie in voor het 
 \begin{equation}
     \begin{aligned}
         \label{eq:dirac_vrij_golf}
-        \psi(\vec{x},t)=(u(E,\vec{p})e^{i(\vec{p}\cdot\vec{x} -Et)}
+        \psi(\vec{x},t)=u(E,\vec{p})e^{i(\vec{p}\cdot\vec{x} -Et)}
     \end{aligned}
 \end{equation}
 dan krijgen we met de vereenvoudigde dirac vergelijking
@@ -241,11 +241,11 @@ dan krijgen we met de vereenvoudigde dirac vergelijking
         \begin{pmatrix}
             1\\
             0\\
-            \frac{p_x-i_{p_y}}{E+m} 
+            \frac{p_x-i_{p_y}}{E+m}\\ 
             \frac{-p_z}{E+m}\\
-        \end{pmatrix},
-    \end{aligned},
+        \end{pmatrix}
         u^{(3)},u^{(4)}
+    \end{aligned},
 \end{equation}
 en hun energie:
 \begin{equation}
@@ -347,19 +347,19 @@ Hierbij zijn
         \rho(E_i)&=\left| \frac{dn}{dE_f} \right|_{E_i}
     \end{aligned}
 \end{equation}
-In deze cursus gaat het vooral over de tweede orde storingsrekening gaan, vanwege 1 intermediare toestand.
+In deze cursus gaat het vooral over de tweede orde storingsrekening gaan, vanwege 1 intermediaire toestand.
 
 \subsection{Faseruimte}%
 \label{sub:faseruimte}
 
-Uit de gouden regel van Fermi kunnen we halen dat elke kwantumtoestand in de impulsruimte een volume van $(2\pi)^3$ zal innemen (Heisenberg).
+Uit de gouden regel van Fermi in eerste orde kunnen we halen dat elke kwantumtoestand in de impulsruimte een volume van $(2\pi)^3$ zal innemen (wat neerkomt op Heisenberg).
 \begin{equation}
     \begin{aligned}
         \label{eq:fermi_faseruimte}
         d^3\vec{x}d^3\vec{p} = (2\pi)^3
     \end{aligned}
 \end{equation}
-Hierbij is $d^3\vec{x}$ het volume en kunnen we $d^3\vec{p}$ afleiden. Bij dit afleiden gaan we ervan uit dat deze isotroop is verdeeld.
+Hierbij is $d^3\vec{x}$ het volume en kunnen we $d^3\vec{p}$ afleiden. Bij dit afleiden gaan we ervan uit dat deze isotroop is verdeeld. Het aantal toestanden $dn$ tussen $[p,p+dp]$ komt nu neer op:
 \begin{equation}
     \begin{aligned}
         \label{eq:fermi_aantal_deeltjes}
@@ -432,7 +432,7 @@ De makkelijkste vorm van een vertex is als het een scalaire interactie is $\left
 \subsection{QED}%
 \label{sub:qed}
 
-Hier wordt er enkel gebruik gemaakt van de elektromagnetische wisselwerking. Zie terug Thomson voor de regels. Het is belangrijk om te begrijpen dat de $\frac{1}{q^2}$ in de propagator van QED zal aangeven hoe gemakkelijk zal zijn om een foton van de ene naar de andere kant een impuls $q$ zal meenemen.
+Hier wordt er enkel gebruik gemaakt van de elektromagnetische wisselwerking. Zie terug Thomson voor de regels. Het is belangrijk om te begrijpen dat de $\frac{1}{q^2}$ in de propagator van QED zal aangeven hoe gemakkelijk het zal zijn om een foton van de ene naar de andere kant een impuls $q$ zal meenemen.
 
 \subsection{Currents}%
 \label{sub:currents}
@@ -464,7 +464,7 @@ De current density is niet meer dan $j^\mu = \overline \psi \gamma^\mu \psi$ wat
     \label{fig:zwakke_int}
 \end{figure}
 
-Bij de zwakke interactie wordt er boson uitgewisseld. Eerder werd dit gezien als een puntinteractie. De relatie tussen de 2 is gegeven door
+Bij de zwakke interactie wordt er een boson uitgewisseld. Eerder werd dit gezien als een puntinteractie. De relatie tussen de 2 is gegeven door
 \begin{equation}
     \begin{aligned}
         \label{eq:zwakke_int_const}
@@ -561,7 +561,7 @@ Een groep is een set van operaties die moeten voldoen aan:
     \item inwendigheid: $R_iR_j$ is ook deel van de set
     \item identiteit: $I$ bestaat met $R_iI = IR_i = R_I$
     \item inversie: $R_I^{-1}$ moet bestaan met $R_I^{-1}R_i=R_iR_I^{-1}=I$
-    \item associativiteit: $R_i(J_jR_k)=(R_iR_j)R_k$
+    \item associativiteit: $R_i(R_jR_k)=(R_iR_j)R_k$
     \item commutativiteit: $R_iR_j=R_jR_i$
 \end{itemize}
 Indien ze hier allemaal aan voldoen is dit een abelse groep. De meest gebruikte in de deeltjes fysica
