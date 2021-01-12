@@ -93,11 +93,11 @@ In de quantumvelden theorie zijn de deeltjes niet meer dan de kleinste excitatie
         \begin{equation}
             \begin{aligned}
                 \label{eq:veld_func_em}
-                f^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu =
+                F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu =
                 \begin{pmatrix}
                     0 & -E_x & -E_y & -E_z \\
                     E_x & 0 & -B_z & B_y \\
-                    E_y & B_z & 0 -B_x \\
+                    E_y & B_z & 0 & -B_x \\
                     E_z & -B_y & B_x & 0 \\
                 \end{pmatrix}
             \end{aligned}
@@ -105,10 +105,10 @@ In de quantumvelden theorie zijn de deeltjes niet meer dan de kleinste excitatie
         De kwanta van dit veld zijn fotonen.
 \end{itemize}
 
-\subsection{Lakale $U(1)$ ijk(=gauge) invariantie}%
+\subsection{Lokale $U(1)$ ijk(=gauge) invariantie}%
 \label{sub:lakale_u_1_gauge_invariantie}
 
-Als we eisen dat de Lagrangiaan invariant moet zijn onder $\psi(x) \rightarrow \psi'(x) = e^{iq\chi(x)}\psi(x)$. Dit is niets anders dan de fase overal te gaan veranderen of dit kan ook gezien worden als een rotatie in de ruimte met hoek $\chi(x)$. De ruimte afhankelijkheid van de hoek slaat neet op het lokale gedeelte van de invariantie. Bijvoorbeeld voor de Dirac Lagrangiaan krijgen we dan
+Als we eisen dat de Lagrangiaan invariant moet zijn onder $\psi(x) \rightarrow \psi'(x) = e^{iq\chi(x)}\psi(x)$. Dit is niets anders dan de fase overal te gaan veranderen of dit kan ook gezien worden als een rotatie in de ruimte met hoek $\chi(x)$. De ruimte afhankelijkheid van de hoek slaat niet op het lokale gedeelte van de invariantie. Bijvoorbeeld voor de Dirac Lagrangiaan krijgen we dan
 \begin{equation}
     \begin{aligned}
         \label{eq:lok_ijk_inv_dir_1}
@@ -141,12 +141,12 @@ Om te weten hoe het veld $A$ transformeert moeten we nog 1 term toevoegen aan de
         \mathcal{L} = \overline \psi (i\gamma^\mu \partial_\mu - m)\psi {\color{red}- q\overline\psi\gamma^\mu A_\mu\psi} {\color{green}- \frac{1}{4} F_{\mu\nu}F^{\mu\nu}}
     \end{aligned}
 \end{equation}
-De betekenis van de 3 termen in de QED Lagrangiaan zijn in het zwart de beschrijving van de deeltjes, in het groen de beschrijving van het veld en in het groen de interactie tussen de deeltjes en het veld.
+De betekenis van de 3 termen in de QED Lagrangiaan zijn in het zwart de beschrijving van de deeltjes, in het groen de beschrijving van het veld en in het rood de interactie tussen de deeltjes en het veld.
 
 \subsection{Massa van de deeltjes}%
 \label{sub:massa_van_de_deeltjes}
 
-Laten we nu ook massa geven aan dat ijkveld dat we daarjuist hebben ingevoerd. Dit kan gedaan worden door een massa term aan de Lagrangiaan toe te voegen.
+Laten we nu ook massa geven aan dat ijkveld dat we daarjuist hebben ingevoerd (komt overeen met massa aan het foton te geven). Dit kan gedaan worden door een massa term aan de Lagrangiaan toe te voegen.
 \begin{equation}
     \begin{aligned}
         \label{eq:qed_lagr_met_massa}
@@ -157,10 +157,10 @@ Wat hier opvalt is dat bosonen in hun massaterm een $m^2$ hebben staan en de fer
 \begin{equation}
     \begin{aligned}
         \label{eq:lok_ijk_tran_massa_term}
-        \frac{1}{2} \rightarrow \frac{1}{2} m_\gamma^2(A_\mu-\partial_\mu\chi)(A_\mu-\partial_\mu\chi) \neq \frac{1}{2} m_\gamma^2 A_\mu A^\mu
+        \frac{1}{2} m_\gamma^2A_\mu A^\mu \rightarrow \frac{1}{2} m_\gamma^2(A_\mu-\partial_\mu\chi)(A_\mu-\partial_\mu\chi) \neq \frac{1}{2} m_\gamma^2 A_\mu A^\mu
     \end{aligned}
 \end{equation}
-We zien dat het ijk boson massaloos moet zijn om te voldoen aan de lokale ijk transformaties. Het massaloos zijn van het foton is een simpel voorbeeld van het Goldstone theorema. Dit theorema zegt dat voor eender welke lokale ijk invariantie je eist moeten de ijkbosonen van deze velden massaloos zijn. Wat nu met de $SU(2)$ theorie? Deze heeft ijkbosonen die een massa hebben wat botst met dit theorema.
+We zien dat het ijk boson massaloos moet zijn om te voldoen aan de lokale ijk transformaties. Het massaloos zijn van het foton is een simpel voorbeeld van het Goldstone theorema. Dit theorema zegt dat voor eender welke lokale ijk invariantie je eist dat de ijkbosonen van deze velden massaloos moeten zijn. Wat nu met de $SU(2)$ theorie? Deze heeft ijkbosonen die een massa hebben wat botst met dit theorema.
 
 \subsection{Interagerende scalaire velden}%
 \label{sub:interagerende_scalaire_velden}
@@ -190,7 +190,7 @@ De potentiaal heeft enkel een minimum in $\phi=0$.
     \label{fig:higgs_boson/hoed_pot_1}
 \end{figure}
 
-Nemen we nu $\nu^2<0$ krijgen we nu 2 minima in de potentiaal bij $\pm v$.
+Nemen we nu $\mu^2<0$ krijgen we nu 2 minima in de potentiaal bij $\pm v$.
 
 \begin{figure}[h]
     \centering
@@ -206,16 +206,16 @@ De tweede term is nu geen massaterm meer en hebben we een massaloos deeltje dat 
         \phi(x) &= v+\eta(x)
     \end{aligned}
 \end{equation}
-$eta$ is hier de beschrijving van het deeltje in de put (hoeveel deze dus afwijkt van $v$). Vullen we dit in in vergelijking (\ref{eq:lagr_hoed_pot}) geeft het volgende
+$\eta$ is hier de beschrijving van het deeltje in de put (hoeveel deze dus afwijkt van $v$). Vullen we dit in in vergelijking (\ref{eq:lagr_hoed_pot}) geeft het volgende
 \begin{equation}
     \begin{aligned}
         \label{eq:lagr_hoed_pot_symm_breking}
         \mathcal{L} &= \frac{1}{2} (\partial_\mu \eta) (\partial^\mu \eta) - \frac{1}{2} \mu^2 (v+\eta)^2 - \frac{1}{4} \lambda (v+\eta)^4\\
                     &\downarrow \mu^2= v^2\lambda\\
-        &= \frac{1}{2} (\partial_\mu \eta) (\partial^\mu \eta) - \lambda v^2\eta^2 - \lambda v \eta^4 - \frac{1}{4} \lambda \eta^4 + \frac{1}{4} \lambda v^4\\
+        &= \frac{1}{2} (\partial_\mu \eta) (\partial^\mu \eta) - \lambda v^2\eta^2 - \lambda v \eta^3 - \frac{1}{4} \lambda \eta^4 + \frac{1}{4} \lambda v^4\\
     \end{aligned}
 \end{equation}
-Wat we nu kunnen zien is een massief scalair veld met $m_\eta = \sqrt{2\lambda v^2}  \sqrt{-2\nu^5}$ met 2 self interacties van het $\eta$ veld.
+Wat we nu kunnen zien is een massief scalair veld met $m_\eta = \sqrt{2\lambda v^2} = \sqrt{-2\mu^2}$ met 2 self interacties van het $\eta$ veld.
 
 \begin{figure}[h]
     \centering
@@ -246,7 +246,7 @@ De hoed potentiaal zal in deze omstandigheden geroteerd worden rond de as loodre
     \label{fig:higgs_boson/hoed_pot_comp}
 \end{figure}
 
-Deze zal in dit geval invariant zijn onder de globale $U(1)$ transformatie $\phi \rightarrow e^{i\alpha}\phi$. Voor $\nu^2<0$ krijgen we nu een ring van minima bij
+Deze zal in dit geval invariant zijn onder de globale $U(1)$ transformatie $\phi \rightarrow e^{i\alpha}\phi$. Voor $\mu^2<0$ krijgen we nu een ring van minima bij
 \begin{equation}
     \begin{aligned}
         \label{eq:complex_symm_breking}
@@ -307,7 +307,7 @@ In het rood vinden we de beschrijving van het scalair veld $\eta$ dat massief is
     \begin{aligned}
         \label{eq:comp_scal_veld_lagr_unitaire_ijk}
         \mathcal{L} = \frac{1}{2} (\partial_\nu h)(\partial^\nu h) + \lambda v^2 h^2 + \frac{1}{2} (\partial_\nu\xi)(\partial^\nu\xi) - \frac{1}{4} F^{\mu\nu}F_{\mu\nu} + \frac{1}{2} g^2v^2B_\mu B^\mu\\
-        + gvB_\mu(\partial^\mu h) + \frac{1}{2} g^2 B_\mu B^\mu h^2 - \lambda vh^3 - \frac{1}{4} \lambda h^4
+        + g^2vB_\mu B^\mu h + \frac{1}{2} g^2 B_\mu B^\mu h^2 - \lambda vh^3 - \frac{1}{4} \lambda h^4
     \end{aligned}
 \end{equation}
 Hierbij zijn de $\eta$ termen vervangen door Higgs termen. We hebben nog steeds het $B$ veld en de directe koppeling van $B$ en $\xi$ is verdwenen. De $\xi$ termen zijn als het ware opgeslokt door het $B$ veld. Zo bekomen we een Lagrangiaan die 2 massieve velden beschrijft met hun inderlinge interacties daarbij. De massa van deze velden zijn $m_B = gv$ en $m_h = \sqrt{2\lambda}v$.
@@ -387,7 +387,7 @@ Nu we een model hebben voor het Higgs boson is het natuurlijk ook belangrijk om 
     \item $H\rightarrow f\overline f$: De vervalbreedte van deze fermion vervalkanalen hangen door de massa afhankelijkheid van de koppelingsconstante ook af van de massa's van de interagerende deeltjes, $\Gamma(H\rightarrow f\overline f) \propto m_f^2m_H$. Behalve als $m_H > 2m_t$ (wat heel onwaarschijnlijk is vanwege de grote massa van het top quark) is zal het sterkste fermionisch verval kanaal gegeven worden door $b\overline b$.
     \item $H\rightarrow WW$: Het Higgs boson koppelt ook sterk aan de $W$ bosonen met $\Gamma(H\rightarrow WW)\propto m_H^3$ als $m_H \gg 2m_W$. Daarentegen als $m_H < 2m_W$ moet minstens 1 $W$ off-shell zijn wat onderdrukt zal worden.
     \item $H\rightarrow ZZ$: Als hier terug $m_H \gg 2m_Z$ krijgen we $\Gamma(H\rightarrow ZZ)\propto \Gamma(H\rightarrow WW)/2$.
-    \item $H\rightarrow \gamma\gamma$ en $H\overline gg$: Niet op boom level wat we later bekijken.
+    \item $H\rightarrow \gamma\gamma$ en $H \rightarrow gg$: Niet op boom level wat we later bekijken.
 \end{itemize}
 De totale verval breedte van het Higgs boson wordt gegeven door $\Gamma_{tot} = \sum_X \Gamma(H\rightarrow XX)$ en kan geplot worden in functie van de massa van het Higgs boson. Onder de $150$GeV is $\Gamma_H$ klein omdat er niet veel mogelijke verval kanalen zijn. Vanaf je aan de $180$GeV komt is het mogelijk om 2 $W$ bosonen aan te maken en vergroot $\Gamma_H$  significant. Als je kijkt bij $m_H=1000$GeV is zijn breedte even groot en zou het experimenteel onmogelijk zijn om deze waar te nemen. In figuur \ref{fig:higgs_boson/verval_higgs} worden de waarschijnlijkheden gegeven om het Higgs te laten vervallen naar een specifiek kanaal. Hier wordt bevestigd dat bij lage energie $b\overline b$ overheerst en vanaf $\pm 150$GeV zal $WW$ verval overnemen. Een interessante opmerking is dat de waarschijnlijkheid van het $Z$ boson een dip zal ondervinden bij de $W$ resonantie.
 
@@ -483,8 +483,8 @@ Belangrijk om op te merken hier is dat de werkzame doorsnedes hier de eenheid fe
 \subsection{De zoek voor het Higgs boson}%
 \label{sub:de_zoek_voor_het_higgs_boson}
 
-De initiële zoektocht naar het Higgs boson is begonnen in het LEP. Dit is dus de geassocieerde productie $e^{+} e^{-} \rightarrow Z+H$. Eens het Higgs aangemaakt is zal het voornamelijk vervallen naar $b$ quarks ($H \rightarrow b \bar{b}$) en het $Z$ boson zal vervallen in 3 mogelijke combinaties $Z \rightarrow l^{+} l^{-}, \nu \bar{\nu}, q \bar{q}$. Het probleem bij deze opstelling is dat er een sterke achtergrond zal zijn voor $e^{+} e^{-} \rightarrow Z+Z^{*}$ waar bij het virtueel boson vervalt naar $Z^{*} \rightarrow b \bar{b}$. De maximale hoeveelheid energie dat aangemaakt kan worden in het LEP is $\sqrt{s} = 209$GeV. Nemen we hiervan dan nog eens de massa van het $Z$ boson af kunnen we maar zoeken naar een Higgs boson met een massa kleiner dan $m_{H}<\sqrt{s}-m_{Z}=118$GeV. In de prkatijk valt nog een kleine hoeveelheid weg door waarnemings thresholds en zou de massa van het Higgs kleiner moeten zijn dan $114$GeV.\\
-Schakelen we over naar het Tevatron en LHC waar we veel hogere energieën kunnen berijken. Kijken we eerst naar het Tevatron waar $p\bar{p}$ of in essentie een quark en antiquark zullenn botsen met elkaar. Het grote nadeel voor de hadron colliders is natuurlijk dat deze een grote hoeveelheid achtergrond creëren. Om deze achtergrond een beetje te proberen omzeilen kijken we het liefst naar de geassocieerde productie van Higgs bosonen. Dit omdat we hier een $t\bar{t}$ of een $W$ of een $Z$ wordt aangemaakt die we dan kunnen gebruiken als tags. De verschillende vervalmodes zijn:
+De initiële zoektocht naar het Higgs boson is begonnen in het LEP. Dit is dus de geassocieerde productie $e^{+} e^{-} \rightarrow Z+H$. Eens het Higgs aangemaakt is zal het voornamelijk vervallen naar $b$ quarks ($H \rightarrow b \bar{b}$) en het $Z$ boson zal vervallen in 3 mogelijke combinaties $Z \rightarrow l^{+} l^{-}, \nu \bar{\nu}, q \bar{q}$. Het probleem bij deze opstelling is dat er een sterke achtergrond zal zijn voor $e^{+} e^{-} \rightarrow Z+Z^{*}$ waar bij het virtueel boson vervalt naar $Z^{*} \rightarrow b \bar{b}$. De maximale hoeveelheid energie dat aangemaakt kan worden in het LEP is $\sqrt{s} = 209$GeV. Nemen we hiervan dan nog eens de massa van het $Z$ boson af kunnen we maar zoeken naar een Higgs boson met een massa kleiner dan $m_{H}<\sqrt{s}-m_{Z}=118$GeV. In de praktijk valt nog een kleine hoeveelheid weg door waarnemings thresholds en zou de massa van het Higgs kleiner moeten zijn dan $114$GeV.\\
+Schakelen we over naar het Tevatron en LHC waar we veel hogere energieën kunnen berijken. Kijken we eerst naar het Tevatron waar $p\bar{p}$ of in essentie een quark en antiquark zullen botsen met elkaar. Het grote nadeel voor de hadron colliders is natuurlijk dat deze een grote hoeveelheid achtergrond creëren. Om deze achtergrond een beetje te proberen omzeilen kijken we het liefst naar de geassocieerde productie van Higgs bosonen. Dit omdat we hier een $t\bar{t}$ of een $W$ of een $Z$ wordt aangemaakt die we dan kunnen gebruiken als tags. De verschillende vervalmodes zijn:
 \begin{itemize}
     \item $b\bar{b}$: deze is geprefereerd maar is moeilijk om waar te nemen in hadron colliders omdat er duizenden mogelijkheden zijn om deze aan te maken.
     \item $\tau^{+} \tau^{-}$: iets minder moeilijk maar nog steeds moeilijk omdat je het $\tau$ zelf niet ziet vanwege zijn korte levensduur.
@@ -503,7 +503,6 @@ Om dit alles goed uit te voeren is het nodig een een zoek criterium in te voeren
     \item Vergelijk dit met de theorie: $R_{95}=\frac{\sigma_{95}}{\sigma_{S M}}$. Hierbij is $\sigma_{S M}$ de werkzame doorsnede die we verwachten uit de theorie.
 \end{enumerate}
 Als $R<1$ dan zijn we met $95\%$ kans zeker dat de gemeten werkzame doorsnede kleiner is dan de theorie en hebben we $95\%$ kans dat er geen Higgs zal zijn bij deze massa.\\
-
 Heel belangrijk bij deze experimenten is om een grote hoeveelheid evenementen te bekijken zodat de werkzame doorsnede van de $95\%$ kan uitmiddelen tegenover de achtergrond. Indien dit niet gedaan wordt is de waarde van $R$ zo groot dat deze irrelevant zijn.\\
 Bekijken we eerst de resultaten die gevonden zijn in het Tevatron. Indien de massa van het Higgs boson tussen $100-120$GeV uit $H \rightarrow b \bar{b}$ en tussen $139-184$GeV uit $H \rightarrow W W$ zou liggen zou deze met het Tevatron zeker waargenomen worden. In figuur \ref{fig:higgs_boson/zoektoacht_h_tevatron} zou die curve $R$ onder 1 moeten komen liggen als deze er niet zou liggen. Indien deze daar wel zou liggen zou in de experimenten $R$ boven 1 moeten blijven liggen en ontstaat er een exces tussen de vooraf verwachte (berekende) stippellijn en de experimentele waardes. In de werkelijkheid heeft het Tevatron het Higgs boson enkel kunnen uitsluiten voor massa's tussen $100-103$GeV en $147-180$GeV die weergegeven worden met de groene zones. De reden waarom het niet kon uitgesloten worden voor de energieën daartussen is door de overgang van het dominerende verval kanaal van het Higgs en de achtergrond proportioneel veel groter zal zijn in deze zones (zie figuur \ref{fig:higgs_boson/verval_higgs}).
 
@@ -515,7 +514,7 @@ Bekijken we eerst de resultaten die gevonden zijn in het Tevatron. Indien de mas
 \end{figure}
 
 Op de verwachte waarde (stippellijn) hebben we natuurlijk een bepaalde zekerheid dat ze correct zijn. De groene en gele zones rond de verwachte lijnen geven de $1\sigma$ en $2\sigma$ waarschijnlijkheid weer. Indien er weldegelijk een Higgs boson aanwezig zou zijn moet er een exces zijn tussen de experimentele waardes en de voorspelde waarden. Dit omdat de voorspelde waarden voor $R$ bij het meten van meer experimenten enkel kan dalen maar de experimentele $R$ naar 1 zal moeten gaan omdat de experimentele werkzame doorsnede naar de werkzame doorsnede van het Standaard Model zal convergeren. Het Tevatron zegt dus dat er iets zal zitten rond die $124$GeV waar we het Higgs nu juist verwachten. Dit exces van $\pm 2.5\sigma$ is deze niet groot genoeg om het Higgs boson als ontdekt te beschouwen. Eén van de grote redenen hiervoor is de breedte van het exces. Dit is zuiver uit experimentele limitaties. We hebben dus detectoren nodig die een betere resolutie hebben en maar data kunnen generen.\\
-Hier komt het LHC dan in het beeld met een hogere $\sqrt{s}$ waardoor het makkelijker is om Higgs bosonen aan te maken en een hogere $\mathcal{L}$ waardoor zo goed als even veel evenementen kunnen uitgevord worden in 1 dag als er evenementen in een jaar kunnen aangemaakt worden in het Tevatron. Na een jaar experimentele data te verzamelen in het LHC krijgen we de resultaten weergegeven in figuur \ref{fig:higgs_boson/zoektocht_naar_h}.
+Hier komt het LHC dan in het beeld met een hogere $\sqrt{s}$ waardoor het makkelijker is om Higgs bosonen aan te maken en een hogere $\mathcal{L}$ waardoor zo goed als even veel evenementen kunnen uitgevoerd worden in 1 dag als er evenementen in een jaar kunnen aangemaakt worden in het Tevatron. Na een jaar experimentele data te verzamelen in het LHC krijgen we de resultaten weergegeven in figuur \ref{fig:higgs_boson/zoektocht_naar_h}.
 
 \begin{figure}[h]
     \centering
@@ -601,7 +600,7 @@ Uit het verval van he Higgs naar 2 fotonen weten we direct het een boson is. Om 
     \label{fig:higgs_boson/h_hoek_dist}
 \end{figure}
 
-Uit verdere analyse kan ingezien worden dat dit een vector boson moet zijn ($0+$ in figuur)
+Uit verdere analyse kan ingezien worden dat dit een pseudo scalair boson moet zijn ($0+$ in figuur, pseudo deeltjes hebben een positieve pariteit)
 
 \begin{figure}[h]
     \centering
